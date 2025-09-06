@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer System - CS 2082</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lesson.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-laptop-code"></i>
+                <span>CS 2082</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="lesson-container">
+        <aside class="lesson-sidebar">
+            <h3>Course Content</h3>
+            <ul class="lesson-menu">
+                <li class="active"><a href="computer-system.html">1.1 Introduction to Computer Systems</a></li>
+                <li><a href="input-devices.html">1.2 Input Devices</a></li>
+                <li><a href="cpu.html">1.3 CPU</a></li>
+                <li><a href="motherboard.html">1.4 Motherboard and Data Bus</a></li>
+                <li><a href="memory.html">1.5 Memory</a></li>
+                <li><a href="output-devices.html">1.6 Output Devices and Ports</a></li>
+                <li><a href="software.html">1.7 Computer Software</a></li>
+            </ul>
+        </aside>
+
+        <article class="lesson-content">
+            <div class="navigation-buttons top-navigation">
+                <div></div>
+                <a href="input-devices.html" class="nav-button next">Next: 1.2 Input Devices <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <h1>1.1 Introduction to Computer Systems</h1>
+            
+            <section id="introduction" class="lesson-section">
+                <h2>1.1 Introduction to Computer Systems</h2>
+                <p>Welcome to the exciting world of computer systems! In this lesson, we'll explore what makes computers so powerful and how they've become an essential part of our daily lives.</p>
+                
+                <div class="learning-objectives">
+                    <h3><i class="fas fa-bullseye"></i> Learning Objectives</h3>
+                    <ul>
+                        <li>Understand what a computer system is and its key features</li>
+                        <li>Explore various application areas of computer systems</li>
+                        <li>Learn about the IPOS cycle and its components</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="definition" class="lesson-section">
+                <h3>1.1.1 Definition and Features of Computer System</h3>
+                The word “Computer” comes from the Latin word Computare, which means “to calculate.” In the past, computers were mainly used for calculation, but today they are everywhere—at home, in schools, offices, hospitals, banks, and many other places.
+                <div class="definition-box">
+                    <h4><i class="fas fa-lightbulb"></i> What is a Computer?</h4>
+                    <p>A computer is an electronic programmable device that accepts raw data(input) from the user, processes it according to a given set of instructions(software/program), stores the data and information for future use and produces meaningful information (output).</p>
+                </div>
+                Computers are very fast and accurate. They are not only used for solving math problems but also for making documents, videos, music, presentations, and games.
+                <h4><i class="fas fa-laptop-code"></i> Features of a Computer</h4>
+                <div class="compact-features">
+                    <p class="features-intro"><i class="fas fa-info-circle"></i> Computers are powerful and useful in almost every field. Their importance is increasing with time. The main features of computers are:</p>
+                    
+                    <p class="feature-item"><span class="feature-icon"><i class="fas fa-robot"></i></span> <strong>1. Automatic</strong><br>
+                    A computer works automatically once instructions are given through software. It can also automatically control other devices connected to it. <span class="example">Example:</span> Printing 1000 pages without monitoring.</p>
+                    
+                    <p class="feature-item"><span class="feature-icon"><i class="fas fa-tachometer-alt"></i></span> <strong>2. Speed</strong><br>
+                    A computer works with electrical signals (0 and 1 in binary form). These signals travel close to the speed of light, so computers can process millions of instructions in one second. For example, weather forecasting calculations that would take humans hours are done in minutes by a computer. The table below shows the speed of the computer in different units of time.</p>
+                    
+                    <div class="info-table">
+                        <table>
+                            <tr><th>Unit of Time</th><th>Part of second</th><th>Power of 10</th></tr>
+                            <tr><td>Millisecond</td><td>1/1000</td><td>One Thousand (10<sup>-3</sup>)</td></tr>
+                            <tr><td>Microsecond</td><td>1/1000000</td><td>One Millionth (10<sup>-6</sup>)</td></tr>
+                            <tr><td>Nanosecond</td><td>1/1000000000</td><td>One Billionth (10<sup>-9</sup>)</td></tr>
+                            <tr><td>Picosecond</td><td>1/1000000000000</td><td>One Trillionth (10<sup>-12</sup>)</td></tr>
+                            <tr><td>Femtosecond</td><td>1/1000000000000000</td><td>One Quadrillionth (10<sup>-15</sup>)</td></tr>
+                        </table>
+                    </div>
+                    
+                    <p class="feature-item"><span class="feature-icon"><i class="fas fa-bullseye"></i></span> <strong>3. Accuracy</strong><br>
+                    A computer gives accurate results if correct input and instructions are provided. However:<br>
+                    - The incorrect output produced due to incorrect input is referred to as Garbage In Garbage Out (GIGO).<br>
+                    - Errors due to hardware or software faults are called bugs.</p>
+                    
+                    <p class="feature-item"><span class="feature-icon"><i class="fas fa-database"></i></span> <strong>4. Storage</strong><br>
+                    A computer can store large amounts of data, information, and programs on storage devices (hard disks, CDs, pen drives, etc.). Stored data can be used anytime. 1 Byte = 1 character.</p>
+                    
+                    <div class="info-table">
+                        <table class="storage-table">
+                            <tr>
+                                <td>1 Bit = 1 or 0</td>
+                                <td>4 bits = 1 Nibble</td>
+                                <td>8 bits = 1 Byte</td>
+                                <td>1024 bytes = 1 KB</td>
+                            </tr>
+                            <tr>
+                                <td>1024 KB = 1 MB</td>
+                                <td>1024 MB = 1 GB</td>
+                                <td>1024 GB = 1 TB</td>
+                                <td>1024 TB = 1 PB</td>
+                            </tr>
+                            <tr>
+                                <td>1024 PB = 1 EB</td>
+                                <td>1024 EB = 1 ZB</td>
+                                <td>1024 ZB = 1 YB</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <p>KB-Kilobyte, MB-Megabyte, GB-Gigabyte, TB-Terabyte, PB-Petabyte, EB-Exabyte, ZB-Zettabyte, YB-Yottabyte</p>
+                    
+                    <p class="feature-item"><span class="feature-icon"><i class="fas fa-infinity"></i></span> <strong>5. Diligence</strong><br>
+                    A computer does not get tired or bored. It can work for long hours with the same speed and accuracy. The capability of a computer to perform a task repeatedly without losing speed and accuracy for a long time is known as diligence.</p>
+                    
+                    <p class="feature-item"><span class="feature-icon"><i class="fas fa-tasks"></i></span> <strong>6. Versatility</strong><br>
+                    A computer is a versatile (multi-purpose) machine. Versatility refers to the capability of doing various kinds of tasks. It can be used for calculations, preparing documents, designing and research, entertainment (games, music, videos) and communication (emails, messages, file sharing).</p>
+                </div>
+                
+                <div class="real-world-example">
+                    <h4><i class="fas fa-mobile-alt"></i> Real World Example</h4>
+                    <p>Think of a smartphone - it's a complete computer system. It has hardware (screen, processor, memory) and software (apps, operating system) working together. You can take photos, send messages, browse the internet, and play games - all thanks to its versatile computer system!</p>
+                </div>
+            </section>
+
+            <section id="applications" class="lesson-section">
+                <h3>1.1.2 Application Areas of Computer Systems</h3>
+                
+                <p>Computers are very powerful and versatile. They help people work faster, correctly, and more efficiently. With computers, people can prepare documents, spreadsheets, presentations, and graphics. They can also enjoy modern facilities like instant messaging, video chatting, email, online shopping, ticket booking, banking, and getting the latest news. Today, computers are used in almost every field of life. Some important applications are:</p>
+                
+                <h4><i class="fas fa-graduation-cap"></i> Education</h4>
+                <ul class="application-list">
+                    <li>Computers are widely used in the education sector for both teaching and learning.</li>
+                    <li>Students can study different subjects through educational websites and online resources.</li>
+                    <li>Teachers prepare lesson materials, presentations, and multimedia content with the help of computers.</li>
+                    <li>Schools use computers to maintain student records, prepare bills, and manage exam results efficiently.</li>
+                </ul>
+                
+                <h4><i class="fas fa-comments"></i> Communication</h4>
+                <ul class="application-list">
+                    <li>Computers play a vital role in sharing information through the Internet.</li>
+                    <li>They enable services like email, video calls, instant messaging, and social media platforms (e.g., Facebook, Twitter, Instagram) to keep people connected worldwide.</li>
+                </ul>
+                
+                <h4><i class="fas fa-university"></i> Banking</h4>
+                <ul class="application-list">
+                    <li>Computers are used in banks to keep customer records and prepare bank statements.</li>
+                    <li>People can use online and mobile banking to check balance, transfer money, or pay bills easily.</li>
+                    <li>Computers also make banking safer and faster by reducing paperwork.</li>
+                </ul>
+                
+                <h4><i class="fas fa-heartbeat"></i> Medicine</h4>
+                <ul class="application-list">
+                    <li>Computers are used in hospitals to diagnose diseases with machines like CT scans, ultrasound, and ECG.</li>
+                    <li>Hospitals use computers to manage patient records and track medicines.</li>
+                    <li>Computers are also used in surgeries and in medical research to discover new treatments.</li>
+                </ul>
+                
+                <h4><i class="fas fa-gamepad"></i> Entertainment</h4>
+                <ul class="application-list">
+                    <li>Computers are used for entertainment like playing games, listening to music, watching movies, and browsing the Internet.</li>
+                    <li>Streaming apps like Netflix and Spotify give access to movies and songs through computers and the Internet.</li>
+                    <li>Computers let people use social media to talk with others around the world, and they can also be used to make digital drawings and designs.</li>
+                </ul>
+                
+                <h4><i class="fas fa-flask"></i> Scientific Research</h4>
+                <ul class="application-list">
+                    <li>Computers are essential in all forms of scientific study. Scientists use the Internet to get the latest information from around the world.</li>
+                    <li>Computers are used in weather forecasting, space research, and other complex studies.</li>
+                    <li>Computers help researchers analyze large amounts of data and run computer experiments (simulations) to understand things better.</li>
+                </ul>
+                
+                <h4><i class="fas fa-tractor"></i> Agriculture</h4>
+                <ul class="application-list">
+                    <li>Computers make farming more accurate, save time, reduce waste, and increase crop production.</li>
+                    <li>Farmers use GPS (Global Positioning System) to find the best areas for planting crops.</li>
+                    <li>Drones (small flying machines with cameras) are used to check fields, monitor plant health, and spray fertilizers or pesticides.</li>
+                    <li>AI (Artificial Intelligence) helps farmers predict weather, decide when to plant, and how much water or fertilizer to use.</li>
+                </ul>
+            </section>
+
+            <section id="ipos" class="lesson-section">
+                <h3>1.1.3 Functions of a Computer System: The IPOS Cycle</h3>
+                
+                <div class="ipos-intro">
+                    <p>A computer works step by step to change raw data into useful information. This process is called the IPOS Cycle: <strong>Input → Process → Output → Storage</strong>.</p>
+                </div>
+
+                <div class="ipos-diagram">
+                    <div class="ipos-box input">
+                        <div class="ipos-icon"><i class="fas fa-keyboard"></i></div>
+                        <h4>1. Input</h4>
+                        <p>Data is entered into the computer using input devices (keyboard, mouse, scanner, etc.).</p>
+                    </div>
+                    
+                    <div class="ipos-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    
+                    <div class="ipos-box process">
+                        <div class="ipos-icon"><i class="fas fa-microchip"></i></div>
+                        <h4>2. Process</h4>
+                        <p>The Central Processing Unit (CPU) processes the entered data according to instructions.</p>
+                    </div>
+                    
+                    <div class="ipos-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    
+                    <div class="ipos-box output">
+                        <div class="ipos-icon"><i class="fas fa-desktop"></i></div>
+                        <h4>3. Output</h4>
+                        <p>The processed information is displayed or given to the user through output devices (monitor, printer, speaker, etc.).</p>
+                    </div>
+                    
+                    <div class="ipos-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    
+                    <div class="ipos-box storage">
+                        <div class="ipos-icon"><i class="fas fa-save"></i></div>
+                        <h4>4. Storage</h4>
+                        <p>The data and information can be saved in the computer's memory (hard disk, pen drive, etc.) for future use.</p>
+                    </div>
+                </div>
+                
+                <div class="ipos-cycle">
+                    <div class="cycle-arrow">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <p>The cycle continues as stored data can be retrieved and used as input for new processes.</p>
+                </div>
+                
+                <div class="ipos-diagram">
+                    <h4><i class="fas fa-project-diagram"></i> IPOS Cycle Diagram</h4>
+                    <div class="diagram-container">
+                        <div class="diagram-box">Input</div>
+                        <div class="diagram-arrow">→</div>
+                        <div class="diagram-box">Process</div>
+                        <div class="diagram-arrow">→</div>
+                        <div class="diagram-box">Output</div>
+                        <div class="diagram-arrow">→</div>
+                        <div class="diagram-box">Storage</div>
+                        <div class="diagram-arrow loop">↻</div>
+                    </div>
+                    <p class="diagram-caption">Figure 1: The IPOS cycle showing how data flows through a computer system.</p>
+                </div>
+                
+                <div class="real-world-example">
+                    <h4><i class="fas fa-mobile-alt"></i> Real World Example: Smartphone Camera</h4>
+                    <p>Let's see how the IPOS cycle works when you take a photo with your smartphone:</p>
+                    <ol>
+                        <li><strong>Input:</strong> Light enters through the camera lens when you press the capture button.</li>
+                        <li><strong>Process:</strong> The image processor adjusts settings like brightness, contrast, and focus.</li>
+                        <li><strong>Output:</strong> The processed image is displayed on your screen.</li>
+                        <li><strong>Storage:</strong> The photo is saved to your phone's memory or cloud storage.</li>
+                    </ol>
+                </div>
+                
+            </section>
+
+            <div class="navigation-buttons">
+                <div></div>
+                <a href="input-devices.html" class="nav-button next">Next: 1.2 Input Devices <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Topics</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: info@cs2082.edu.np</p>
+                <p>Phone: +977-1-1234567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Computer Science 2082. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Function to save user's answer
+        function saveAnswer(elementId) {
+            const textarea = document.querySelector(`#${elementId} textarea`);
+            if (textarea.value.trim() === '') {
+                alert('Please enter your answer before saving.');
+                return;
+            }
+            localStorage.setItem(elementId, textarea.value);
+            alert('Your answer has been saved!');
+        }
+
+        // Function to check IPOS answers
+        function checkIPOS() {
+            const input = document.getElementById('inputField').value.toLowerCase();
+            const process = document.getElementById('processField').value.toLowerCase();
+            const output = document.getElementById('outputField').value.toLowerCase();
+            const storage = document.getElementById('storageField').value.toLowerCase();
+            
+            let correct = 0;
+            const total = 4;
+            
+            if (input.includes('keyboard') || input.includes('type') || input.includes('type')) correct++;
+            if (process.includes('process') || process.includes('format') || process.includes('word')) correct++;
+            if (output.includes('screen') || output.includes('display') || output.includes('show')) correct++;
+            if (storage.includes('save') || storage.includes('store') || storage.includes('hard drive')) correct++;
+            
+            alert(`You got ${correct} out of ${total} correct! ${correct === total ? 'Great job!' : 'Try again!'}`);
+        }
+
+        // Load saved answers when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedAnswers = ['dailyUses'];
+            savedAnswers.forEach(id => {
+                const saved = localStorage.getItem(id);
+                if (saved) {
+                    const textarea = document.querySelector(`#${id} textarea`);
+                    if (textarea) textarea.value = saved;
+                }
+            });
+            
+            // Update progress based on completed sections
+            updateProgress();
+            
+            // Add click event to navigation links to update progress
+            document.querySelectorAll('.lesson-toc a').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    // Update active state
+                    document.querySelectorAll('.lesson-toc a').forEach(a => a.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Update progress when navigating to a new section
+                    setTimeout(updateProgress, 500);
+                });
+            });
+        });
+        
+        // Function to update progress
+        function updateProgress() {
+            const sections = document.querySelectorAll('.lesson-section');
+            let viewedSections = 0;
+            
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                // If section is in viewport
+                if (rect.top < window.innerHeight * 0.8 && rect.bottom > 0) {
+                    section.classList.add('viewed');
+                }
+                
+                if (section.classList.contains('viewed')) {
+                    viewedSections++;
+                }
+            });
+            
+            const progress = Math.min(100, Math.round((viewedSections / sections.length) * 100));
+            const progressBar = document.querySelector('.progress');
+            if (progressBar) {
+                progressBar.style.width = `${progress}%`;
+                const progressText = document.querySelector('.lesson-progress p');
+                if (progressText) progressText.textContent = `${progress}% Complete`;
+            }
+        }
+        
+        // Update progress on scroll
+        window.addEventListener('scroll', updateProgress);
+    </script>
+</body>
+</html>

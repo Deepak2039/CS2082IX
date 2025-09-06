@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.6 Output Devices - Computer Science 2082</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lesson.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-laptop-code"></i>
+                <span>CS 2082</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="lesson-container">
+        <aside class="lesson-sidebar">
+            <h3>Course Content</h3>
+            <ul class="lesson-menu">
+                <li class="active"><a href="computer-system.html">1.1 Introduction to Computer Systems</a></li>
+                <li><a href="input-devices.html">1.2 Input Devices</a></li>
+                <li><a href="cpu.html">1.3 CPU</a></li>
+                <li><a href="motherboard.html">1.4 Motherboard and Data Bus</a></li>
+                <li><a href="memory.html">1.5 Memory</a></li>
+                <li><a href="output-devices.html">1.6 Output Devices and Ports</a></li>
+                <li><a href="software.html">1.7 Computer Software</a></li>
+            </ul>
+        </aside>
+
+        <article class="lesson-content">
+            <div class="nav-buttons">
+                <a href="memory.html" class="nav-btn nav-prev"><i class="fas fa-arrow-left"></i> Previous: Memory</a>
+                <a href="software.html" class="nav-btn nav-next">Next: Software <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <h1>1.6 Output Devices</h1>
+            
+            <div class="learning-objectives">
+                <h3>Learning Objectives</h3>
+                <ul>
+                    <li>Understand the purpose and types of output devices</li>
+                    <li>Learn about different display technologies (LED, LCD)</li>
+                    <li>Compare various types of printers and their uses</li>
+                    <li>Understand common computer ports and their functions</li>
+                </ul>
+            </div>
+
+            <section class="lesson-section" id="overview">
+                <h2>1.6.1 Overview of Output Devices</h2>
+                <p>Output devices are hardware components that display or present data processed by a computer in a human-readable form. They convert electronic data into a form that users can understand, such as text, images, sounds, or physical output.</p>
+                
+                <div class="definition-box">
+                    <h4><i class="fas fa-info-circle"></i> Categories of Output Devices</h4>
+                    <div class="categories">
+                        <div class="category">
+                            <i class="fas fa-desktop"></i>
+                            <h5>Display Devices</h5>
+                            <p>Show visual output (e.g., monitors, projectors)</p>
+                        </div>
+                        <div class="category">
+                            <i class="fas fa-print"></i>
+                            <h5>Printers</h5>
+                            <p>Produce hard copy output (e.g., laser, inkjet, 3D printers)</p>
+                        </div>
+                        <div class="category">
+                            <i class="fas fa-volume-up"></i>
+                            <h5>Audio Devices</h5>
+                            <p>Produce sound output (e.g., speakers, headphones)</p>
+                        </div>
+                        <div class="category">
+                            <i class="fas fa-project-diagram"></i>
+                            <h5>Other Output</h5>
+                            <p>Projectors, plotters, and more</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="lesson-section" id="display-units">
+                <h2>1.6.2 Display Units</h2>
+                <p>Display units are the most common output devices that present visual information from the computer.</p>
+                
+                <div class="device-cards">
+                    <div class="device-card">
+                        <div class="device-icon">
+                            <i class="fas fa-tv"></i>
+                        </div>
+                        <div class="device-info">
+                            <h3>LED Monitor</h3>
+                            <ul>
+                                <li><strong>Technology:</strong> Light Emitting Diodes</li>
+                                <li><strong>Advantages:</strong> Energy efficient, thin design, better contrast</li>
+                                <li><strong>Uses:</strong> Computer monitors, TVs, digital signage</li>
+                                <li><strong>Lifespan:</strong> 50,000-100,000 hours</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="device-card">
+                        <div class="device-icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <div class="device-info">
+                            <h3>LCD Monitor</h3>
+                            <ul>
+                                <li><strong>Technology:</strong> Liquid Crystal Display with CCFL backlight</li>
+                                <li><strong>Advantages:</strong> Lightweight, less power consumption than CRT</li>
+                                <li><strong>Uses:</strong> Computer monitors, laptops, tablets</li>
+                                <li><strong>Resolution:</strong> Ranges from HD to 8K</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comparison-box">
+                    <h4><i class="fas fa-balance-scale"></i> LED vs LCD: Key Differences</h4>
+                    <div class="comparison">
+                        <div>
+                            <h5>LED Monitors</h5>
+                            <ul>
+                                <li>Use light-emitting diodes for backlighting</li>
+                                <li>Better contrast and black levels</li>
+                                <li>More energy efficient</li>
+                                <li>Thinner and lighter</li>
+                                <li>Longer lifespan</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5>LCD Monitors</h5>
+                            <ul>
+                                <li>Use CCFL (cold cathode fluorescent) backlighting</li>
+                                <li>Less expensive than LED</li>
+                                <li>Thicker and heavier</li>
+                                <li>Shorter lifespan than LED</li>
+                                <li>More power consumption</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="lesson-section" id="printers">
+                <h2>1.6.3 Printers</h2>
+                <p>Printers produce hard copies of digital documents and images on paper or other media.</p>
+                
+                <div class="printer-cards">
+                    <div class="printer-card">
+                        <div class="printer-icon">
+                            <i class="fas fa-print"></i>
+                        </div>
+                        <h3>Laser Printer</h3>
+                        <ul>
+                            <li><strong>Technology:</strong> Uses laser beam and toner</li>
+                            <li><strong>Speed:</strong> 20-100+ pages per minute</li>
+                            <li><strong>Quality:</strong> High quality text, good for graphics</li>
+                            <li><strong>Best for:</strong> Office use, high-volume printing</li>
+                            <li><strong>Cost:</strong> Higher initial cost, lower cost per page</li>
+                        </ul>
+                    </div>
+
+                    <div class="printer-card">
+                        <div class="printer-icon">
+                            <i class="fas fa-print"></i>
+                        </div>
+                        <h3>Ink-jet Printer</h3>
+                        <ul>
+                            <li><strong>Technology:</strong> Sprays tiny droplets of ink</li>
+                            <li><strong>Speed:</strong> 5-35 pages per minute</li>
+                            <li><strong>Quality:</strong> Excellent for photos and color printing</li>
+                            <li><strong>Best for:</strong> Home use, photo printing</li>
+                            <li><strong>Cost:</strong> Lower initial cost, higher cost per page</li>
+                        </ul>
+                    </div>
+
+                    <div class="printer-card">
+                        <div class="printer-icon">
+                            <i class="fas fa-print"></i>
+                        </div>
+                        <h3>Dot-matrix Printer</h3>
+                        <ul>
+                            <li><strong>Technology:</strong> Uses pins to strike an inked ribbon</li>
+                            <li><strong>Speed:</strong> 50-500 characters per second</li>
+                            <li><strong>Quality:</strong> Low to medium, produces dot patterns</li>
+                            <li><strong>Best for:</strong> Multi-part forms, invoices, receipts</li>
+                            <li><strong>Specialty:</strong> Can create carbon copies</li>
+                        </ul>
+                    </div>
+
+                    <div class="printer-card">
+                        <div class="printer-icon">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <h3>3D Printer</h3>
+                        <ul>
+                            <li><strong>Technology:</strong> Adds material layer by layer</li>
+                            <li><strong>Materials:</strong> PLA, ABS, resin, metal, etc.</li>
+                            <li><strong>Uses:</strong> Prototyping, manufacturing, medical</li>
+                            <li><strong>Types:</strong> FDM, SLA, SLS, DLP</li>
+                            <li><strong>Applications:</strong> Product design, education, healthcare</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="lesson-section" id="ports">
+                <h2>1.6.4 Computer Ports</h2>
+                <p>Ports are physical docking points that allow connection of external devices to a computer.</p>
+                
+                <div class="port-cards">
+                    <div class="port-card">
+                        <div class="port-icon usb">
+                            <i class="fas fa-usb"></i>
+                        </div>
+                        <div class="port-info">
+                            <h3>USB/Type-C</h3>
+                            <ul>
+                                <li><strong>Versions:</strong> USB 1.0 to USB4</li>
+                                <li><strong>Speed:</strong> 12 Mbps (USB 1.1) to 40 Gbps (USB4)</li>
+                                <li><strong>Uses:</strong> Data transfer, charging, peripherals</li>
+                                <li><strong>Type-C Features:</strong> Reversible, supports video/audio, fast charging</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="port-card">
+                        <div class="port-icon hdmi">
+                            <i class="fas fa-hdmi"></i>
+                        </div>
+                        <div class="port-info">
+                            <h3>HDMI</h3>
+                            <ul>
+                                <li><strong>Versions:</strong> 1.0 to 2.1</li>
+                                <li><strong>Max Resolution:</strong> Up to 10K @ 120Hz</li>
+                                <li><strong>Uses:</strong> Audio/video transmission</li>
+                                <li><strong>Features:</strong> Carries audio and video, supports 3D, Ethernet</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="port-card">
+                        <div class="port-icon vga">
+                            <i class="fas fa-projector"></i>
+                        </div>
+                        <div class="port-info">
+                            <h3>VGA</h3>
+                            <ul>
+                                <li><strong>Type:</strong> Analog video</li>
+                                <li><strong>Max Resolution:</strong> 2048×1536 @ 85Hz</li>
+                                <li><strong>Uses:</strong> Older monitors, projectors</li>
+                                <li><strong>Status:</strong> Legacy, being phased out</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="port-card">
+                        <div class="port-icon ethernet">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div class="port-info">
+                            <h3>Ethernet (RJ-45)</h3>
+                            <ul>
+                                <li><strong>Speeds:</strong> 10/100/1000/10000 Mbps</li>
+                                <li><strong>Uses:</strong> Wired network connections</li>
+                                <li><strong>Advantages:</strong> Stable, secure, high speed</li>
+                                <li><strong>Types:</strong> Cat5e, Cat6, Cat7, Cat8</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="port-card">
+                        <div class="port-icon audio">
+                            <i class="fas fa-headphones"></i>
+                        </div>
+                        <div class="port-info">
+                            <h3>Audio Jack (3.5mm)</h3>
+                            <ul>
+                                <li><strong>Types:</strong> TRS (stereo), TRRS (with mic)</li>
+                                <li><strong>Uses:</strong> Headphones, speakers, microphones</li>
+                                <li><strong>Colors:</strong> Green (audio out), Pink (mic in), Blue (line in)</li>
+                                <li><strong>Status:</strong> Being replaced by USB-C/Wireless</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="interactive-activity">
+                <h3><i class="fas fa-tasks"></i> Interactive Activity</h3>
+                <p>Match the output device with its correct description:</p>
+                <div class="matching-activity">
+                    <div class="matching-pairs">
+                        <div class="matching-item" draggable="true" data-answer="laser">Uses toner and heat to create high-quality prints quickly</div>
+                        <div class="matching-item" draggable="true" data-answer="hdmi">Transmits both audio and video signals digitally</div>
+                        <div class="matching-item" draggable="true" data-answer="3dprinter">Creates physical objects by adding material layer by layer</div>
+                        <div class="matching-item" draggable="true" data-answer="led">Display technology using light-emitting diodes for backlighting</div>
+                    </div>
+                    <div class="matching-targets">
+                        <div class="matching-target" data-answer="laser">Laser Printer</div>
+                        <div class="matching-target" data-answer="hdmi">HDMI Port</div>
+                        <div class="matching-target" data-answer="3dprinter">3D Printer</div>
+                        <div class="matching-target" data-answer="led">LED Monitor</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="lesson-summary">
+                <h3><i class="fas fa-clipboard-check"></i> Summary</h3>
+                <ul>
+                    <li>Output devices present processed data in human-readable form, including visual, audio, and physical outputs.</li>
+                    <li>Display technologies like LED and LCD monitors provide visual output with different characteristics in terms of power consumption, contrast, and image quality.</li>
+                    <li>Printers vary from laser (fast, high-volume) to inkjet (high-quality color) to dot-matrix (impact printing for forms) and 3D printers (additive manufacturing).</li>
+                    <li>Computer ports like USB/Type-C, HDMI, VGA, Ethernet, and audio jacks enable connection of various output and input devices to computers.</li>
+                    <li>Modern interfaces like USB-C and wireless technologies are gradually replacing older port standards.</li>
+                </ul>
+            </section>
+
+            <div class="navigation-buttons">
+                <a href="memory.html" class="nav-button prev"><i class="fas fa-arrow-left"></i> Previous: 1.5 Memory</a>
+                <a href="software.html" class="nav-button next">Next: 1.7 Computer Software <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Computer Science 2082. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Drag and drop functionality for the matching activity
+        document.addEventListener('DOMContentLoaded', function() {
+            const items = document.querySelectorAll('.matching-item');
+            const targets = document.querySelectorAll('.matching-target');
+            
+            let draggedItem = null;
+
+            // Add event listeners for drag events on items
+            items.forEach(item => {
+                item.addEventListener('dragstart', function() {
+                    draggedItem = this;
+                    setTimeout(() => {
+                        this.style.opacity = '0.4';
+                    }, 0);
+                });
+
+                item.addEventListener('dragend', function() {
+                    setTimeout(() => {
+                        this.style.opacity = '1';
+                        draggedItem = null;
+                    }, 0);
+                });
+            });
+
+            // Add event listeners for drop targets
+            targets.forEach(target => {
+                target.addEventListener('dragover', function(e) {
+                    e.preventDefault();
+                    this.style.borderColor = '#4a6bff';
+                });
+
+                target.addEventListener('dragleave', function() {
+                    this.style.borderColor = '#ddd';
+                });
+
+                target.addEventListener('drop', function(e) {
+                    e.preventDefault();
+                    this.style.borderColor = '#ddd';
+                    
+                    if (draggedItem && this.dataset.answer === draggedItem.dataset.answer) {
+                        const originalText = this.textContent;
+                        this.innerHTML = draggedItem.textContent + '<span class="correct"> ✓</span>';
+                        this.style.backgroundColor = '#e8f5e9';
+                        this.style.borderColor = '#4caf50';
+                        draggedItem.style.display = 'none';
+                        
+                        // Show success message
+                        const success = document.createElement('div');
+                        success.className = 'success-message';
+                        success.textContent = 'Correct! ' + originalText + ' matches with ' + draggedItem.textContent;
+                        this.parentNode.insertBefore(success, this.nextSibling);
+                        
+                        // Remove success message after 3 seconds
+                        setTimeout(() => {
+                            success.remove();
+                        }, 3000);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

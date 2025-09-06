@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.5 Memory - Computer Science 2082</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lesson.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-laptop-code"></i>
+                <span>CS 2082</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="lesson-container">
+        <aside class="lesson-sidebar">
+            <h3>Course Content</h3>
+            <ul class="lesson-menu">
+                <li class="active"><a href="computer-system.html">1.1 Introduction to Computer Systems</a></li>
+                <li><a href="input-devices.html">1.2 Input Devices</a></li>
+                <li><a href="cpu.html">1.3 CPU</a></li>
+                <li><a href="motherboard.html">1.4 Motherboard and Data Bus</a></li>
+                <li><a href="memory.html">1.5 Memory</a></li>
+                <li><a href="output-devices.html">1.6 Output Devices and Ports</a></li>
+                <li><a href="software.html">1.7 Computer Software</a></li>
+            </ul>
+        </aside>
+
+        <div class="lesson-content">
+            <div class="nav-buttons">
+                <a href="motherboard.html" class="nav-btn nav-prev"><i class="fas fa-arrow-left"></i> Previous: Motherboard</a>
+                <a href="output-devices.html" class="nav-btn nav-next">Next: Output Devices <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <h1>1.5 Memory (Primary and Secondary)</h1>
+            
+            <div class="learning-objectives">
+                <h3>Learning Objectives</h3>
+                <ul>
+                    <li>Understand the function and importance of memory in a computer system</li>
+                    <li>Learn about different units of memory measurement</li>
+                    <li>Compare and contrast primary and secondary memory</li>
+                    <li>Identify different types of memory and their characteristics</li>
+                </ul>
+            </div>
+
+            <section class="lesson-section" id="memory-definition">
+                <h2>1.5.1 Definition and Function of Memory</h2>
+                <p>Computer memory refers to the electronic holding place for instructions and data that the computer's processor can reach quickly. It's where the computer stores data and instructions that are currently in use.</p>
+                
+                <div class="definition-box">
+                    <h4><i class="fas fa-info-circle"></i> Key Functions of Memory</h4>
+                    <ul>
+                        <li><strong>Data Storage:</strong> Temporarily holds data and instructions that the CPU needs</li>
+                        <li><strong>Fast Access:</strong> Provides quick access to data for the processor</li>
+                        <li><strong>Program Execution:</strong> Holds the program currently being executed</li>
+                        <li><strong>Data Processing:</strong> Stores intermediate results of processing</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="lesson-section" id="memory-units">
+                <h2>1.5.2 Units of Memory Measurement</h2>
+                <p>Computer memory is measured in binary digits (bits) and bytes. Here are the common units of memory measurement:</p>
+                
+                <div class="memory-units">
+                    <div class="memory-unit">
+                        <h4>Bit (b)</h4>
+                        <p>Smallest unit of data (0 or 1)</p>
+                    </div>
+                    <div class="memory-unit">
+                        <h4>Nibble</h4>
+                        <p>4 bits</p>
+                    </div>
+                    <div class="memory-unit">
+                        <h4>Byte (B)</h4>
+                        <p>8 bits</p>
+                    </div>
+                    <div class="memory-unit">
+                        <h4>Kilobyte (KB)</h4>
+                        <p>1,024 bytes</p>
+                    </div>
+                    <div class="memory-unit">
+                        <h4>Megabyte (MB)</h4>
+                        <p>1,024 KB</p>
+                    </div>
+                    <div class="memory-unit">
+                        <h4>Gigabyte (GB)</h4>
+                        <p>1,024 MB</p>
+                    </div>
+                    <div class="memory-unit">
+                        <h4>Terabyte (TB)</h4>
+                        <p>1,024 GB</p>
+                    </div>
+                    <div class="memory-unit">
+                        <h4>Petabyte (PB)</h4>
+                        <p>1,024 TB</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="lesson-section" id="memory-types">
+                <h2>1.5.3 Types of Memory: Primary and Secondary</h2>
+                
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th>Primary Memory</th>
+                                <th>Secondary Memory</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Volatility</td>
+                                <td>Volatile (RAM), Non-volatile (ROM)</td>
+                                <td>Non-volatile</td>
+                            </tr>
+                            <tr>
+                                <td>Speed</td>
+                                <td>Very Fast</td>
+                                <td>Slower than primary</td>
+                            </tr>
+                            <tr>
+                                <td>Access</td>
+                                <td>Directly accessible by CPU</td>
+                                <td>Not directly accessible</td>
+                            </tr>
+                            <tr>
+                                <td>Capacity</td>
+                                <td>Smaller (GBs)</td>
+                                <td>Larger (GBs to TBs)</td>
+                            </tr>
+                            <tr>
+                                <td>Cost</td>
+                                <td>More expensive per GB</td>
+                                <td>Less expensive per GB</td>
+                            </tr>
+                            <tr>
+                                <td>Examples</td>
+                                <td>RAM, ROM, Cache</td>
+                                <td>HDD, SSD, Flash Drives</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="lesson-section" id="primary-memory">
+                <h2>1.5.4 Primary Memory</h2>
+                <p>Primary memory is the main memory of the computer that can be directly accessed by the CPU. It's faster but has limited storage capacity.</p>
+                
+                <div class="memory-cards">
+                    <div class="memory-card primary">
+                        <div class="memory-icon">
+                            <i class="fas fa-memory"></i>
+                        </div>
+                        <h3>RAM (Random Access Memory)</h3>
+                        <ul>
+                            <li><strong>Volatile</strong> - loses data when power is off</li>
+                            <li><strong>Read/Write</strong> - data can be read from and written to</li>
+                            <li><strong>Speed</strong> - very fast access time (nanoseconds)</li>
+                            <li><strong>Use</strong> - stores currently running programs and data</li>
+                        </ul>
+                    </div>
+
+                    <div class="memory-card primary">
+                        <div class="memory-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h3>ROM (Read-Only Memory)</h3>
+                        <ul>
+                            <li><strong>Non-volatile</strong> - retains data without power</li>
+                            <li><strong>Read-Only</strong> - data is written during manufacturing</li>
+                            <li><strong>Permanent</strong> - stores firmware/BIOS</li>
+                            <li><strong>Types</strong> - PROM, EPROM, EEPROM</li>
+                        </ul>
+                    </div>
+
+                    <div class="memory-card primary">
+                        <div class="memory-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h3>Cache Memory</h3>
+                        <ul>
+                            <li><strong>Very fast</strong> - faster than main memory</li>
+                            <li><strong>Expensive</strong> - more costly per MB than RAM</li>
+                            <li><strong>Levels</strong> - L1 (fastest), L2, L3</li>
+                            <li><strong>Purpose</strong> - reduces memory access time</li>
+                        </ul>
+                    </div>
+
+                    <div class="memory-card primary">
+                        <div class="memory-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h3>Registers</h3>
+                        <ul>
+                            <li><strong>Fastest</strong> - fastest memory in a computer</li>
+                            <li><strong>Smallest</strong> - very limited storage (few bytes)</li>
+                            <li><strong>Location</strong> - inside the CPU</li>
+                            <li><strong>Purpose</strong> - holds data being processed</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="lesson-section" id="secondary-memory">
+                <h2>1.5.5 Secondary Memory (Storage Devices)</h2>
+                <p>Secondary memory provides long-term storage for data and programs not currently in use by the CPU.</p>
+                
+                <div class="memory-cards">
+                    <div class="memory-card secondary">
+                        <div class="memory-icon">
+                            <i class="fas fa-hdd"></i>
+                        </div>
+                        <h3>Hard Disk Drive (HDD)</h3>
+                        <ul>
+                            <li><strong>Technology</strong> - magnetic storage</li>
+                            <li><strong>Speed</strong> - 5,400 to 7,200 RPM</li>
+                            <li><strong>Capacity</strong> - 500GB to 10TB+</li>
+                            <li><strong>Durability</strong> - mechanical parts, less durable</li>
+                            <li><strong>Cost</strong> - $0.03-0.06 per GB</li>
+                        </ul>
+                    </div>
+
+                    <div class="memory-card secondary">
+                        <div class="memory-icon">
+                            <i class="fas fa-sd-card"></i>
+                        </div>
+                        <h3>Solid State Drive (SSD)</h3>
+                        <ul>
+                            <li><strong>Technology</strong> - flash memory</li>
+                            <li><strong>Speed</strong> - much faster than HDD</li>
+                            <li><strong>Capacity</strong> - 120GB to 4TB+</li>
+                            <li><strong>Durability</strong> - no moving parts, more durable</li>
+                            <li><strong>Cost</strong> - $0.08-0.20 per GB</li>
+                        </ul>
+                    </div>
+
+                    <div class="memory-card secondary">
+                        <div class="memory-icon">
+                            <i class="fas fa-compact-disc"></i>
+                        </div>
+                        <h3>Optical Discs (CD/DVD/Blu-ray)</h3>
+                        <ul>
+                            <li><strong>Types</strong> - CD (700MB), DVD (4.7-17GB), Blu-ray (25-128GB)</li>
+                            <li><strong>Speed</strong> - slower than HDD/SSD</li>
+                            <li><strong>Portability</strong> - very portable</li>
+                            <li><strong>Durability</strong> - can be scratched/damaged</li>
+                            <li><strong>Use</strong> - media distribution, backups</li>
+                        </ul>
+                    </div>
+
+                    <div class="memory-card secondary">
+                        <div class="memory-icon">
+                            <i class="fas fa-usb"></i>
+                        </div>
+                        <h3>Flash Memory</h3>
+                        <ul>
+                            <li><strong>Types</strong> - USB drives, SD cards, microSD</li>
+                            <li><strong>Capacity</strong> - 1GB to 1TB+</li>
+                            <li><strong>Portability</strong> - highly portable</li>
+                            <li><strong>Durability</strong> - no moving parts, durable</li>
+                            <li><strong>Use</strong> - portable storage, cameras, phones</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="interactive-activity">
+                <h3><i class="fas fa-tasks"></i> Interactive Activity</h3>
+                <p>Match the memory type with its correct description:</p>
+                <div class="matching-activity">
+                    <div class="matching-pairs">
+                        <div class="matching-item" draggable="true" data-answer="ram">Volatile memory that stores currently running programs and data</div>
+                        <div class="matching-item" draggable="true" data-answer="rom">Non-volatile memory that stores firmware/BIOS</div>
+                        <div class="matching-item" draggable="true" data-answer="cache">Very fast memory that reduces CPU-memory access time</div>
+                        <div class="matching-item" draggable="true" data-answer="ssd">Solid state storage with no moving parts</div>
+                    </div>
+                    <div class="matching-targets">
+                        <div class="matching-target" data-answer="ram">RAM</div>
+                        <div class="matching-target" data-answer="rom">ROM</div>
+                        <div class="matching-target" data-answer="cache">Cache</div>
+                        <div class="matching-target" data-answer="ssd">SSD</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="lesson-summary">
+                <h3><i class="fas fa-clipboard-check"></i> Summary</h3>
+                <ul>
+                    <li>Memory is essential for storing data and instructions that the CPU needs to access quickly.</li>
+                    <li>Primary memory (RAM, ROM, Cache, Registers) is faster but more expensive and volatile (except ROM).</li>
+                    <li>Secondary memory (HDD, SSD, Optical, Flash) provides larger, non-volatile storage but is slower.</li>
+                    <li>Memory is measured in bits and bytes, with common units being KB, MB, GB, and TB.</li>
+                    <li>Different types of memory serve different purposes in a computer system, from ultra-fast registers to high-capacity hard drives.</li>
+                </ul>
+            </section>
+
+            <div class="navigation-buttons">
+                <a href="motherboard.html" class="nav-button prev"><i class="fas fa-arrow-left"></i> Previous: 1.4 Motherboard and Data Bus</a>
+                <a href="output-devices.html" class="nav-button next">Next: 1.6 Output Devices <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Computer Science 2082. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Drag and drop functionality for the matching activity
+        document.addEventListener('DOMContentLoaded', function() {
+            const items = document.querySelectorAll('.matching-item');
+            const targets = document.querySelectorAll('.matching-target');
+            
+            let draggedItem = null;
+
+            // Add event listeners for drag events on items
+            items.forEach(item => {
+                item.addEventListener('dragstart', function() {
+                    draggedItem = this;
+                    setTimeout(() => {
+                        this.style.opacity = '0.4';
+                    }, 0);
+                });
+
+                item.addEventListener('dragend', function() {
+                    setTimeout(() => {
+                        this.style.opacity = '1';
+                        draggedItem = null;
+                    }, 0);
+                });
+            });
+
+            // Add event listeners for drop targets
+            targets.forEach(target => {
+                target.addEventListener('dragover', function(e) {
+                    e.preventDefault();
+                    this.style.borderColor = '#4a6bff';
+                });
+
+                target.addEventListener('dragleave', function() {
+                    this.style.borderColor = '#ddd';
+                });
+
+                target.addEventListener('drop', function(e) {
+                    e.preventDefault();
+                    this.style.borderColor = '#ddd';
+                    
+                    if (draggedItem && this.dataset.answer === draggedItem.dataset.answer) {
+                        this.innerHTML = draggedItem.textContent;
+                        this.style.backgroundColor = '#e8f5e9';
+                        this.style.borderColor = '#4caf50';
+                        draggedItem.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

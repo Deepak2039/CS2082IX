@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.4 Motherboard and Data Bus - Computer Science 2082</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lesson.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-laptop-code"></i>
+                <span>CS 2082</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="lesson-container">
+        <aside class="lesson-sidebar">
+            <h3>Course Content</h3>
+            <ul class="lesson-menu">
+                <li class="active"><a href="computer-system.html">1.1 Introduction to Computer Systems</a></li>
+                <li><a href="input-devices.html">1.2 Input Devices</a></li>
+                <li><a href="cpu.html">1.3 CPU</a></li>
+                <li><a href="motherboard.html">1.4 Motherboard and Data Bus</a></li>
+                <li><a href="memory.html">1.5 Memory</a></li>
+                <li><a href="output-devices.html">1.6 Output Devices and Ports</a></li>
+                <li><a href="software.html">1.7 Computer Software</a></li>
+            </ul>
+        </aside>
+
+        <article class="lesson-content">
+            <div class="nav-buttons">
+                <a href="cpu.html" class="nav-btn nav-prev"><i class="fas fa-arrow-left"></i> Previous: CPU</a>
+                <a href="memory.html" class="nav-btn nav-next">Next: Memory <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <h1>1.4 Motherboard and Data Bus</h1>
+            
+            <div class="learning-objectives">
+                <h3>Learning Objectives</h3>
+                <ul>
+                    <li>Understand the role and importance of the motherboard in a computer system</li>
+                    <li>Identify the main components of a motherboard</li>
+                    <li>Explain the function of the data bus and its role in data transfer</li>
+                    <li>Understand different types of buses and their characteristics</li>
+                </ul>
+            </div>
+
+            <section class="lesson-section" id="motherboard-role">
+                <h2>1.4.1 The Motherboard's Role</h2>
+                <p>The motherboard is the main printed circuit board (PCB) in a computer that connects all the components together. It's often called the "backbone" of the computer because it allows communication between all the hardware components.</p>
+                
+                <div class="definition-box">
+                    <h4><i class="fas fa-info-circle"></i> Key Functions of the Motherboard</h4>
+                    <ul>
+                        <li><strong>Component Connection:</strong> Provides sockets and slots for CPU, RAM, expansion cards, and other components</li>
+                        <li><strong>Power Distribution:</strong> Distributes power from the power supply to all connected components</li>
+                        <li><strong>Data Communication:</strong> Facilitates data transfer between components through buses</li>
+                        <li><strong>BIOS/UEFI:</strong> Contains the basic input/output system or unified extensible firmware interface</li>
+                    </ul>
+                </div>
+
+                <div class="component-cards">
+                    <div class="component-card">
+                        <div class="component-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <div class="component-info">
+                            <h3>Main Components of a Motherboard</h3>
+                            <ul>
+                                <li><strong>CPU Socket:</strong> Holds the processor</li>
+                                <li><strong>RAM Slots:</strong> For installing memory modules</li>
+                                <li><strong>Chipset:</strong> Manages data flow between components</li>
+                                <li><strong>Expansion Slots:</strong> For graphics cards and other add-ons</li>
+                                <li><strong>Storage Connectors:</strong> SATA, M.2 for hard drives and SSDs</li>
+                                <li><strong>I/O Ports:</strong> USB, audio, video, and network connections</li>
+                                <li><strong>Power Connectors:</strong> For the power supply unit</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="lesson-section" id="data-bus">
+                <h2>1.4.2 Understanding the Data Bus</h2>
+                <p>A data bus is a communication system that transfers data between components inside a computer or between computers. It's essentially a set of parallel wires that transmit binary data in the form of electrical signals.</p>
+
+                <div class="definition-box">
+                    <h4><i class="fas fa-info-circle"></i> Types of Buses</h4>
+                    <div class="bus-types">
+                        <div class="bus-type">
+                            <h5>1. Data Bus</h5>
+                            <p>Carries actual data being processed</p>
+                            <p><strong>Width:</strong> Measured in bits (e.g., 32-bit, 64-bit)</p>
+                        </div>
+                        <div class="bus-type">
+                            <h5>2. Address Bus</h5>
+                            <p>Carries memory addresses for reading/writing data</p>
+                            <p><strong>Determines:</strong> Maximum addressable memory</p>
+                        </div>
+                        <div class="bus-type">
+                            <h5>3. Control Bus</h5>
+                            <p>Carries control signals for coordination</p>
+                            <p><strong>Includes:</strong> Read, Write, Interrupt, Clock signals</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Bus Characteristics</h3>
+                <div class="bus-characteristics">
+                    <div class="characteristic">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <h4>Bus Width</h4>
+                        <p>Number of bits that can be transferred at once (e.g., 32-bit, 64-bit)</p>
+                    </div>
+                    <div class="characteristic">
+                        <i class="fas fa-clock"></i>
+                        <h4>Bus Speed</h4>
+                        <p>Measured in MHz or GHz, determines how fast data can be transferred</p>
+                    </div>
+                    <div class="characteristic">
+                        <i class="fas fa-exchange-alt"></i>
+                        <h4>Bus Bandwidth</h4>
+                        <p>Total amount of data that can be transferred per second (e.g., MB/s, GB/s)</p>
+                    </div>
+                </div>
+
+                <div class="real-world-example">
+                    <h4><i class="fas fa-lightbulb"></i> Real-World Analogy</h4>
+                    <p>Think of the data bus as a highway system. The width of the highway (bus width) determines how many lanes of traffic (bits) can move at once, while the speed limit (bus speed) determines how fast the traffic can move. The total capacity (bandwidth) is like the total number of cars that can pass through in a given time.</p>
+                </div>
+            </section>
+
+            <section class="interactive-activity">
+                <h3><i class="fas fa-tasks"></i> Interactive Activity</h3>
+                <p>Match the following motherboard components with their descriptions:</p>
+                <div class="matching-activity">
+                    <div class="matching-pairs">
+                        <div class="matching-item" draggable="true" data-answer="chipset">Manages data flow between CPU, memory, and peripherals</div>
+                        <div class="matching-item" draggable="true" data-answer="bios">Stores the firmware used to perform hardware initialization during booting</div>
+                        <div class="matching-item" draggable="true" data-answer="pci">Expansion bus for connecting hardware devices</div>
+                    </div>
+                    <div class="matching-targets">
+                        <div class="matching-target" data-answer="chipset">Chipset</div>
+                        <div class="matching-target" data-answer="bios">BIOS/UEFI</div>
+                        <div class="matching-target" data-answer="pci">PCI Express</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="lesson-summary">
+                <h3><i class="fas fa-clipboard-check"></i> Summary</h3>
+                <ul>
+                    <li>The motherboard is the main circuit board that connects all computer components.</li>
+                    <li>Key components include CPU socket, RAM slots, chipset, expansion slots, and I/O ports.</li>
+                    <li>The data bus is a communication system that transfers data between components.</li>
+                    <li>There are three main types of buses: data bus, address bus, and control bus.</li>
+                    <li>Bus performance is determined by its width, speed, and bandwidth.</li>
+                    <li>Modern computers use high-speed buses like PCI Express for faster data transfer.</li>
+                </ul>
+            </section>
+
+            <div class="navigation-buttons">
+                <a href="cpu.html" class="nav-button prev"><i class="fas fa-arrow-left"></i> Previous: 1.3 Central Processing Unit</a>
+                <a href="memory.html" class="nav-button next">Next: 1.5 Memory <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Computer Science 2082. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Drag and drop functionality for the matching activity
+        document.addEventListener('DOMContentLoaded', function() {
+            const items = document.querySelectorAll('.matching-item');
+            const targets = document.querySelectorAll('.matching-target');
+            
+            let draggedItem = null;
+
+            // Add event listeners for drag events on items
+            items.forEach(item => {
+                item.addEventListener('dragstart', function() {
+                    draggedItem = this;
+                    setTimeout(() => {
+                        this.style.opacity = '0.4';
+                    }, 0);
+                });
+
+                item.addEventListener('dragend', function() {
+                    setTimeout(() => {
+                        this.style.opacity = '1';
+                        draggedItem = null;
+                    }, 0);
+                });
+            });
+
+            // Add event listeners for drop targets
+            targets.forEach(target => {
+                target.addEventListener('dragover', function(e) {
+                    e.preventDefault();
+                    this.style.borderColor = '#4a6bff';
+                });
+
+                target.addEventListener('dragleave', function() {
+                    this.style.borderColor = '#ddd';
+                });
+
+                target.addEventListener('drop', function(e) {
+                    e.preventDefault();
+                    this.style.borderColor = '#ddd';
+                    
+                    if (draggedItem && this.dataset.answer === draggedItem.dataset.answer) {
+                        this.innerHTML = draggedItem.textContent;
+                        this.style.backgroundColor = '#e8f5e9';
+                        this.style.borderColor = '#4caf50';
+                        draggedItem.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
