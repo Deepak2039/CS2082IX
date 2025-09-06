@@ -1,12 +1,12 @@
 // Navigation data
 const navigationData = [
-    { title: '1. Computer System', url: 'computer-system.html' },
-    { title: '2. Input Devices', url: 'input-devices.html' },
-    { title: '3. CPU', url: 'cpu.html' },
-    { title: '4. Motherboard', url: 'motherboard.html' },
-    { title: '5. Memory', url: 'memory.html' },
-    { title: '6. Output Devices', url: 'output-devices.html' },
-    { title: '7. Software', url: 'software.html' }
+    { title: '1.1 Introduction to Computer Systems', url: 'computer-system.html' },
+    { title: '1.2 Input Devices', url: 'input-devices.html' },
+    { title: '1.3 CPU', url: 'cpu.html' },
+    { title: '1.4 Motherboard and Data Bus', url: 'motherboard.html' },
+    { title: '1.5 Memory', url: 'memory.html' },
+    { title: '1.6 Output Devices and Ports', url: 'output-devices.html' },
+    { title: '1.7 Computer Software', url: 'software.html' }
 ];
 
 // Function to create navigation HTML
@@ -94,6 +94,15 @@ function createNavigationButtons(currentPage) {
 document.addEventListener('DOMContentLoaded', function() {
     // Get current page
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    
+    // Add active class to current page in navigation
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        if (link.getAttribute('href') === currentPage) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
     
     // Add main navigation
     const header = document.querySelector('header');
