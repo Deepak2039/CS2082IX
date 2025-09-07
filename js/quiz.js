@@ -77,6 +77,8 @@ let downloadCertBtn, certificateSection, progressBar;
     let questions = [];
     let userAnswers = [];
     let quizCompleted = false;
+    let timeLeft = 60 * 60; // 60 minutes in seconds
+    let timerInterval = null;
 
     // Fetch questions from JSON file and select 100 random questions
     async function loadQuestions() {
@@ -125,7 +127,45 @@ let downloadCertBtn, certificateSection, progressBar;
     function startQuiz() {
         startScreen.style.display = 'none';
         quizScreen.style.display = 'block';
+        startTimer();
         showQuestion();
+    }
+    
+    // Start the countdown timer
+    function startTimer() {
+        updateTimerDisplay();
+        timerInterval = setInterval(() => {
+            timeLeft--;
+            updateTimerDisplay();
+            
+            if (timeLeft <= 0) {
+                clearInterval(timerInterval);
+                timeUp();
+            } else if (timeLeft <= 300) { // 5 minutes left
+                const timerElement = document.getElementById('timer');
+                const timerContainer = timerElement.closest('.timer-container');
+                if (timerContainer && !timerContainer.classList.contains('warning')) {
+                    timerContainer.classList.add('warning');
+                }
+            }
+        }, 1000);
+    }
+    
+    // Update the timer display
+    function updateTimerDisplay() {
+        const minutes = Math.floor(timeLeft / 60);
+        const seconds = timeLeft % 60;
+        const timerElement = document.getElementById('timer');
+        if (timerElement) {
+            timerElement.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        }
+    }
+    
+    // Handle time's up
+    function timeUp() {
+        clearInterval(timerInterval);
+        alert('Time\'s up! Your quiz will be submitted automatically.');
+        showResults();
     }
 
     // Display current question
@@ -271,12 +311,29 @@ let downloadCertBtn, certificateSection, progressBar;
 
     // Reset quiz
     function resetQuiz() {
+        // Clear existing timer
+        if (timerInterval) {
+            clearInterval(timerInterval);
+            timerInterval = null;
+        }
+        
+        // Reset timer
+        timeLeft = 60 * 60; // Reset to 60 minutes
+        updateTimerDisplay();
+        
+        // Remove warning class if present
+        const timerContainer = document.querySelector('.timer-container');
+        if (timerContainer) {
+            timerContainer.classList.remove('warning');
+        }
+        
+        // Reset quiz state
         currentQuestionIndex = 0;
         score = 0;
         userAnswers = [];
         quizCompleted = false;
-        scoreEl.textContent = '0';
         
+        // Reset UI
         startScreen.style.display = 'block';
         resultScreen.style.display = 'none';
         quizScreen.style.display = 'none';
