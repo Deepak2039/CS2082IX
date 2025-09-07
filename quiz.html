@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Systems Certification Quiz</title>
+    <link rel="stylesheet" href="css/quiz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="quiz-container">
+        <header>
+            <h1>Computer Systems Certification</h1>
+            <div class="score-container">
+                Score: <span id="score">0</span>/<span id="total-questions">0</span>
+            </div>
+        </header>
+
+        <div id="start-screen">
+            <h2>Welcome to the Certification Quiz</h2>
+            <p>Answer 90% of the questions correctly to earn your certification.</p>
+            <button id="start-btn">Start Quiz</button>
+        </div>
+
+        <div id="quiz-screen" style="display: none;">
+            <div class="progress-bar">
+                <div class="progress" id="progress-bar"></div>
+            </div>
+            <div class="question-container">
+                <h2 id="question-text"></h2>
+                <div id="options-container" class="options-container">
+                    <!-- Options will be inserted here by JavaScript -->
+                </div>
+                <div class="explanation" id="explanation" style="display: none;">
+                    <h3>Explanation:</h3>
+                    <p id="explanation-text"></p>
+                </div>
+                <button id="next-btn" style="display: none;">Next Question</button>
+            </div>
+        </div>
+
+        <div id="result-screen" style="display: none;">
+            <h2>Quiz Complete!</h2>
+            <p>Your score: <span id="final-score">0</span>%</p>
+            
+            <div id="name-input-section" style="display: none; margin: 20px 0;">
+                <h3>Enter your name for the certificate:</h3>
+                <input type="text" id="student-name-input" placeholder="Your Name" style="padding: 10px; font-size: 16px; width: 300px; max-width: 100%;">
+                <button id="generate-certificate-btn" style="padding: 10px 20px; font-size: 16px; margin-left: 10px; cursor: pointer;">Generate Certificate</button>
+            </div>
+            
+            <div id="certificate-section" style="display: none;">
+                <div class="certificate-container">
+                    <div class="certificate">
+                        <div class="watermark">Certificate of Completion</div>
+                        <div class="certificate-header">
+                            <h1>Certificate of Achievement</h1>
+                            <p>This is to certify that</p>
+                        </div>
+                        
+                        <div class="student-name">
+                            <h2 id="student-name">[Your Name]</h2>
+                        </div>
+                        
+                        <div class="certificate-body">
+                            <p>has successfully completed the</p>
+                            <h3>Computer Systems Certification</h3>
+                            <p>with a score of <span id="certificate-score">0</span>%</p>
+                            <div class="date-issued">
+                                <p>Issued on: <span id="certificate-date">[Date]</span></p>
+                            </div>
+                        </div>
+                        
+                        <div class="signatures">
+                            <div class="signature">
+                                <div class="signature-line"></div>
+                                <p>Signature</p>
+                            </div>
+                            <div class="signature">
+                                <div class="signature-line"></div>
+                                <p>Date</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="certificate-actions">
+                        <button id="download-certificate" class="btn-download">
+                            <i class="fas fa-download"></i> Download Certificate
+                        </button>
+                        <button id="share-certificate" class="btn-share">
+                            <i class="fas fa-share-alt"></i> Share
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="try-again-section" style="display: none;">
+                <div class="try-again-container">
+                    <h3>Almost There! 🎯</h3>
+                    <p>You scored <span id="try-again-score">0</span>%, but you need at least 90% to get certified.</p>
+                    <p>Review the material and try again!</p>
+                    <button id="try-again-btn" class="btn-try-again">
+                        <i class="fas fa-redo"></i> Try Again
+                    </button>
+                </div>
+            </div>
+            
+            <div class="result-actions">
+                <button id="back-to-home" class="btn-home">
+                    <i class="fas fa-home"></i> Back to Home
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/quiz.js" defer></script>
+</body>
+</html>

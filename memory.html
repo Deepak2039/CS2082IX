@@ -6,6 +6,7 @@
     <title>1.5 Memory - Computer Science 2082</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/lesson.css">
+    <link rel="stylesheet" href="css/memory.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -55,101 +56,88 @@
 
             <section class="lesson-section" id="memory-definition">
                 <h2>1.5.1 Definition and Function of Memory</h2>
-                <p>Computer memory refers to the electronic holding place for instructions and data that the computer's processor can reach quickly. It's where the computer stores data and instructions that are currently in use.</p>
+                <p>Memory is the storage unit of a computer used to store data, instructions, and information either temporarily or permanently. It enables the CPU to process and retrieve data whenever required.</p>
                 
                 <div class="definition-box">
-                    <h4><i class="fas fa-info-circle"></i> Key Functions of Memory</h4>
+                    <h4><i class="fas fa-info-circle"></i> Functions of Memory</h4>
                     <ul>
-                        <li><strong>Data Storage:</strong> Temporarily holds data and instructions that the CPU needs</li>
-                        <li><strong>Fast Access:</strong> Provides quick access to data for the processor</li>
-                        <li><strong>Program Execution:</strong> Holds the program currently being executed</li>
-                        <li><strong>Data Processing:</strong> Stores intermediate results of processing</li>
+                        <li><strong>Storage of Data and Instructions</strong> – Holds data and program instructions temporarily (RAM) or permanently (ROM/secondary memory).</li>
+                        <li><strong>Supply to CPU</strong> – Provides data and instructions to the CPU during processing.</li>
+                        <li><strong>Store Intermediate Results</strong> – Saves temporary results generated during processing.</li>
+                        <li><strong>Store Final Output</strong> – Keeps processed results for future use.</li>
+                        <li><strong>Booting Support</strong> – ROM stores essential programs (BIOS/firmware) required to start the computer.</li>
                     </ul>
                 </div>
             </section>
 
             <section class="lesson-section" id="memory-units">
                 <h2>1.5.2 Units of Memory Measurement</h2>
-                <p>Computer memory is measured in binary digits (bits) and bytes. Here are the common units of memory measurement:</p>
+                <p>Computer memory and storage are measured in bits and bytes.</p>
+                <ul>
+                    <li><strong>Bit (b):</strong> The smallest unit of memory, stores either 0 or 1.</li>
+                    <li><strong>Nibble:</strong> A group of 4 bits.</li>
+                    <li><strong>Byte (B):</strong> A group of 8 bits, represents one character (e.g., a letter/number).</li>
+                </ul>
                 
+                <h4>Hierarchy of Memory Units:</h4>
                 <div class="memory-units">
-                    <div class="memory-unit">
-                        <h4>Bit (b)</h4>
-                        <p>Smallest unit of data (0 or 1)</p>
-                    </div>
-                    <div class="memory-unit">
-                        <h4>Nibble</h4>
-                        <p>4 bits</p>
-                    </div>
-                    <div class="memory-unit">
-                        <h4>Byte (B)</h4>
-                        <p>8 bits</p>
-                    </div>
-                    <div class="memory-unit">
-                        <h4>Kilobyte (KB)</h4>
-                        <p>1,024 bytes</p>
-                    </div>
-                    <div class="memory-unit">
-                        <h4>Megabyte (MB)</h4>
-                        <p>1,024 KB</p>
-                    </div>
-                    <div class="memory-unit">
-                        <h4>Gigabyte (GB)</h4>
-                        <p>1,024 MB</p>
-                    </div>
-                    <div class="memory-unit">
-                        <h4>Terabyte (TB)</h4>
-                        <p>1,024 GB</p>
-                    </div>
-                    <div class="memory-unit">
-                        <h4>Petabyte (PB)</h4>
-                        <p>1,024 TB</p>
-                    </div>
+                    <div class="memory-unit">1 Byte (B) = 8 bits</div>
+                    <div class="memory-unit">1 Kilobyte (KB) = 1024 Bytes</div>
+                    <div class="memory-unit">1 Megabyte (MB) = 1024 KB</div>
+                    <div class="memory-unit">1 Gigabyte (GB) = 1024 MB</div>
+                    <div class="memory-unit">1 Terabyte (TB) = 1024 GB</div>
+                    <div class="memory-unit">1 Petabyte (PB) = 1024 TB</div>
+                    <div class="memory-unit">1 Exabyte (EB) = 1024 PB</div>
                 </div>
             </section>
 
             <section class="lesson-section" id="memory-types">
-                <h2>1.5.3 Types of Memory: Primary and Secondary</h2>
+                <h2>1.5.3 Types of Memory: Primary and Secondary Memory</h2>
+                <p>The overall classification of computers can be done in two types:</p>
+                <ul>
+                    <li>Primary memory</li>
+                    <li>Secondary memory</li>
+                </ul>
+                
+                <h3>Primary Memory (Main Memory / Internal Memory)</h3>
+                <p>Primary memory is the main/internal memory of a computer that is directly accessible by the CPU. It temporarily stores data and instructions while the computer is running.</p>
+                <p>RAM is called volatile memory because all the data stored in it is erased when the power supply is turned off.</p>
+                <p>RAM is called Random Access Memory because the CPU can read and write data from any physical location directly and quickly, without following a fixed order (sequential path).</p>
+                
+                <h4>Types of Primary Memory</h4>
+                <ul>
+                    <li>RAM (Random Access Memory)</li>
+                    <li>ROM (Read Only Memory)</li>
+                </ul>
+                
+                <h3>Secondary Memory (Storage Devices)</h3>
+                <p>Storage devices, also called secondary memory / auxiliary memory / backup memory, are used to store data and instructions permanently for future use. Unlike primary memory, they retain data even when the power is turned off.</p>
                 
                 <div class="comparison-table">
-                    <table>
+                    <h4>Comparison between Primary and Secondary Memory</h4>
+                    <table class="memory-comparison">
                         <thead>
                             <tr>
-                                <th>Feature</th>
                                 <th>Primary Memory</th>
                                 <th>Secondary Memory</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Volatility</td>
-                                <td>Volatile (RAM), Non-volatile (ROM)</td>
-                                <td>Non-volatile</td>
+                                <td>Considered as the main memory of a computer system</td>
+                                <td>Also known as auxiliary or backup memory</td>
                             </tr>
                             <tr>
-                                <td>Speed</td>
-                                <td>Very Fast</td>
-                                <td>Slower than primary</td>
+                                <td>Faster than secondary memory</td>
+                                <td>Slower than primary memory</td>
                             </tr>
                             <tr>
-                                <td>Access</td>
-                                <td>Directly accessible by CPU</td>
-                                <td>Not directly accessible</td>
+                                <td>More expensive</td>
+                                <td>Less expensive</td>
                             </tr>
                             <tr>
-                                <td>Capacity</td>
-                                <td>Smaller (GBs)</td>
-                                <td>Larger (GBs to TBs)</td>
-                            </tr>
-                            <tr>
-                                <td>Cost</td>
-                                <td>More expensive per GB</td>
-                                <td>Less expensive per GB</td>
-                            </tr>
-                            <tr>
-                                <td>Examples</td>
-                                <td>RAM, ROM, Cache</td>
-                                <td>HDD, SSD, Flash Drives</td>
+                                <td>Examples: RAM, ROM, Cache</td>
+                                <td>Examples: Pen drive, CD, Hard Disk</td>
                             </tr>
                         </tbody>
                     </table>
@@ -157,33 +145,168 @@
             </section>
 
             <section class="lesson-section" id="primary-memory">
-                <h2>1.5.4 Primary Memory</h2>
-                <p>Primary memory is the main memory of the computer that can be directly accessed by the CPU. It's faster but has limited storage capacity.</p>
+                <h2>1.5.4 Example of Primary Memory: RAM, ROM, Cache, Register</h2>
+                
+                <h3>RAM (Random Access Memory)</h3>
+                <p>RAM is the volatile / short-term memory of a computer system that temporarily stores data and instructions during processing.</p>
+                
+                <div class="memory-cards">
+                    <div class="memory-card">
+                        <h4>Static RAM (SRAM)</h4>
+                        <p>SRAM is a type of volatile memory made of transistors which does not require periodic refreshing to hold data. SRAM is faster than DRAM but is more expensive and has a smaller storage capacity. It is mainly used as cache memory in computers.</p>
+                    </div>
+                    <div class="memory-card">
+                        <h4>Dynamic RAM (DRAM)</h4>
+                        <p>DRAM is a type of volatile memory made of capacitors which requires periodic refreshing to hold data. DRAM is slower than SRAM but is cheaper and has a larger storage capacity. It is widely used as the main memory in personal computers.</p>
+                    </div>
+                </div>
+                
+                <h3>ROM (Read Only Memory)</h3>
+                <p>ROM is a type of non-volatile primary memory that permanently stores data and instructions which can only be read and not easily modified. The contents of ROM remain safe even when the power supply is turned off. The data and instructions are written during manufacturing and are mainly used to store the BIOS (Basic Input Output System), which is essential for booting the computer. Programs stored in ROM are called firmware.</p>
+                
+                <h4>Types of ROM:</h4>
+                <div class="memory-cards">
+                    <div class="memory-card">
+                        <h5>PROM (Programmable ROM)</h5>
+                        <p>PROM is a type of non-volatile memory that is initially blank at the time of manufacturing and can be programmed only once using a device called a PROM programmer (PROM burner). Once data is written, it becomes permanent and cannot be erased or modified.</p>
+                    </div>
+                    <div class="memory-card">
+                        <h5>EPROM (Erasable PROM)</h5>
+                        <p>EPROM is a type of non-volatile memory that can be erased and reprogrammed multiple times. To erase the stored data, it requires exposure to ultraviolet (UV) light. After erasing, new data can be written again.</p>
+                    </div>
+                    <div class="memory-card">
+                        <h5>EEPROM (Electrically Erasable PROM)</h5>
+                        <p>EEPROM is a type of non-volatile memory that can be erased and reprogrammed electronically using electrical signals within milliseconds. Unlike EPROM, it does not require UV light or special equipment.</p>
+                    </div>
+                </div>
+                
+                <h3>Cache Memory</h3>
+                <p>Cache memory is a high-speed volatile memory located between the CPU and RAM. It stores frequently used data and instructions so that the CPU can access them quickly, making processing faster.</p>
+                
+                <h3>CPU Register</h3>
+                <p>A CPU register is a very small and high-speed storage location inside the microprocessor. It stores data, addresses, and instructions that the CPU needs immediately during processing.</p>
+            </section>
+
+            <section class="lesson-section" id="secondary-memory">
+                <h2>1.5.5 Example of Secondary Memory (Storage Devices)</h2>
+                
+                <h3>Hard Disk Drive (HDD)</h3>
+                <p>A hard disk is a popular secondary storage device that stores a very large amount of data permanently. It consists of circular platters made of aluminum coated with a magnetic material, which rotate at high speed while data is written or read. The speed of a hard disk is measured in Revolutions Per Minute (RPM), which usually ranges from 5400 to 7200 rpm in common computers.</p>
+                
+                <h3>SSD (Solid State Drive)</h3>
+                <p>An SSD is a modern secondary storage device that stores data using semiconductor chips instead of rotating platters. It provides faster read/write speeds, lower latency, and better reliability compared to hard disks. Although more expensive, SSDs are widely used in laptops, notebooks, and ultrabooks for high performance.</p>
+                
+                <h3>Optical Storage Discs</h3>
+                <p>An optical storage disc is a secondary storage device that uses laser light technology to store and retrieve data. Common examples include CDs, DVDs, and Blu-ray Discs.</p>
+                
+                <div class="memory-cards">
+                    <div class="memory-card">
+                        <h4>CD (Compact Disc)</h4>
+                        <p>A CD is an optical storage disc developed by Philips Company (Netherlands) in 1980. It uses laser ray technology to store and read data in the form of pits (tiny reflective bumps). A standard CD is 12 cm in diameter, 1 mm thick, and weighs about 18 g. The storage capacity of CD is 700MB.</p>
+                    </div>
+                    <div class="memory-card">
+                        <h4>DVD (Digital Versatile Disc)</h4>
+                        <p>A DVD is an optical storage disc with higher storage capacity than CDs because it stores data in multiple layers. A DVD drive is required to read and write data on DVDs.</p>
+                        <p><strong>Storage Capacities:</strong></p>
+                        <ul>
+                            <li>Single Side, Single Layer: 4.7 GB</li>
+                            <li>Single Side, Double Layer: 8.5 GB</li>
+                            <li>Double Side, Single Layer: 9.4 GB</li>
+                            <li>Double Side, Double Layer: 17.08 GB</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="comparison-table">
+                    <h4>Difference between CD and DVD</h4>
+                    <table class="memory-comparison">
+                        <thead>
+                            <tr>
+                                <th>CD</th>
+                                <th>DVD</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Storage capacity is 700MB</td>
+                                <td>Storage capacity is up to 20GB</td>
+                            </tr>
+                            <tr>
+                                <td>Cheaper</td>
+                                <td>More expensive</td>
+                            </tr>
+                            <tr>
+                                <td>Types: CD-R, CD-RW, etc.</td>
+                                <td>Types: DVD-RW, DVD+RW, etc.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <h3>Flash Memory</h3>
+                <p>Flash memory is a type of non-volatile storage that can be electrically erased and reprogrammed. It is widely used in USB drives, memory cards, SSDs, and other portable storage devices. Flash memory retains data even when the power is switched off.</p>
+                
+                <h4>Pen Drive (USB Flash Drive)</h4>
+                <p>A pen drive is a portable storage device that uses flash memory (non-volatile) to store and transfer data between computers and digital devices. It connects to a computer via a USB (Universal Serial Bus) port and retains data even when power is turned off.</p>
+                
+                <h4>Cloud Storage</h4>
+                <p>Cloud storage is a type of online data storage where files are stored on remote servers accessed through the Internet. It allows users to upload, access, and manage data from anywhere and on any device with an internet connection. Examples: Google Drive, Dropbox, Microsoft OneDrive, Amazon S3</p>
+                
+                <div class="comparison-table">
+                    <h4>Compare HDD vs SSD vs Flash Memory</h4>
+                    <table class="memory-comparison">
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th>HDD</th>
+                                <th>SSD</th>
+                                <th>Flash Memory</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Storage Technology</td>
+                                <td>Uses mechanical parts with spinning disks and read/write heads</td>
+                                <td>Uses flash memory chips with no moving parts</td>
+                                <td>Non-volatile memory using flash technology, typically in small form factors</td>
+                            </tr>
+                            <tr>
+                                <td>Speed</td>
+                                <td>Slower read/write speeds due to mechanical parts</td>
+                                <td>Faster read/write speeds with no moving parts</td>
+                                <td>Fast, but typically slower than SSDs for large-scale data storage</td>
+                            </tr>
+                            <tr>
+                                <td>Capacity</td>
+                                <td>Available in larger capacities (up to several TBs)</td>
+                                <td>Available in smaller to moderate capacities (typically up to several TBs)</td>
+                                <td>Typically smaller capacity (e.g., 1GB to 1TB, depending on the device)</td>
+                            </tr>
+                            <tr>
+                                <td>Size/Weight</td>
+                                <td>Larger and heavier</td>
+                                <td>Smaller, lighter, and more compact</td>
+                                <td>Very small and lightweight, often used in portable devices</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="lesson-section" id="memory-characteristics">
+                <h2>1.5.6 Function and Characteristics of Each Type of Memory</h2>
                 
                 <div class="memory-cards">
                     <div class="memory-card primary">
                         <div class="memory-icon">
                             <i class="fas fa-memory"></i>
                         </div>
-                        <h3>RAM (Random Access Memory)</h3>
+                        <h3>Registers</h3>
                         <ul>
-                            <li><strong>Volatile</strong> - loses data when power is off</li>
-                            <li><strong>Read/Write</strong> - data can be read from and written to</li>
-                            <li><strong>Speed</strong> - very fast access time (nanoseconds)</li>
-                            <li><strong>Use</strong> - stores currently running programs and data</li>
-                        </ul>
-                    </div>
-
-                    <div class="memory-card primary">
-                        <div class="memory-icon">
-                            <i class="fas fa-microchip"></i>
-                        </div>
-                        <h3>ROM (Read-Only Memory)</h3>
-                        <ul>
-                            <li><strong>Non-volatile</strong> - retains data without power</li>
-                            <li><strong>Read-Only</strong> - data is written during manufacturing</li>
-                            <li><strong>Permanent</strong> - stores firmware/BIOS</li>
-                            <li><strong>Types</strong> - PROM, EPROM, EEPROM</li>
+                            <li><strong>Function:</strong> Hold data being processed by CPU</li>
+                            <li><strong>Characteristics:</strong> Fastest, most expensive, limited capacity</li>
+                            <li><strong>Speed:</strong> 1-3 ns</li>
+                            <li><strong>Volatility:</strong> Volatile</li>
                         </ul>
                     </div>
 
@@ -193,10 +316,10 @@
                         </div>
                         <h3>Cache Memory</h3>
                         <ul>
-                            <li><strong>Very fast</strong> - faster than main memory</li>
-                            <li><strong>Expensive</strong> - more costly per MB than RAM</li>
-                            <li><strong>Levels</strong> - L1 (fastest), L2, L3</li>
-                            <li><strong>Purpose</strong> - reduces memory access time</li>
+                            <li><strong>Function:</strong> Store frequently used data for quick access</li>
+                            <li><strong>Characteristics:</strong> Very fast, expensive, small capacity</li>
+                            <li><strong>Speed:</strong> 5-10 ns</li>
+                            <li><strong>Volatility:</strong> Volatile</li>
                         </ul>
                     </div>
 
@@ -204,75 +327,25 @@
                         <div class="memory-icon">
                             <i class="fas fa-microchip"></i>
                         </div>
-                        <h3>Registers</h3>
+                        <h3>RAM</h3>
                         <ul>
-                            <li><strong>Fastest</strong> - fastest memory in a computer</li>
-                            <li><strong>Smallest</strong> - very limited storage (few bytes)</li>
-                            <li><strong>Location</strong> - inside the CPU</li>
-                            <li><strong>Purpose</strong> - holds data being processed</li>
+                            <li><strong>Function:</strong> Temporary storage for running programs</li>
+                            <li><strong>Characteristics:</strong> Fast, moderate cost, medium capacity</li>
+                            <li><strong>Speed:</strong> 50-100 ns</li>
+                            <li><strong>Volatility:</strong> Volatile</li>
                         </ul>
                     </div>
-                </div>
-            </section>
 
-            <section class="lesson-section" id="secondary-memory">
-                <h2>1.5.5 Secondary Memory (Storage Devices)</h2>
-                <p>Secondary memory provides long-term storage for data and programs not currently in use by the CPU.</p>
-                
-                <div class="memory-cards">
                     <div class="memory-card secondary">
                         <div class="memory-icon">
                             <i class="fas fa-hdd"></i>
                         </div>
-                        <h3>Hard Disk Drive (HDD)</h3>
+                        <h3>HDD/SSD</h3>
                         <ul>
-                            <li><strong>Technology</strong> - magnetic storage</li>
-                            <li><strong>Speed</strong> - 5,400 to 7,200 RPM</li>
-                            <li><strong>Capacity</strong> - 500GB to 10TB+</li>
-                            <li><strong>Durability</strong> - mechanical parts, less durable</li>
-                            <li><strong>Cost</strong> - $0.03-0.06 per GB</li>
-                        </ul>
-                    </div>
-
-                    <div class="memory-card secondary">
-                        <div class="memory-icon">
-                            <i class="fas fa-sd-card"></i>
-                        </div>
-                        <h3>Solid State Drive (SSD)</h3>
-                        <ul>
-                            <li><strong>Technology</strong> - flash memory</li>
-                            <li><strong>Speed</strong> - much faster than HDD</li>
-                            <li><strong>Capacity</strong> - 120GB to 4TB+</li>
-                            <li><strong>Durability</strong> - no moving parts, more durable</li>
-                            <li><strong>Cost</strong> - $0.08-0.20 per GB</li>
-                        </ul>
-                    </div>
-
-                    <div class="memory-card secondary">
-                        <div class="memory-icon">
-                            <i class="fas fa-compact-disc"></i>
-                        </div>
-                        <h3>Optical Discs (CD/DVD/Blu-ray)</h3>
-                        <ul>
-                            <li><strong>Types</strong> - CD (700MB), DVD (4.7-17GB), Blu-ray (25-128GB)</li>
-                            <li><strong>Speed</strong> - slower than HDD/SSD</li>
-                            <li><strong>Portability</strong> - very portable</li>
-                            <li><strong>Durability</strong> - can be scratched/damaged</li>
-                            <li><strong>Use</strong> - media distribution, backups</li>
-                        </ul>
-                    </div>
-
-                    <div class="memory-card secondary">
-                        <div class="memory-icon">
-                            <i class="fas fa-usb"></i>
-                        </div>
-                        <h3>Flash Memory</h3>
-                        <ul>
-                            <li><strong>Types</strong> - USB drives, SD cards, microSD</li>
-                            <li><strong>Capacity</strong> - 1GB to 1TB+</li>
-                            <li><strong>Portability</strong> - highly portable</li>
-                            <li><strong>Durability</strong> - no moving parts, durable</li>
-                            <li><strong>Use</strong> - portable storage, cameras, phones</li>
+                            <li><strong>Function:</strong> Long-term data storage</li>
+                            <li><strong>Characteristics:</strong> High capacity, slower than primary memory</li>
+                            <li><strong>Speed:</strong> 5-10 ms (HDD), 50-150 μs (SSD)</li>
+                            <li><strong>Volatility:</strong> Non-volatile</li>
                         </ul>
                     </div>
                 </div>

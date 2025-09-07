@@ -57,35 +57,211 @@
             </div>
 
             <section class="lesson-section" id="concept-types">
-                <h2>1.7.1 Concept and Types of Software</h2>
-                <p>Computer software is a collection of instructions that tell a computer how to work. It can be categorized into:</p>
+                <h2>1.7.1 Concept and Types of Computer Software</h2>
+                <p>Computer software is a collection of programs, instructions, or data that direct a computer to perform specific tasks or functions. It works with hardware to make the computer usable for different applications.</p>
                 
+                <h3>Types of Computer Software</h3>
+                <ul class="content-list">
+                    <li>System Software</li>
+                    <li>Application Software</li>
+                </ul>
+
                 <div class="software-categories">
                     <div class="software-category">
-                        <i class="fas fa-cogs"></i>
-                        <h4>System Software</h4>
+                        <h4><i class="fas fa-cogs"></i> System Software</h4>
+                        <p>System software is the backbone of computer operations, responsible for managing hardware resources, providing a platform for applications, and ensuring smooth functioning of the computer system. It acts as a bridge between users and hardware, enabling interaction and control.</p>
+                        
+                        <h5>Functions of System Software</h5>
                         <ul>
-                            <li>Operating Systems (Windows, macOS, Linux)</li>
+                            <li>Provides a platform for running application software</li>
+                            <li>Manages files, folders, and system resources</li>
+                            <li>Controls input/output devices</li>
+                            <li>Maintains stability and reliability of the computer system</li>
+                            <li>Improves system performance through utilities</li>
+                        </ul>
+
+                        <h5>Categories of System Software</h5>
+                        <ul>
+                            <li>Operating System (OS)</li>
+                            <li>Utility Software</li>
                             <li>Device Drivers</li>
-                            <li>Utilities</li>
+                            <li>Language Processing Software (Language Translators)</li>
                         </ul>
                     </div>
+
                     <div class="software-category">
-                        <i class="fas fa-desktop"></i>
-                        <h4>Application Software</h4>
+                        <h4><i class="fas fa-desktop"></i> Application Software</h4>
+                        <p>Application software is a collection of programs designed to perform specific user tasks such as document editing, email, photo editing, billing, multimedia, and engineering design. It depends on system software (OS) to run.</p>
+                        
+                        <h5>Functions of Application Software</h5>
                         <ul>
-                            <li>Word Processors</li>
-                            <li>Spreadsheets</li>
-                            <li>Web Browsers</li>
+                            <li>Helps users perform specific tasks (writing, designing, billing)</li>
+                            <li>Provides user-friendly interaction with hardware</li>
+                            <li>Enhances productivity and entertainment</li>
+                            <li>Converts user needs into computer-executable tasks</li>
+                        </ul>
+
+                        <h5>Types of Application Software</h5>
+                        <ul>
+                            <li>Packaged Software (General-Purpose)</li>
+                            <li>Customized / Tailored Software</li>
                         </ul>
                     </div>
-                    <div class="software-category">
-                        <i class="fas fa-code"></i>
-                        <h4>Programming Software</h4>
+                </div>
+            </section>
+
+            <section class="lesson-section" id="operating-system">
+                <h3>Operating System (OS)</h3>
+                <p>An Operating System (OS) is a type of system software that controls and manages the overall operation of a computer system. It works like a traffic policeman, directing the smooth flow between hardware, software, and users.</p>
+                
+                <h4>Key Features</h4>
+                <ul>
+                    <li><strong>First software loaded</strong> – It is the first program loaded into RAM when the computer starts and runs until shutdown.</li>
+                    <li><strong>Interface</strong> – Acts as a bridge between user ↔ hardware and software ↔ hardware.</li>
+                    <li><strong>Hardware control</strong> – Makes hardware usable by managing CPU, memory, and devices.</li>
+                    <li><strong>Environment</strong> – Provides a working environment for application software and users.</li>
+                    <li><strong>Essential</strong> – A computer cannot function without an OS.</li>
+                </ul>
+
+                <h4>Functions of Operating System</h4>
+                <ul>
+                    <li><strong>Process Management</strong> – Handles execution of programs.</li>
+                    <li><strong>Memory Management</strong> – Allocates and manages RAM.</li>
+                    <li><strong>File Management</strong> – Organizes data into files and folders.</li>
+                    <li><strong>Device Management</strong> – Controls input/output devices through drivers.</li>
+                    <li><strong>User Interface</strong> – Provides CLI (Command Line Interface) or GUI (Graphical User Interface).</li>
+                    <li><strong>Security and Access Control</strong> – Protects system from unauthorized access.</li>
+                </ul>
+
+                <h4>Examples of Operating Systems</h4>
+                <div class="os-examples">
+                    <div class="os-example">
+                        <i class="fab fa-windows"></i>
+                        <span>Microsoft Windows</span>
+                    </div>
+                    <div class="os-example">
+                        <i class="fab fa-apple"></i>
+                        <span>macOS</span>
+                    </div>
+                    <div class="os-example">
+                        <i class="fab fa-linux"></i>
+                        <span>Linux</span>
+                    </div>
+                    <div class="os-example">
+                        <i class="fab fa-android"></i>
+                        <span>Android</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="lesson-section" id="language-processor">
+                <h3>Language Processor (Translator)</h3>
+                <p>A Language Processor (or Translator) is system software that converts programs written in assembly language or high-level programming languages into machine language (binary code: 0s and 1s), so the CPU can understand and execute them.</p>
+                
+                <h4>Types of Language Processors</h4>
+                <div class="comparison-container">
+                    <div class="comparison-box">
+                        <h5><i class="fas fa-cog"></i> Assembler</h5>
                         <ul>
-                            <li>IDEs (VS Code, Eclipse)</li>
-                            <li>Compilers</li>
-                            <li>Debuggers</li>
+                            <li>Converts assembly language programs into machine language</li>
+                            <li>Example: Converts mnemonic codes like ADD, SUB into binary instructions</li>
+                        </ul>
+                    </div>
+
+                    <div class="comparison-box">
+                        <h5><i class="fas fa-code"></i> Interpreter</h5>
+                        <ul>
+                            <li>Translates high-level language programs into machine code line by line</li>
+                            <li>Errors are shown immediately after each line</li>
+                            <li>Slower execution</li>
+                            <li>Example: Python Interpreter</li>
+                        </ul>
+                    </div>
+
+                    <div class="comparison-box">
+                        <h5><i class="fas fa-file-code"></i> Compiler</h5>
+                        <ul>
+                            <li>Translates the entire high-level language program into machine code at once</li>
+                            <li>Errors are shown after the whole program is compiled</li>
+                            <li>Faster execution</li>
+                            <li>Example: C Compiler, Java Compiler</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="lesson-section" id="utility-software">
+                <h3>Utility Software</h3>
+                <p>Utility software is a type of system software that performs maintenance and optimization tasks to keep a computer system in smooth working condition.</p>
+                
+                <h4>Functions of Utility Software</h4>
+                <ul>
+                    <li><strong>File Management</strong> – Copying, transferring, deleting, or recovering lost files</li>
+                    <li><strong>System Protection</strong> – Detecting and removing viruses or malware</li>
+                    <li><strong>Disk Management</strong> – Disk cleanup, defragmentation, compression</li>
+                    <li><strong>Backup & Recovery</strong> – Safeguards data in case of failure</li>
+                    <li><strong>Performance Optimization</strong> – Speeds up system by cleaning registry, cache, and temporary files</li>
+                </ul>
+
+                <h4>Examples of Utility Software</h4>
+                <div class="utility-examples">
+                    <div class="utility-example">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Antivirus (Avast, Quick Heal)</span>
+                    </div>
+                    <div class="utility-example">
+                        <i class="fas fa-file-archive"></i>
+                        <span>Compression Tools (WinZip, WinRAR)</span>
+                    </div>
+                    <div class="utility-example">
+                        <i class="fas fa-hdd"></i>
+                        <span>Disk Utilities (Disk Defragmenter, CCleaner)</span>
+                    </div>
+                    <div class="utility-example">
+                        <i class="fas fa-undo"></i>
+                        <span>Data Recovery Tools</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="lesson-section" id="device-drivers">
+                <h3>Device Driver Software</h3>
+                <p>A Device Driver is a type of system software that controls and manages a specific hardware device, making it usable by the computer system.</p>
+                
+                <h4>Examples of Device Drivers</h4>
+                <ul>
+                    <li><strong>Printer Driver</strong> – Required to use printers</li>
+                    <li><strong>Display/Graphics Driver</strong> – Controls monitors and graphics cards</li>
+                    <li><strong>Sound Card Driver</strong> – Enables audio input/output</li>
+                    <li><strong>Network Driver</strong> – Manages LAN/Wi-Fi connectivity</li>
+                </ul>
+            </section>
+
+            <section class="lesson-section" id="application-software-types">
+                <h3>Types of Application Software</h3>
+                
+                <div class="comparison-container">
+                    <div class="comparison-box">
+                        <h4><i class="fas fa-box"></i> Packaged Software (General-Purpose)</h4>
+                        <p>Ready-made software developed by software companies for general users to perform common, day-to-day tasks.</p>
+                        <h5>Examples:</h5>
+                        <ul>
+                            <li><strong>Office Applications:</strong> MS Office (Word, Excel, PowerPoint)</li>
+                            <li><strong>Design & Graphics:</strong> Adobe Photoshop, CorelDraw, 3DS Max</li>
+                            <li><strong>Database Management:</strong> Oracle, SQL Server</li>
+                            <li><strong>Multimedia & Communication:</strong> VLC Media Player, Zoom, Spotify</li>
+                        </ul>
+                    </div>
+
+                    <div class="comparison-box">
+                        <h4><i class="fas fa-cogs"></i> Customized / Tailored Software</h4>
+                        <p>Application software designed to meet the specific requirements of a particular organization, office, or individual. It is developed on demand to handle unique needs that cannot be fully met by packaged software.</p>
+                        <h5>Examples:</h5>
+                        <ul>
+                            <li><strong>Education:</strong> SEE Result Processing Software, School Management System</li>
+                            <li><strong>Health:</strong> Hospital Management Software</li>
+                            <li><strong>Business:</strong> Billing Software, Banking Software</li>
+                            <li><strong>Transport:</strong> Airline Ticket Reservation System</li>
                         </ul>
                     </div>
                 </div>
@@ -96,29 +272,29 @@
                 
                 <div class="comparison-container">
                     <div class="comparison-box">
-                        <h4><i class="fab fa-osi"></i> Open Source</h4>
+                        <h4><i class="fab fa-osi"></i> Open Source Software (OSS)</h4>
                         <ul>
-                            <li>Source code available</li>
-                            <li>Free to use and modify</li>
-                            <li>Examples: Linux, Firefox</li>
+                            <li>Software whose source code is publicly available</li>
+                            <li>Users can view, modify, and distribute it</li>
+                            <li>Example: Linux, Android, OpenOffice</li>
                         </ul>
                     </div>
 
                     <div class="vs-separator">VS</div>
 
                     <div class="comparison-box">
-                        <h4><i class="fas fa-copyright"></i> Proprietary</h4>
+                        <h4><i class="fas fa-copyright"></i> Proprietary Software</h4>
                         <ul>
-                            <li>Closed source</li>
-                            <li>Paid license required</li>
-                            <li>Examples: Windows, Photoshop</li>
+                            <li>Software whose source code is hidden and controlled by the creator/company</li>
+                            <li>Requires license and cannot be modified by users</li>
+                            <li>Example: Windows OS, Adobe Photoshop, MS Office</li>
                         </ul>
                     </div>
                 </div>
             </section>
 
             <section class="lesson-section" id="system-vs-application">
-                <h2>1.7.3 System vs Application Software</h2>
+                <h2>1.7.3 Comparison: System vs Application Software</h2>
                 
                 <div class="comparison-table">
                     <table>
@@ -129,18 +305,28 @@
                         </tr>
                         <tr>
                             <td>Purpose</td>
-                            <td>Controls hardware</td>
-                            <td>Performs user tasks</td>
+                            <td>Manages and controls computer hardware and provides a platform for running application software</td>
+                            <td>Performs specific tasks as required by the user</td>
                         </tr>
                         <tr>
                             <td>Dependency</td>
-                            <td>Runs independently</td>
-                            <td>Needs system software</td>
+                            <td>Runs independently and is essential for computer operation</td>
+                            <td>Requires system software to run</td>
                         </tr>
                         <tr>
                             <td>Examples</td>
-                            <td>Windows, macOS</td>
-                            <td>Word, Chrome</td>
+                            <td>Windows, macOS, Linux, Device Drivers, Utility Programs</td>
+                            <td>MS Office, Photoshop, VLC Media Player, Banking Software</td>
+                        </tr>
+                        <tr>
+                            <td>User Interaction</td>
+                            <td>Works in the background with minimal user interaction</td>
+                            <td>Directly interacts with users to perform tasks</td>
+                        </tr>
+                        <tr>
+                            <td>Installation</td>
+                            <td>Pre-installed with the operating system</td>
+                            <td>Installed by users as per their requirements</td>
                         </tr>
                     </table>
                 </div>
@@ -151,24 +337,46 @@
                 
                 <div class="app-types">
                     <div class="app-type">
-                        <h3><i class="fas fa-mobile-alt"></i> Mobile Apps</h3>
+                        <h3><i class="fas fa-mobile-alt"></i> Mobile Application (Mobile App)</h3>
+                        <p>A mobile application (app) is a program designed to perform specific tasks on smartphones, tablets, and smart devices. Mobile apps work with features like touchscreens, GPS, cameras, and mobile networks.</p>
+                        <p>They include games, social media apps, productivity tools, navigation apps, etc.</p>
+                        <p>Mobile software also includes mobile operating systems like Android and iOS, which manage the device's hardware and provide the environment for running apps.</p>
+                        
+                        <h4>Characteristics:</h4>
                         <ul>
-                            <li>Native (iOS/Android)</li>
-                            <li>Web Apps</li>
-                            <li>Hybrid Apps</li>
-                            <li>Progressive Web Apps (PWA)</li>
+                            <li>Installed on mobile devices</li>
+                            <li>Platform-dependent (Android/iOS)</li>
+                            <li>Can work offline (depending on the app)</li>
+                            <li>Access to device hardware features</li>
                         </ul>
                     </div>
 
                     <div class="app-type">
-                        <h3><i class="fas fa-globe"></i> Web Apps</h3>
+                        <h3><i class="fas fa-globe"></i> Web Application (Web App)</h3>
+                        <p>A web application is software that runs on a web server and is accessed through a web browser over the internet. Unlike mobile apps, they do not need to be installed on devices.</p>
+                        <p>They can be accessed from any device with a browser and internet connection.</p>
+                        <p>Examples: Gmail (email), Google Docs (office tool), Facebook (social media).</p>
+                        
+                        <h4>Characteristics:</h4>
                         <ul>
-                            <li>Static Websites</li>
-                            <li>Dynamic Web Apps</li>
-                            <li>Single Page Apps (SPA)</li>
-                            <li>Progressive Web Apps (PWA)</li>
+                            <li>Runs on web browsers</li>
+                            <li>Platform-independent</li>
+                            <li>Requires internet connection</li>
+                            <li>No installation needed</li>
+                            <li>Easier to maintain and update</li>
                         </ul>
                     </div>
+                </div>
+
+                <div class="key-differences">
+                    <h4>Key Differences</h4>
+                    <ul>
+                        <li><strong>Installation:</strong> Mobile apps need to be installed; web apps run in browsers</li>
+                        <li><strong>Platform:</strong> Mobile apps are platform-specific; web apps are cross-platform</li>
+                        <li><strong>Internet:</strong> Web apps require internet; some mobile apps can work offline</li>
+                        <li><strong>Updates:</strong> Web apps update automatically; mobile apps need manual updates</li>
+                        <li><strong>Performance:</strong> Mobile apps generally have better performance than web apps</li>
+                    </ul>
                 </div>
             </section>
 

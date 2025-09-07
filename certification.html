@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS 2082 - Get Certified</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lesson.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .certificate-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .certificate {
+            background: #fff;
+            border: 15px solid #1a365d;
+            padding: 3rem 2rem;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            background-image: url('data:image/svg+xml;utf8,<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M30,10 L70,10 L90,30 L90,90 L10,90 L10,30 L30,10 Z" fill="none" stroke="%23e2e8f0" stroke-width="2" stroke-dasharray="5,5"/></svg>');
+            background-size: 200px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-blend-mode: overlay;
+        }
+
+        .certificate h1 {
+            color: #1a365d;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+
+        .certificate h1:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, #1a365d, #4299e1, #1a365d);
+        }
+
+        .certificate h2 {
+            color: #2b6cb0;
+            font-size: 2rem;
+            margin: 1.5rem 0;
+            padding: 1rem 2rem;
+            display: inline-block;
+            border-bottom: 2px solid #4299e1;
+            position: relative;
+        }
+
+        .certificate h3 {
+            color: #2c5282;
+            font-size: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .certificate p {
+            color: #4a5568;
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+            line-height: 1.6;
+        }
+
+        .signature {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 2px solid #e2e8f0;
+        }
+
+        .signature div {
+            text-align: center;
+            min-width: 200px;
+        }
+
+        .signature-line {
+            height: 1px;
+            background: #cbd5e0;
+            margin: 0.5rem 0;
+            position: relative;
+        }
+
+        .signature-line:after {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: #cbd5e0;
+        }
+
+        #download-btn {
+            margin-top: 2rem;
+            padding: 0.8rem 2rem;
+            font-size: 1.1rem;
+            background: #2b6cb0;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        #download-btn:hover {
+            background: #2c5282;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #download-btn i {
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-laptop-code"></i>
+                <a href="index.html" class="home-link">CS 2082</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="certification-container">
+            <h1>CS 2082 Certification Exam</h1>
+            <p>Test your knowledge of computer systems and earn your certification. You need to score at least 80% to pass.</p>
+            
+            <div id="quiz-container" class="quiz-container">
+                <div class="quiz-progress">Question <span id="current-question">1</span> of <span id="total-questions">20</span></div>
+                <div id="questions-container">
+                    <!-- Questions will be inserted here by JavaScript -->
+                </div>
+                <div class="navigation-buttons">
+                    <button id="prev-btn" class="btn btn-outline" disabled>Previous</button>
+                    <button id="next-btn" class="btn btn-primary">Next</button>
+                    <button id="submit-btn" class="btn btn-primary" style="display: none;">Submit Exam</button>
+                </div>
+            </div>
+
+            <div id="certificate-container" class="certificate-container">
+                <div class="certificate">
+                    <h1>CERTIFICATE OF COMPLETION</h1>
+                    <p>This is to certify that</p>
+                    <h2 id="student-name">[Your Name]</h2>
+                    <p>has successfully completed the</p>
+                    <h3>CS 2082 - Computer Systems Certification</h3>
+                    <p>with a score of <span id="final-score">0</span>%</p>
+                    <p>on <span id="completion-date">[Date]</span></p>
+                    
+                    <div class="signature">
+                        <div>
+                            <div class="signature-line"></div>
+                            <p>Instructor</p>
+                        </div>
+                        <div>
+                            <div class="signature-line"></div>
+                            <p>Date</p>
+                        </div>
+                    </div>
+                </div>
+                <button id="download-btn" class="btn btn-primary" style="margin-top: 2rem;">
+                    <i class="fas fa-download"></i> Download Certificate
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Computer Science 2082. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Add html2canvas library for certificate generation -->
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    
+    <script>
+        // Sample questions (20 questions for demonstration)
+        const questions = [
+            {
+                question: "What does CPU stand for?",
+                options: [
+                    "Central Processing Unit",
+                    "Computer Processing Unit",
+                    "Central Process Unit",
+                    "Computer Process Unit"
+                ],
+                answer: 0
+            },
+            // More questions will be added in the next step
+        ];
+
+        // Certificate download functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const downloadBtn = document.getElementById('download-btn');
+            
+            if (downloadBtn) {
+                downloadBtn.addEventListener('click', downloadCertificate);
+            }
+
+            // Set current date in the certificate
+            const dateElement = document.getElementById('completion-date');
+            if (dateElement) {
+                const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                dateElement.textContent = new Date().toLocaleDateString('en-US', options);
+            }
+        });
+
+        async function downloadCertificate() {
+            const certificate = document.querySelector('.certificate');
+            
+            try {
+                // Generate the canvas
+                const canvas = await html2canvas(certificate, {
+                    scale: 2, // Higher quality
+                    useCORS: true,
+                    logging: false,
+                    backgroundColor: null
+                });
+                
+                // Convert canvas to image and download
+                const link = document.createElement('a');
+                link.download = 'CS2082-Certificate.png';
+                link.href = canvas.toDataURL('image/png');
+                link.click();
+                
+            } catch (error) {
+                console.error('Error generating certificate:', error);
+                alert('Error generating certificate. Please try again.');
+            }
+        }
+    </script>
+</body>
+</html>
