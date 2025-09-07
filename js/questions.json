@@ -1,0 +1,6239 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "level": "Knowledge",
+      "question": "The word “Computer” comes from which Latin word?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Computare",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Computus",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Communicare",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Compere",
+          "is_correct": false
+        }
+      ],
+      "explanation": "“Computare” means to calculate. Others are unrelated.",
+      "answer": "a"
+    },
+    {
+      "id": 2,
+      "level": "Knowledge",
+      "question": "Which of the following is not a feature of a computer?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Accuracy",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Laziness",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Speed",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Versatility",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Computers are accurate, fast, and versatile but never lazy.",
+      "answer": "b"
+    },
+    {
+      "id": 3,
+      "level": "Knowledge",
+      "question": "GIGO stands for:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Good Input Good Output",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Garbage In Garbage Out",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "General Input General Output",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Great Input Great Output",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Wrong input gives wrong output.",
+      "answer": "b"
+    },
+    {
+      "id": 4,
+      "level": "Knowledge",
+      "question": "1 Byte is equal to:",
+      "options": [
+        {
+          "label": "a",
+          "text": "4 bits",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "8 bits",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "16 bits",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "32 bits",
+          "is_correct": false
+        }
+      ],
+      "explanation": "One byte equals 8 bits.",
+      "answer": "b"
+    },
+    {
+      "id": 5,
+      "level": "Knowledge",
+      "question": "Which is the smallest storage unit?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Bit",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Nibble",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Byte",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "KB",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Bit is the smallest unit, either 0 or 1.",
+      "answer": "a"
+    },
+    {
+      "id": 6,
+      "level": "Knowledge",
+      "question": "The feature of working without tiredness is:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Speed",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Accuracy",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Diligence",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "Versatility",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Diligence means continuous work without fatigue.",
+      "answer": "c"
+    },
+    {
+      "id": 7,
+      "level": "Knowledge",
+      "question": "Which error occurs due to faulty hardware or software?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Bug",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Virus",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Spam",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Worm",
+          "is_correct": false
+        }
+      ],
+      "explanation": "A bug is a system fault.",
+      "answer": "a"
+    },
+    {
+      "id": 8,
+      "level": "Knowledge",
+      "question": "Which of the following is an input device?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Keyboard",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Printer",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Monitor",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Speaker",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Keyboard is used to enter data.",
+      "answer": "a"
+    },
+    {
+      "id": 9,
+      "level": "Knowledge",
+      "question": "Which of these is not a storage device?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Hard disk",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Pen drive",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Monitor",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "CD",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Monitor is an output device, not storage.",
+      "answer": "c"
+    },
+    {
+      "id": 10,
+      "level": "Application",
+      "question": "Preparing multimedia slides is an example of computers in:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Education",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Banking",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Agriculture",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Medicine",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The correct answer is based on the standard specifications and common knowledge about the topic.",
+      "answer": "a"
+    },
+    {
+      "id": 11,
+      "level": "Application",
+      "question": "ATMs are applications of computers in:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Banking",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Education",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Entertainment",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Research",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The correct answer is based on the standard specifications and common knowledge about the topic.",
+      "answer": "a"
+    },
+    {
+      "id": 12,
+      "level": "Application",
+      "question": "Weather forecasting is an application in:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Agriculture",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Scientific Research",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Banking",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Medicine",
+          "is_correct": false
+        }
+      ],
+      "explanation": null,
+      "answer": "b"
+    },
+    {
+      "id": 13,
+      "level": "Application",
+      "question": "A farmer using drones to monitor crops shows application in:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Agriculture",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Communication",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Medicine",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Banking",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The correct answer is based on the standard specifications and common knowledge about the topic.",
+      "answer": "a"
+    },
+    {
+      "id": 14,
+      "level": "Application",
+      "question": "Online shopping is an example of:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Banking",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Entertainment",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Application of computers",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "Accuracy",
+          "is_correct": false
+        }
+      ],
+      "explanation": null,
+      "answer": "c"
+    },
+    {
+      "id": 15,
+      "level": "Application",
+      "question": "CT Scan machines use computers in:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Banking",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Medicine",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Education",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Agriculture",
+          "is_correct": false
+        }
+      ],
+      "explanation": null,
+      "answer": "b"
+    },
+    {
+      "id": 16,
+      "level": "Application",
+      "question": "Using Facebook mainly represents:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Communication",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Entertainment",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Research",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Medicine",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The correct answer is based on the standard specifications and common knowledge about the topic.",
+      "answer": "a"
+    },
+    {
+      "id": 17,
+      "level": "Application",
+      "question": "Video games are applications in:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Education",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Entertainment",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Banking",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Agriculture",
+          "is_correct": false
+        }
+      ],
+      "explanation": null,
+      "answer": "b"
+    },
+    {
+      "id": 18,
+      "level": "Application",
+      "question": "Robotic surgery shows which feature of computers?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Versatility",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Diligence",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Accuracy",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Storage",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The correct answer is based on the standard specifications and common knowledge about the topic.",
+      "answer": "a"
+    },
+    {
+      "id": 19,
+      "level": "Application",
+      "question": "Student record keeping is an application in:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Education",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Communication",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Research",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Agriculture",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The correct answer is based on the standard specifications and common knowledge about the topic.",
+      "answer": "a"
+    },
+    {
+      "id": 20,
+      "level": "Higher Ability",
+      "question": "Which feature allows computers to work in all fields?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Versatility",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Diligence",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Accuracy",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Storage",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The correct answer is based on the standard specifications and common knowledge about the topic.",
+      "answer": "a"
+    },
+    {
+      "id": 21,
+      "level": "Higher Ability",
+      "question": "Correct sequence of IPOS is:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Input → Process → Output → Storage",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Input → Output → Process → Storage",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Storage → Input → Process → Output",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Output → Input → Storage → Process",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The correct answer is based on the standard specifications and common knowledge about the topic.",
+      "answer": "a"
+    },
+    {
+      "id": 22,
+      "level": "Knowledge",
+      "question": "Which layout is the most common keyboard arrangement?",
+      "options": [
+        {
+          "label": "a",
+          "text": "ABCD",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "QWERTY",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "AZERTY",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "DVORAK",
+          "is_correct": false
+        }
+      ],
+      "explanation": "QWERTY is the standard layout, named after the first six letters.",
+      "answer": "b"
+    },
+    {
+      "id": 23,
+      "level": "Knowledge",
+      "question": "How many keys does a standard keyboard usually have?",
+      "options": [
+        {
+          "label": "a",
+          "text": "64",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "84",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "104",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "124",
+          "is_correct": false
+        }
+      ],
+      "explanation": "A standard keyboard has 104 keys.",
+      "answer": "c"
+    },
+    {
+      "id": 24,
+      "level": "Knowledge",
+      "question": "A joystick is mainly used in:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Writing text",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Gaming",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Printing",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Typing",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Joysticks are primarily used in video games and simulations.",
+      "answer": "b"
+    },
+    {
+      "id": 25,
+      "level": "Knowledge",
+      "question": "Which input device captures sound?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Scanner",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Microphone",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Touchpad",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Webcam",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Microphones convert sound into digital signals.",
+      "answer": "b"
+    },
+    {
+      "id": 26,
+      "level": "Knowledge",
+      "question": "Which input device converts images or documents into digital format?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Scanner",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Webcam",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Microphone",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Touchpad",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Scanner digitizes physical documents.",
+      "answer": "a"
+    },
+    {
+      "id": 27,
+      "level": "Knowledge",
+      "question": "A webcam is used for:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Printing",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Real-time video communication",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Gaming",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Storage",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Webcam captures live video and audio.",
+      "answer": "b"
+    },
+    {
+      "id": 28,
+      "level": "Knowledge",
+      "question": "Which device combines input and output features?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Touchscreen",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Monitor",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Printer",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "CPU",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Touchscreen accepts commands by touch and shows results on the same display.",
+      "answer": "a"
+    },
+    {
+      "id": 29,
+      "level": "Knowledge",
+      "question": "Which pointing device is built into laptops?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Mouse",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Trackball",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Touchpad",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "Joystick",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Touchpad is a built-in pointing device in laptops.",
+      "answer": "c"
+    },
+    {
+      "id": 30,
+      "level": "Application",
+      "question": "Which device is commonly used in laptops instead of a mouse?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Keyboard",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Touchpad",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Microphone",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Joystick",
+          "is_correct": false
+        }
+      ],
+      "explanation": null,
+      "answer": "b"
+    },
+    {
+      "id": 31,
+      "level": "Application",
+      "question": "During a Zoom meeting, which two devices are mainly used?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Scanner and printer",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Webcam and microphone",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Touchpad and joystick",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Monitor and speaker",
+          "is_correct": false
+        }
+      ],
+      "explanation": null,
+      "answer": "b"
+    },
+    {
+      "id": 32,
+      "level": "Higher Ability",
+      "question": "For live online teaching, which set of input devices is required?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Mouse and joystick",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Webcam and microphone",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Scanner and printer",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Touchpad and CPU",
+          "is_correct": false
+        }
+      ],
+      "explanation": null,
+      "answer": "b"
+    },
+    {
+      "id": 33,
+      "level": "Knowledge",
+      "question": "CPU is known as:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Brain of the computer",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Memory of the computer",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Output device",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Hard disk",
+          "is_correct": false
+        }
+      ],
+      "explanation": "CPU controls and processes all operations.",
+      "answer": "a"
+    },
+    {
+      "id": 34,
+      "level": "Knowledge",
+      "question": "Which company is NOT a CPU manufacturer?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Intel",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "AMD",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Apple",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Epson",
+          "is_correct": true
+        }
+      ],
+      "explanation": "Epson makes printers, not CPUs.",
+      "answer": "d"
+    },
+    {
+      "id": 35,
+      "level": "Knowledge",
+      "question": "The first step in CPU processing is:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Execute",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Fetch",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Decode",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Store",
+          "is_correct": false
+        }
+      ],
+      "explanation": "CPU first fetches data/instructions from memory.",
+      "answer": "b"
+    },
+    {
+      "id": 36,
+      "level": "Knowledge",
+      "question": "The step where instructions are interpreted is:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Execute",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Decode",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Store",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Fetch",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Decode stage interprets fetched instructions.",
+      "answer": "b"
+    },
+    {
+      "id": 37,
+      "level": "Knowledge",
+      "question": "Which part of the CPU performs arithmetic operations?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Control Unit",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Arithmetic Logic Unit",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Registers",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Memory Unit",
+          "is_correct": false
+        }
+      ],
+      "explanation": "ALU performs all arithmetic and logical operations.",
+      "answer": "b"
+    },
+    {
+      "id": 38,
+      "level": "Knowledge",
+      "question": "Which CPU component directs data flow?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Registers",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Control Unit",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "ALU",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Cache",
+          "is_correct": false
+        }
+      ],
+      "explanation": "CU directs and coordinates CPU activities.",
+      "answer": "b"
+    },
+    {
+      "id": 39,
+      "level": "Knowledge",
+      "question": "The function of storing results temporarily is performed by:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Registers",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "CU",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "ALU",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Input unit",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Registers store immediate data and results.",
+      "answer": "a"
+    },
+    {
+      "id": 40,
+      "level": "Knowledge",
+      "question": "Logical operations like AND, OR, NOT are done by:",
+      "options": [
+        {
+          "label": "a",
+          "text": "ALU",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "CU",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Registers",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Memory unit",
+          "is_correct": false
+        }
+      ],
+      "explanation": "ALU performs arithmetic and logic.",
+      "answer": "a"
+    },
+    {
+      "id": 41,
+      "level": "Knowledge",
+      "question": "Interrupts in CPU are used for:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Storing data",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Handling signals",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Typing commands",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Saving files",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Interrupts manage hardware/software signals.",
+      "answer": "b"
+    },
+    {
+      "id": 42,
+      "level": "Application",
+      "question": "A student adding 25 + 10 in CPU is processed at which stage?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Decode",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Execute",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Fetch",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Store",
+          "is_correct": false
+        }
+      ],
+      "explanation": null,
+      "answer": "b"
+    },
+    {
+      "id": 43,
+      "level": "Application",
+      "question": "After executing 25 + 10 = 35, the result is placed in:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Register",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "ALU",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Input device",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Decoder",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The correct answer is based on the standard specifications and common knowledge about the topic.",
+      "answer": "a"
+    },
+    {
+      "id": 44,
+      "level": "Application",
+      "question": "Which component of CPU controls input/output flow?",
+      "options": [
+        {
+          "label": "a",
+          "text": "ALU",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Control Unit",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Register",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "RAM",
+          "is_correct": false
+        }
+      ],
+      "explanation": null,
+      "answer": "b"
+    },
+    {
+      "id": 45,
+      "level": "Application",
+      "question": "A CPU performing >, <, =, ≠ operations is using:",
+      "options": [
+        {
+          "label": "a",
+          "text": "ALU",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "CU",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Registers",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Cache",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The correct answer is based on the standard specifications and common knowledge about the topic.",
+      "answer": "a"
+    },
+    {
+      "id": 46,
+      "level": "Application",
+      "question": "Where does CPU first fetch instructions from?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Hard disk",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "RAM",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Printer",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Monitor",
+          "is_correct": false
+        }
+      ],
+      "explanation": null,
+      "answer": "b"
+    },
+    {
+      "id": 47,
+      "level": "Application",
+      "question": "Which unit of CPU stores data temporarily during processing?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Registers",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "ALU",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "CU",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Output unit",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The correct answer is based on the standard specifications and common knowledge about the topic.",
+      "answer": "a"
+    },
+    {
+      "id": 48,
+      "level": "Application",
+      "question": "A notification appearing while typing is handled by:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Interrupt",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Register",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Storage",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "ALU",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The correct answer is based on the standard specifications and common knowledge about the topic.",
+      "answer": "a"
+    },
+    {
+      "id": 49,
+      "level": "Application",
+      "question": "Which example shows CPU “Store” function?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Displaying result on monitor",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Saving result in memory",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Moving mouse pointer",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Printing a document",
+          "is_correct": false
+        }
+      ],
+      "explanation": null,
+      "answer": "b"
+    },
+    {
+      "id": 50,
+      "level": "Application",
+      "question": "CPU brands like Intel Core i7 and AMD Ryzen are:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Input devices",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Processors",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Output devices",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Storage devices",
+          "is_correct": false
+        }
+      ],
+      "explanation": null,
+      "answer": "b"
+    },
+    {
+      "id": 51,
+      "level": "Application",
+      "question": "The CU communicating between ALU and registers shows:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Control role of CU",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Logic role of ALU",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Storage role of Registers",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Fetching by RAM",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The correct answer is based on the standard specifications and common knowledge about the topic.",
+      "answer": "a"
+    },
+    {
+      "id": 52,
+      "level": "Higher Ability",
+      "question": "Which function sequence is correct?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Fetch → Decode → Execute → Store",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Fetch → Execute → Decode → Store",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Decode → Store → Fetch → Execute",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Execute → Fetch → Store → Decode",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The correct answer is based on the standard specifications and common knowledge about the topic.",
+      "answer": "a"
+    },
+    {
+      "id": 53,
+      "level": "Higher Ability",
+      "question": "If CPU fails to manage interrupts, what happens?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Processing stops or slows",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Printing continues",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "RAM increases",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Input is ignored",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The correct answer is based on the standard specifications and common knowledge about the topic.",
+      "answer": "a"
+    },
+    {
+      "id": 54,
+      "level": "Higher Ability",
+      "question": "Which is the most temporary storage in CPU?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Registers",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Cache",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "RAM",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Hard disk",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The correct answer is based on the standard specifications and common knowledge about the topic.",
+      "answer": "a"
+    },
+    {
+      "id": 55,
+      "level": "Higher Ability",
+      "question": "Logical decision-making is mainly done in:",
+      "options": [
+        {
+          "label": "a",
+          "text": "ALU",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Registers",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "CU",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "RAM",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The correct answer is based on the standard specifications and common knowledge about the topic.",
+      "answer": "a"
+    },
+    {
+      "id": 56,
+      "level": "Higher Ability",
+      "question": "Which CPU process explains: “Understand 25 + 10 is addition”?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Decode",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Fetch",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Execute",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Store",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The correct answer is based on the standard specifications and common knowledge about the topic.",
+      "answer": "a"
+    },
+    {
+      "id": 57,
+      "level": "Higher Ability",
+      "question": "Which CPU component interacts directly with input/output devices?",
+      "options": [
+        {
+          "label": "a",
+          "text": "CU",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "ALU",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Registers",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Cache",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The correct answer is based on the standard specifications and common knowledge about the topic.",
+      "answer": "a"
+    },
+    {
+      "id": 58,
+      "level": "Higher Ability",
+      "question": "A CPU saving calculation results into RAM shows:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Store",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Fetch",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Decode",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Execute",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The correct answer is based on the standard specifications and common knowledge about the topic.",
+      "answer": "a"
+    },
+    {
+      "id": 59,
+      "level": "Higher Ability",
+      "question": "The difference between CU and ALU is:",
+      "options": [
+        {
+          "label": "a",
+          "text": "CU controls operations, ALU performs calculations",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "CU stores data, ALU controls",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "CU saves results, ALU stores instructions",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Both are same",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The correct answer is based on the standard specifications and common knowledge about the topic.",
+      "answer": "a"
+    },
+    {
+      "id": 60,
+      "level": "Knowledge",
+      "question": "The motherboard is also called:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Hard disk",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "System board",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "CPU",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Power board",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Motherboard is also called the system board or PCB.",
+      "answer": "b"
+    },
+    {
+      "id": 61,
+      "level": "Knowledge",
+      "question": "Which is known as the backbone of the computer?",
+      "options": [
+        {
+          "label": "a",
+          "text": "RAM",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "CPU",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Motherboard",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "Printer",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The motherboard connects all components like a backbone.",
+      "answer": "c"
+    },
+    {
+      "id": 62,
+      "level": "Knowledge",
+      "question": "Which of the following is NOT connected directly to the motherboard?",
+      "options": [
+        {
+          "label": "a",
+          "text": "CPU",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "RAM",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Monitor",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "ROM",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Monitor connects externally, not on the motherboard.",
+      "answer": "c"
+    },
+    {
+      "id": 63,
+      "level": "Knowledge",
+      "question": "Which unit supplies power to the motherboard?",
+      "options": [
+        {
+          "label": "a",
+          "text": "ALU",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "PSU",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "CU",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Cache",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Power Supply Unit distributes electricity.",
+      "answer": "b"
+    },
+    {
+      "id": 64,
+      "level": "Knowledge",
+      "question": "Expansion slots on the motherboard are used for:",
+      "options": [
+        {
+          "label": "a",
+          "text": "RAM only",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Additional cards",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Output devices",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "BIOS storage",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Expansion slots add graphics, network, or sound cards.",
+      "answer": "b"
+    },
+    {
+      "id": 65,
+      "level": "Knowledge",
+      "question": "Which bus carries actual data in binary form?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Address bus",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Control bus",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Data bus",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "PCI slot",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Data bus transfers 0s and 1s.",
+      "answer": "c"
+    },
+    {
+      "id": 66,
+      "level": "Knowledge",
+      "question": "Which bus usually works one-way only?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Control bus",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Data bus",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Address bus",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "Power bus",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Address bus goes from CPU to memory.",
+      "answer": "c"
+    },
+    {
+      "id": 67,
+      "level": "Knowledge",
+      "question": "Which bus carries read/write signals?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Data bus",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Control bus",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Address bus",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Expansion bus",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Control bus manages timing and coordination.",
+      "answer": "b"
+    },
+    {
+      "id": 68,
+      "level": "Knowledge",
+      "question": "The width of which bus decides data transfer speed?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Address bus",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Data bus",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Control bus",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Cache",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Wider data bus = faster transfer.",
+      "answer": "b"
+    },
+    {
+      "id": 69,
+      "level": "Application",
+      "question": "A gamer adding a new graphics card uses:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Expansion slot",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Control bus",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Power supply",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "CPU",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The correct answer is based on the standard specifications and common knowledge about the topic.",
+      "answer": "a"
+    },
+    {
+      "id": 70,
+      "level": "Application",
+      "question": "Which component ensures equal power supply in motherboard?",
+      "options": [
+        {
+          "label": "a",
+          "text": "PSU",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "ALU",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "BIOS",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "RAM",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The correct answer is based on the standard specifications and common knowledge about the topic.",
+      "answer": "a"
+    },
+    {
+      "id": 71,
+      "level": "Application",
+      "question": "When CPU sends result to monitor, which bus is mainly used?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Data bus",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Address bus",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Control bus",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Northbridge",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The correct answer is based on the standard specifications and common knowledge about the topic.",
+      "answer": "a"
+    },
+    {
+      "id": 72,
+      "level": "Application",
+      "question": "A computer using 64-bit data bus is:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Slower",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Faster",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Unstable",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Inaccurate",
+          "is_correct": false
+        }
+      ],
+      "explanation": null,
+      "answer": "b"
+    },
+    {
+      "id": 73,
+      "level": "Application",
+      "question": "If the address bus is wider, what happens?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Faster speed",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "More memory usable",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Higher accuracy",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Better display",
+          "is_correct": false
+        }
+      ],
+      "explanation": null,
+      "answer": "b"
+    },
+    {
+      "id": 74,
+      "level": "Application",
+      "question": "Adding more RAM requires a slot in:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Motherboard",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Hard disk",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "PSU",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Monitor",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The correct answer is based on the standard specifications and common knowledge about the topic.",
+      "answer": "a"
+    },
+    {
+      "id": 75,
+      "level": "Application",
+      "question": "Which bus ensures timing of read/write?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Control bus",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Data bus",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Address bus",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Expansion bus",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The correct answer is based on the standard specifications and common knowledge about the topic.",
+      "answer": "a"
+    },
+    {
+      "id": 76,
+      "level": "Application",
+      "question": "If data bus is 8-bit, CPU transfers:",
+      "options": [
+        {
+          "label": "a",
+          "text": "1 byte at a time",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "8 bytes at a time",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "4 bytes at a time",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Unlimited data",
+          "is_correct": false
+        }
+      ],
+      "explanation": "8-bit data bus = 8 bits (1 byte).",
+      "answer": "a"
+    },
+    {
+      "id": 77,
+      "level": "Higher Ability",
+      "question": "Which is the central hub of a computer system?",
+      "options": [
+        {
+          "label": "a",
+          "text": "RAM",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Motherboard",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Hard disk",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "BIOS",
+          "is_correct": false
+        }
+      ],
+      "explanation": null,
+      "answer": "b"
+    },
+    {
+      "id": 78,
+      "level": "Higher Ability",
+      "question": "Which bus manages interrupts?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Control bus",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Address bus",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Data bus",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Northbridge",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The correct answer is based on the standard specifications and common knowledge about the topic.",
+      "answer": "a"
+    },
+    {
+      "id": 79,
+      "level": "Higher Ability",
+      "question": "CPU fetching instructions from RAM depends on:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Address bus",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Data bus",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Control bus",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Expansion slot",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The correct answer is based on the standard specifications and common knowledge about the topic.",
+      "answer": "a"
+    },
+    {
+      "id": 80,
+      "level": "Higher Ability",
+      "question": "If the PSU fails, which part stops first?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Motherboard",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Monitor",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "CPU",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Printer",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The correct answer is based on the standard specifications and common knowledge about the topic.",
+      "answer": "a"
+    },
+    {
+      "id": 81,
+      "level": "Higher Ability",
+      "question": "PCIe and SATA are examples of:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Expansion buses",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Control buses",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Address buses",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Power lines",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The correct answer is based on the standard specifications and common knowledge about the topic.",
+      "answer": "a"
+    },
+    {
+      "id": 82,
+      "level": "Knowledge",
+      "question": "The smallest unit of computer memory is:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Byte",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Bit",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Nibble",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "KB",
+          "is_correct": false
+        }
+      ],
+      "explanation": "A bit stores either 0 or 1. A nibble = 4 bits, a byte = 8 bits, KB = 1024 bytes.",
+      "answer": "b"
+    },
+    {
+      "id": 83,
+      "level": "Knowledge",
+      "question": "One byte is equal to:",
+      "options": [
+        {
+          "label": "a",
+          "text": "2 bits",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "4 bits",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "8 bits",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "16 bits",
+          "is_correct": false
+        }
+      ],
+      "explanation": "A byte is the standard unit representing one character (8 bits).",
+      "answer": "c"
+    },
+    {
+      "id": 84,
+      "level": "Knowledge",
+      "question": "RAM is called:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Permanent memory",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Volatile memory",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Non-volatile memory",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Secondary memory",
+          "is_correct": false
+        }
+      ],
+      "explanation": "RAM loses all data when power is turned off, hence volatile.",
+      "answer": "b"
+    },
+    {
+      "id": 85,
+      "level": "Knowledge",
+      "question": "ROM is:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Volatile",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Non-volatile",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Temporary only",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Cache memory",
+          "is_correct": false
+        }
+      ],
+      "explanation": "ROM retains data even without power, making it non-volatile.",
+      "answer": "b"
+    },
+    {
+      "id": 86,
+      "level": "Knowledge",
+      "question": "Which memory is faster than DRAM?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Hard disk",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Static RAM (SRAM)",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "ROM",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Pen drive",
+          "is_correct": false
+        }
+      ],
+      "explanation": "SRAM uses transistors, faster and costlier than DRAM.",
+      "answer": "b"
+    },
+    {
+      "id": 87,
+      "level": "Knowledge",
+      "question": "Which type of memory permanently stores BIOS?",
+      "options": [
+        {
+          "label": "a",
+          "text": "RAM",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "ROM",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Cache",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Register",
+          "is_correct": false
+        }
+      ],
+      "explanation": "BIOS is stored in ROM as firmware.",
+      "answer": "b"
+    },
+    {
+      "id": 88,
+      "level": "Knowledge",
+      "question": "Cache memory is located between:",
+      "options": [
+        {
+          "label": "a",
+          "text": "CPU and RAM",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "CPU and Monitor",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Hard disk and RAM",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "ROM and Input device",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Cache stores frequently used data between CPU and RAM.",
+      "answer": "a"
+    },
+    {
+      "id": 89,
+      "level": "Knowledge",
+      "question": "Which memory stores data for immediate use by CPU?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Cache",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Register",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "ROM",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Pen drive",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Registers are the fastest, inside CPU.",
+      "answer": "b"
+    },
+    {
+      "id": 90,
+      "level": "Knowledge",
+      "question": "EEPROM can be erased by:",
+      "options": [
+        {
+          "label": "a",
+          "text": "UV rays",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Electrical signals",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Magnetic field",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Formatting",
+          "is_correct": false
+        }
+      ],
+      "explanation": "EEPROM is erased electronically in milliseconds.",
+      "answer": "b"
+    },
+    {
+      "id": 91,
+      "level": "Knowledge",
+      "question": "Which memory is both volatile and non-volatile depending on type?",
+      "options": [
+        {
+          "label": "a",
+          "text": "RAM only",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "ROM only",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Primary memory",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "Secondary memory",
+          "is_correct": false
+        }
+      ],
+      "explanation": "RAM (volatile) and ROM (non-volatile) are both primary memory.",
+      "answer": "c"
+    },
+    {
+      "id": 92,
+      "level": "Application",
+      "question": "When power is cut, which memory loses its contents?",
+      "options": [
+        {
+          "label": "a",
+          "text": "ROM",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "RAM",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Hard disk",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "CD",
+          "is_correct": false
+        }
+      ],
+      "explanation": "RAM is volatile and erased on power-off.",
+      "answer": "b"
+    },
+    {
+      "id": 93,
+      "level": "Application",
+      "question": "Which memory improves CPU speed by storing frequently used data?",
+      "options": [
+        {
+          "label": "a",
+          "text": "ROM",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Cache",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Hard disk",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Pen drive",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Cache bridges CPU and RAM, reducing access time.",
+      "answer": "b"
+    },
+    {
+      "id": 94,
+      "level": "Application",
+      "question": "Which memory is best for permanent storage of exam results?",
+      "options": [
+        {
+          "label": "a",
+          "text": "RAM",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Register",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Hard disk",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "Cache",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Hard disk is secondary storage, safe and permanent.",
+      "answer": "c"
+    },
+    {
+      "id": 95,
+      "level": "Application",
+      "question": "BIOS is mainly stored in:",
+      "options": [
+        {
+          "label": "a",
+          "text": "RAM",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "ROM",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Cache",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "CPU Register",
+          "is_correct": false
+        }
+      ],
+      "explanation": "ROM stores BIOS firmware for booting.",
+      "answer": "b"
+    },
+    {
+      "id": 96,
+      "level": "Application",
+      "question": "A program loaded for execution runs in:",
+      "options": [
+        {
+          "label": "a",
+          "text": "ROM",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "RAM",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Pen drive",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Hard disk",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Active programs are loaded in RAM.",
+      "answer": "b"
+    },
+    {
+      "id": 97,
+      "level": "Application",
+      "question": "Which memory is programmable only once?",
+      "options": [
+        {
+          "label": "a",
+          "text": "PROM",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "EPROM",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "EEPROM",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "SRAM",
+          "is_correct": false
+        }
+      ],
+      "explanation": "PROM is programmed once and cannot be erased.",
+      "answer": "a"
+    },
+    {
+      "id": 98,
+      "level": "Application",
+      "question": "The memory that can be erased with UV light is:",
+      "options": [
+        {
+          "label": "a",
+          "text": "PROM",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "EPROM",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "EEPROM",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "RAM",
+          "is_correct": false
+        }
+      ],
+      "explanation": "EPROM is erased by ultraviolet rays.",
+      "answer": "b"
+    },
+    {
+      "id": 99,
+      "level": "Application",
+      "question": "Which memory is slower but cheaper than SRAM?",
+      "options": [
+        {
+          "label": "a",
+          "text": "ROM",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "DRAM",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Register",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Cache",
+          "is_correct": false
+        }
+      ],
+      "explanation": "DRAM uses capacitors, cheaper but slower.",
+      "answer": "b"
+    },
+    {
+      "id": 100,
+      "level": "Application",
+      "question": "Which memory type stores firmware?",
+      "options": [
+        {
+          "label": "a",
+          "text": "RAM",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "ROM",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Hard disk",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Register",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Firmware is permanent software stored in ROM.",
+      "answer": "b"
+    },
+    {
+      "id": 101,
+      "level": "Higher Ability",
+      "question": "Why is RAM called Random Access Memory?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Data is stored sequentially",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Data can be accessed directly from any location",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "It is permanent",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "It is slower than ROM",
+          "is_correct": false
+        }
+      ],
+      "explanation": "RAM allows direct access to any location without sequence.",
+      "answer": "b"
+    },
+    {
+      "id": 102,
+      "level": "Higher Ability",
+      "question": "Which memory is most expensive per unit storage?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Hard disk",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "DRAM",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "SRAM",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "ROM",
+          "is_correct": false
+        }
+      ],
+      "explanation": "SRAM is costly due to transistor design.",
+      "answer": "c"
+    },
+    {
+      "id": 103,
+      "level": "Higher Ability",
+      "question": "Why are registers faster than RAM?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Located inside CPU",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Non-volatile",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Larger capacity",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Stored on cache",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Registers are built into processor chip itself.",
+      "answer": "a"
+    },
+    {
+      "id": 104,
+      "level": "Higher Ability",
+      "question": "Which memory must be refreshed frequently?",
+      "options": [
+        {
+          "label": "a",
+          "text": "SRAM",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "DRAM",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "ROM",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Register",
+          "is_correct": false
+        }
+      ],
+      "explanation": "DRAM requires refreshing due to capacitor charge leakage.",
+      "answer": "b"
+    },
+    {
+      "id": 105,
+      "level": "Higher Ability",
+      "question": "Which combination is correct?",
+      "options": [
+        {
+          "label": "a",
+          "text": "SRAM = faster, DRAM = cheaper",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "SRAM = cheaper, DRAM = faster",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Both equal speed",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Both non-volatile",
+          "is_correct": false
+        }
+      ],
+      "explanation": "SRAM is fast and costly; DRAM is cheap and slower.",
+      "answer": "a"
+    },
+    {
+      "id": 106,
+      "level": "Higher Ability",
+      "question": "Cache memory mainly improves:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Booting",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Processing speed",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Storage capacity",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Permanent storage",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Cache reduces CPU wait time by holding frequently accessed data.",
+      "answer": "b"
+    },
+    {
+      "id": 107,
+      "level": "Higher Ability",
+      "question": "Firmware in ROM is essential for:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Running applications",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Booting the computer",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Storing music",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Browsing internet",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Firmware controls hardware startup functions.",
+      "answer": "b"
+    },
+    {
+      "id": 108,
+      "level": "Higher Ability",
+      "question": "Which is non-volatile but rewritable many times electronically?",
+      "options": [
+        {
+          "label": "a",
+          "text": "PROM",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "EPROM",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "EEPROM",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "DRAM",
+          "is_correct": false
+        }
+      ],
+      "explanation": "EEPROM allows electronic erasing and reprogramming.",
+      "answer": "c"
+    },
+    {
+      "id": 109,
+      "level": "Higher Ability",
+      "question": "Why is secondary memory required if primary memory exists?",
+      "options": [
+        {
+          "label": "a",
+          "text": "To store data permanently",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "To increase speed only",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "To replace registers",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "To reduce cache size",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Primary memory is temporary; secondary keeps permanent files.",
+      "answer": "a"
+    },
+    {
+      "id": 110,
+      "level": "Knowledge",
+      "question": "Storage devices are also called:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Primary memory",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Cache memory",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Secondary memory",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "Registers",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Storage devices are permanent, non-volatile, and known as secondary/auxiliary memory.",
+      "answer": "c"
+    },
+    {
+      "id": 111,
+      "level": "Knowledge",
+      "question": "Which of the following is a magnetic storage device?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Hard disk",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Pen drive",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "DVD",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Cloud",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Hard disks use magnetic platters, while pen drives use flash, DVDs use lasers, and cloud is internet-based.",
+      "answer": "a"
+    },
+    {
+      "id": 112,
+      "level": "Knowledge",
+      "question": "The speed of a hard disk is measured in:",
+      "options": [
+        {
+          "label": "a",
+          "text": "GHz",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "MB/s",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Revolutions per minute (RPM)",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "Hertz",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Hard disks rotate at 5400–7200 RPM in normal systems.",
+      "answer": "c"
+    },
+    {
+      "id": 113,
+      "level": "Knowledge",
+      "question": "An SSD stores data using:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Magnetic platters",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Semiconductor chips",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Laser beams",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Cloud servers",
+          "is_correct": false
+        }
+      ],
+      "explanation": "SSDs use NAND flash chips with no moving parts.",
+      "answer": "b"
+    },
+    {
+      "id": 114,
+      "level": "Knowledge",
+      "question": "Which storage uses laser light technology?",
+      "options": [
+        {
+          "label": "a",
+          "text": "SSD",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Optical disc",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Hard disk",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Flash memory",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Optical discs like CD/DVD/Blu-ray use lasers to read and write data.",
+      "answer": "b"
+    },
+    {
+      "id": 115,
+      "level": "Knowledge",
+      "question": "A standard CD can store:",
+      "options": [
+        {
+          "label": "a",
+          "text": "256 MB",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "512 MB",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "700 MB",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "4.7 GB",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Standard CDs hold about 700 MB.",
+      "answer": "c"
+    },
+    {
+      "id": 116,
+      "level": "Knowledge",
+      "question": "Which device has maximum storage capacity?",
+      "options": [
+        {
+          "label": "a",
+          "text": "DVD",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Blu-ray",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "CD",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Pen drive",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Blu-ray stores more (25–50 GB) than CD (700 MB) or DVD (up to 20 GB).",
+      "answer": "b"
+    },
+    {
+      "id": 117,
+      "level": "Knowledge",
+      "question": "Which type of DVD can store 17.08 GB?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Single layer, single side",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Double side, double layer",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Double side, single layer",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Single side, double layer",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Double side, double layer DVD = 17.08 GB.",
+      "answer": "b"
+    },
+    {
+      "id": 118,
+      "level": "Knowledge",
+      "question": "Flash memory is:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Volatile",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Non-volatile",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Magnetic",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Optical",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Flash memory retains data even after power is switched off.",
+      "answer": "b"
+    },
+    {
+      "id": 119,
+      "level": "Knowledge",
+      "question": "A pen drive connects to a computer via:",
+      "options": [
+        {
+          "label": "a",
+          "text": "HDMI",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "USB",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "VGA",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "PCI",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Pen drives are USB flash drives.",
+      "answer": "b"
+    },
+    {
+      "id": 120,
+      "level": "Application",
+      "question": "A laptop with SSD instead of HDD will be:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Slower",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Faster",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Same speed",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Inaccurate",
+          "is_correct": false
+        }
+      ],
+      "explanation": "SSDs are faster, more reliable than HDDs.",
+      "answer": "b"
+    },
+    {
+      "id": 121,
+      "level": "Application",
+      "question": "Which device is best for online file sharing?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Hard disk",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Pen drive",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Cloud storage",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "Optical disc",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Cloud allows storage and access from anywhere.",
+      "answer": "c"
+    },
+    {
+      "id": 122,
+      "level": "Application",
+      "question": "If a student wants to carry notes easily, best device is:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Pen drive",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "DVD",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Hard disk",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Cache",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Pen drives are portable and easy to use.",
+      "answer": "a"
+    },
+    {
+      "id": 123,
+      "level": "Application",
+      "question": "Which is most suitable for storing movies permanently?",
+      "options": [
+        {
+          "label": "a",
+          "text": "RAM",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "ROM",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "DVD",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "Cache",
+          "is_correct": false
+        }
+      ],
+      "explanation": "DVDs have large storage, suitable for videos.",
+      "answer": "c"
+    },
+    {
+      "id": 124,
+      "level": "Application",
+      "question": "Which memory device is portable and rewritable many times?",
+      "options": [
+        {
+          "label": "a",
+          "text": "CD",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Pen drive",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Blu-ray (R only)",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "HDD",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Pen drives use flash memory and are rewritable.",
+      "answer": "b"
+    },
+    {
+      "id": 125,
+      "level": "Application",
+      "question": "Which is an example of optical storage?",
+      "options": [
+        {
+          "label": "a",
+          "text": "USB drive",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "DVD",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "SSD",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "HDD",
+          "is_correct": false
+        }
+      ],
+      "explanation": "DVDs are optical discs using laser light.",
+      "answer": "b"
+    },
+    {
+      "id": 126,
+      "level": "Higher Ability",
+      "question": "Which storage has no moving parts?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Hard disk",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "SSD",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "DVD",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Blu-ray",
+          "is_correct": false
+        }
+      ],
+      "explanation": "SSD and flash devices use solid-state chips.",
+      "answer": "b"
+    },
+    {
+      "id": 127,
+      "level": "Higher Ability",
+      "question": "Which storage is most durable against shock?",
+      "options": [
+        {
+          "label": "a",
+          "text": "HDD",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "SSD",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Optical disc",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Cloud",
+          "is_correct": false
+        }
+      ],
+      "explanation": "SSDs resist vibration/shock since no moving parts.",
+      "answer": "b"
+    },
+    {
+      "id": 128,
+      "level": "Higher Ability",
+      "question": "Which combination is correct?",
+      "options": [
+        {
+          "label": "a",
+          "text": "HDD = cheap + slow, SSD = costly + fast, Flash = portable",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "HDD = fast + costly, SSD = cheap + slow, Flash = permanent",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "HDD = optical, SSD = magnetic, Flash = volatile",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "All wrong",
+          "is_correct": false
+        }
+      ],
+      "explanation": "HDD cheap but slow, SSD fast but costly, flash portable.",
+      "answer": "a"
+    },
+    {
+      "id": 129,
+      "level": "Higher Ability",
+      "question": "Cloud storage requires:",
+      "options": [
+        {
+          "label": "a",
+          "text": "CPU only",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Internet connection",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "CD/DVD drive",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "RAM",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Cloud is accessed online with internet.",
+      "answer": "b"
+    },
+    {
+      "id": 130,
+      "level": "Higher Ability",
+      "question": "Which is faster in MB/s?",
+      "options": [
+        {
+          "label": "a",
+          "text": "HDD (80–160 MB/s)",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "SSD (200–3500 MB/s)",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Flash (10–600 MB/s)",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Optical (3–36 MB/s)",
+          "is_correct": false
+        }
+      ],
+      "explanation": "SSD has the highest speed range.",
+      "answer": "b"
+    },
+    {
+      "id": 131,
+      "level": "Higher Ability",
+      "question": "Which device is most useful for transferring files between two computers quickly?",
+      "options": [
+        {
+          "label": "a",
+          "text": "DVD",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Pen drive",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "HDD",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "ROM",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Pen drives are portable, rewritable, and fast.",
+      "answer": "b"
+    },
+    {
+      "id": 132,
+      "level": "Higher Ability",
+      "question": "Why is SSD better than HDD for laptops?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Higher capacity",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Lower power and faster",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Cheaper per GB",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Optical storage",
+          "is_correct": false
+        }
+      ],
+      "explanation": "SSDs save power and are faster, ideal for laptops.",
+      "answer": "b"
+    },
+    {
+      "id": 133,
+      "level": "Higher Ability",
+      "question": "Why is flash memory widely adopted in smartphones?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Cheaper than HDD",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Small, durable, low power",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Higher RPM",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Uses laser",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Flash memory is compact, efficient, and portable.",
+      "answer": "b"
+    },
+    {
+      "id": 134,
+      "level": "Higher Ability",
+      "question": "Which is best for archival backup?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Cloud",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "RAM",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Register",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Cache",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Cloud ensures safe, long-term backup accessible anywhere.",
+      "answer": "a"
+    },
+    {
+      "id": 135,
+      "level": "Knowledge",
+      "question": "Which of the following is an output device?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Keyboard",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Mouse",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Monitor",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "Scanner",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Monitors display data from CPU, others are input devices.",
+      "answer": "c"
+    },
+    {
+      "id": 136,
+      "level": "Knowledge",
+      "question": "The output seen on a monitor is called:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Hard copy",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Soft copy",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Printout",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Duplicate",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Monitor shows temporary soft copy output.",
+      "answer": "b"
+    },
+    {
+      "id": 137,
+      "level": "Knowledge",
+      "question": "Which monitor uses liquid crystal technology?",
+      "options": [
+        {
+          "label": "a",
+          "text": "CRT",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "LCD",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "LED",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Plasma",
+          "is_correct": false
+        }
+      ],
+      "explanation": "LCD = Liquid Crystal Display monitor.",
+      "answer": "b"
+    },
+    {
+      "id": 138,
+      "level": "Knowledge",
+      "question": "Which monitor uses light-emitting diodes for backlighting?",
+      "options": [
+        {
+          "label": "a",
+          "text": "CRT",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "LCD",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "LED",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "Monochrome",
+          "is_correct": false
+        }
+      ],
+      "explanation": "LED monitors are modern flat displays using LEDs.",
+      "answer": "c"
+    },
+    {
+      "id": 139,
+      "level": "Knowledge",
+      "question": "Printers that strike the paper physically are called:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Non-impact printers",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Impact printers",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Laser printers",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Inkjet printers",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Dot matrix printers are examples of impact printers.",
+      "answer": "b"
+    },
+    {
+      "id": 140,
+      "level": "Knowledge",
+      "question": "Which is NOT a non-impact printer?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Inkjet",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Laser",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Dot matrix",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "3D printer",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Dot matrix is impact; others are non-impact.",
+      "answer": "c"
+    },
+    {
+      "id": 141,
+      "level": "Knowledge",
+      "question": "Which printer is best for high-quality, professional prints?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Dot matrix",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Inkjet",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Laser",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "Thermal",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Laser printers give fast, professional outputs.",
+      "answer": "c"
+    },
+    {
+      "id": 142,
+      "level": "Knowledge",
+      "question": "Which printer sprays liquid ink directly on paper?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Laser printer",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Inkjet printer",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Dot matrix printer",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "3D printer",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Inkjet sprays tiny droplets of ink.",
+      "answer": "b"
+    },
+    {
+      "id": 143,
+      "level": "Knowledge",
+      "question": "A printer that creates 3D objects layer by layer is:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Laser printer",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Inkjet printer",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "3D printer",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "Dot matrix printer",
+          "is_correct": false
+        }
+      ],
+      "explanation": "3D printers produce physical 3D models.",
+      "answer": "c"
+    },
+    {
+      "id": 144,
+      "level": "Knowledge",
+      "question": "Devices that produce sound output are:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Monitors",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Printers",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Speakers",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "Plotters",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Speakers/headphones output audio.",
+      "answer": "c"
+    },
+    {
+      "id": 145,
+      "level": "Application",
+      "question": "Which printer is suitable for printing receipts in shops?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Inkjet",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Dot matrix",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Laser",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "3D printer",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Dot matrix used in receipts/bills.",
+      "answer": "b"
+    },
+    {
+      "id": 146,
+      "level": "Application",
+      "question": "A designer printing engineering diagrams should use:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Plotter",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Inkjet",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Dot matrix",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Thermal",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Plotters produce large, high-quality drawings.",
+      "answer": "a"
+    },
+    {
+      "id": 147,
+      "level": "Application",
+      "question": "Which device is best for printing photos at home?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Inkjet printer",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Dot matrix",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Plotter",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Laser printer",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Inkjet gives detailed, high-resolution prints.",
+      "answer": "a"
+    },
+    {
+      "id": 148,
+      "level": "Application",
+      "question": "A movie theatre uses which output device for sound?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Plotter",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Printer",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Speakers",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "Monitor",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Speakers produce large volume sound.",
+      "answer": "c"
+    },
+    {
+      "id": 149,
+      "level": "Application",
+      "question": "Which device provides immediate display of processed data?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Printer",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Monitor",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Speaker",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Plotter",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Monitor shows results instantly.",
+      "answer": "b"
+    },
+    {
+      "id": 150,
+      "level": "Application",
+      "question": "A manufacturing company creating prototypes uses:",
+      "options": [
+        {
+          "label": "a",
+          "text": "3D printer",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Laser printer",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Plotter",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Dot matrix printer",
+          "is_correct": false
+        }
+      ],
+      "explanation": "3D printers build models layer by layer.",
+      "answer": "a"
+    },
+    {
+      "id": 151,
+      "level": "Higher Ability",
+      "question": "The main difference between hard copy and soft copy is:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Hard copy is on paper, soft copy on screen",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Hard copy is temporary, soft copy permanent",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Both are permanent",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Both are temporary",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Monitors give soft copy; printers give hard copy.",
+      "answer": "a"
+    },
+    {
+      "id": 152,
+      "level": "Higher Ability",
+      "question": "Which monitor is more energy efficient and high quality?",
+      "options": [
+        {
+          "label": "a",
+          "text": "CRT",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "LCD",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "LED",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "Plasma",
+          "is_correct": false
+        }
+      ],
+      "explanation": "LED monitors consume less power and give better visuals.",
+      "answer": "c"
+    },
+    {
+      "id": 153,
+      "level": "Higher Ability",
+      "question": "Which printer is cost-effective for high-volume printing?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Dot matrix",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Inkjet",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Laser",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "3D printer",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Laser printers handle bulk with speed and economy.",
+      "answer": "c"
+    },
+    {
+      "id": 154,
+      "level": "Higher Ability",
+      "question": "Which printer is most suitable for creating multi-copy invoices?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Laser",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Inkjet",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Dot matrix",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "3D printer",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Dot matrix can print carbon copies.",
+      "answer": "c"
+    },
+    {
+      "id": 155,
+      "level": "Higher Ability",
+      "question": "Which output is temporary and disappears when power is off?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Hard copy",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Soft copy",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Printout",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Sound",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Monitor displays are temporary soft copy.",
+      "answer": "b"
+    },
+    {
+      "id": 156,
+      "level": "Higher Ability",
+      "question": "Which device can output both text and graphics on large sheets?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Plotter",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Printer",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Speaker",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Monitor",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Plotters are used in engineering/design for big graphics.",
+      "answer": "a"
+    },
+    {
+      "id": 157,
+      "level": "Higher Ability",
+      "question": "Which technology gives faster and sharper prints?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Dot matrix",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Inkjet",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Laser",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "3D",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Laser printers are fast and sharp.",
+      "answer": "c"
+    },
+    {
+      "id": 158,
+      "level": "Higher Ability",
+      "question": "Which device is best for turning computer designs into real objects?",
+      "options": [
+        {
+          "label": "a",
+          "text": "3D printer",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Plotter",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Inkjet printer",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Dot matrix",
+          "is_correct": false
+        }
+      ],
+      "explanation": "3D printers convert designs into objects.",
+      "answer": "a"
+    },
+    {
+      "id": 159,
+      "level": "Higher Ability",
+      "question": "Which audio device converts digital to analog signals?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Printer",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Plotter",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Speaker",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "Monitor",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Speakers convert signals into audible sound.",
+      "answer": "c"
+    },
+    {
+      "id": 160,
+      "level": "Higher Ability",
+      "question": "Which device is least likely to be used today in modern homes?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Inkjet printer",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "LED monitor",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Dot matrix printer",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "Speaker",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Dot matrix is outdated but used for receipts.",
+      "answer": "c"
+    },
+    {
+      "id": 161,
+      "level": "Knowledge",
+      "question": "Which of the following is a peripheral device?",
+      "options": [
+        {
+          "label": "a",
+          "text": "CPU",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Motherboard",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Printer",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "ALU",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Printer is an external hardware device, hence a peripheral.",
+      "answer": "c"
+    },
+    {
+      "id": 162,
+      "level": "Knowledge",
+      "question": "Which category does a keyboard belong to?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Input device",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Output device",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Storage device",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Communication device",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Keyboard is used for inputting text/data.",
+      "answer": "a"
+    },
+    {
+      "id": 163,
+      "level": "Knowledge",
+      "question": "Which is NOT a peripheral device?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Scanner",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "RAM",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Printer",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Mouse",
+          "is_correct": false
+        }
+      ],
+      "explanation": "RAM is internal memory, not external.",
+      "answer": "b"
+    },
+    {
+      "id": 164,
+      "level": "Knowledge",
+      "question": "Devices like webcam and joystick are:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Input peripherals",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Output peripherals",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Storage peripherals",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Communication ports",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Webcam and joystick are external input peripherals.",
+      "answer": "a"
+    },
+    {
+      "id": 165,
+      "level": "Knowledge",
+      "question": "Which port is used to connect pen drives?",
+      "options": [
+        {
+          "label": "a",
+          "text": "VGA",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "USB",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "HDMI",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Ethernet",
+          "is_correct": false
+        }
+      ],
+      "explanation": "USB is the standard port for pen drives.",
+      "answer": "b"
+    },
+    {
+      "id": 166,
+      "level": "Knowledge",
+      "question": "HDMI is mainly used for:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Audio only",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Video only",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "High-definition audio and video",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "Text files",
+          "is_correct": false
+        }
+      ],
+      "explanation": "HDMI transmits both video and audio signals.",
+      "answer": "c"
+    },
+    {
+      "id": 167,
+      "level": "Knowledge",
+      "question": "Which port connects to wired LAN?",
+      "options": [
+        {
+          "label": "a",
+          "text": "USB",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Ethernet",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Audio",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "HDMI",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Ethernet port is used for wired networking.",
+      "answer": "b"
+    },
+    {
+      "id": 168,
+      "level": "Knowledge",
+      "question": "Which port is small, reversible, and used in smartphones?",
+      "options": [
+        {
+          "label": "a",
+          "text": "VGA",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "HDMI",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Type-C",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "Audio",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Type-C is modern, reversible, and fast.",
+      "answer": "c"
+    },
+    {
+      "id": 169,
+      "level": "Knowledge",
+      "question": "Which port is used to connect headphones or microphones?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Audio port",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "VGA",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "USB",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "HDMI",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Audio ports transmit analog sound input/output.",
+      "answer": "a"
+    },
+    {
+      "id": 170,
+      "level": "Application",
+      "question": "Which device is needed to connect to the internet in wired form?",
+      "options": [
+        {
+          "label": "a",
+          "text": "USB drive",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Ethernet port",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "HDMI cable",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Audio port",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Ethernet is used for LAN connections.",
+      "answer": "b"
+    },
+    {
+      "id": 171,
+      "level": "Application",
+      "question": "To connect a laptop with a TV for HD video, best port is:",
+      "options": [
+        {
+          "label": "a",
+          "text": "HDMI",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "VGA",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "USB",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Ethernet",
+          "is_correct": false
+        }
+      ],
+      "explanation": "HDMI transmits HD video/audio.",
+      "answer": "a"
+    },
+    {
+      "id": 172,
+      "level": "Application",
+      "question": "If we want to connect external speakers, which port do we use?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Audio port",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "HDMI",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "USB",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Ethernet",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Audio port connects headphones/speakers.",
+      "answer": "a"
+    },
+    {
+      "id": 173,
+      "level": "Application",
+      "question": "Which port is commonly used to connect modern printers?",
+      "options": [
+        {
+          "label": "a",
+          "text": "USB",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "HDMI",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "VGA",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Ethernet",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Printers mostly use USB connectivity.",
+      "answer": "a"
+    },
+    {
+      "id": 174,
+      "level": "Application",
+      "question": "Which port is widely disappearing in new laptops?",
+      "options": [
+        {
+          "label": "a",
+          "text": "VGA",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "HDMI",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "USB",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Audio",
+          "is_correct": false
+        }
+      ],
+      "explanation": "VGA is outdated analog technology.",
+      "answer": "a"
+    },
+    {
+      "id": 175,
+      "level": "Application",
+      "question": "Which peripheral device allows video calling?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Scanner",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Webcam",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Printer",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Speaker",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Webcam captures video for calling.",
+      "answer": "b"
+    },
+    {
+      "id": 176,
+      "level": "Application",
+      "question": "Which peripheral device helps scan barcodes in shops?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Plotter",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Barcode reader",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Microphone",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Type-C",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Barcode reader converts barcode data into digital.",
+      "answer": "b"
+    },
+    {
+      "id": 177,
+      "level": "Application",
+      "question": "A joystick is mainly used in:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Office work",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Gaming",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Printing",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Networking",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Joystick is used to control games.",
+      "answer": "b"
+    },
+    {
+      "id": 178,
+      "level": "Higher Ability",
+      "question": "Which is the correct pair?",
+      "options": [
+        {
+          "label": "a",
+          "text": "USB – Storage devices",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "VGA – Audio devices",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "HDMI – LAN",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Ethernet – Printers",
+          "is_correct": false
+        }
+      ],
+      "explanation": "USB connects storage devices like pen drives.",
+      "answer": "a"
+    },
+    {
+      "id": 179,
+      "level": "Higher Ability",
+      "question": "Which peripheral is both input and output?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Monitor",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Printer",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Touchscreen",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "Scanner",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Touchscreen displays output and accepts input.",
+      "answer": "c"
+    },
+    {
+      "id": 180,
+      "level": "Higher Ability",
+      "question": "Which port is most versatile for modern laptops?",
+      "options": [
+        {
+          "label": "a",
+          "text": "VGA",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "USB Type-C",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Audio",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Ethernet",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Type-C supports power, data, and display.",
+      "answer": "b"
+    },
+    {
+      "id": 181,
+      "level": "Higher Ability",
+      "question": "If an HDMI cable is faulty, what problem occurs?",
+      "options": [
+        {
+          "label": "a",
+          "text": "No internet",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "No display/sound",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "No power",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "No storage",
+          "is_correct": false
+        }
+      ],
+      "explanation": "HDMI transmits video/audio, so failure stops both.",
+      "answer": "b"
+    },
+    {
+      "id": 182,
+      "level": "Higher Ability",
+      "question": "Which device is NOT a communication peripheral?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Modem",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Network card",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Webcam",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "Ethernet port",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Webcam is input/output, not networking.",
+      "answer": "c"
+    },
+    {
+      "id": 183,
+      "level": "Higher Ability",
+      "question": "Which port supports the fastest data transfer today?",
+      "options": [
+        {
+          "label": "a",
+          "text": "USB 2.0",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "USB 3.0",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "VGA",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Audio",
+          "is_correct": false
+        }
+      ],
+      "explanation": "USB 3.0/3.1/Type-C offer very high transfer rates.",
+      "answer": "b"
+    },
+    {
+      "id": 184,
+      "level": "Higher Ability",
+      "question": "Which device converts digital signals into audible sound?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Webcam",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Speaker",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Scanner",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Printer",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Speakers output sound.",
+      "answer": "b"
+    },
+    {
+      "id": 185,
+      "level": "Higher Ability",
+      "question": "Which port allows both charging and video display?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Audio port",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Type-C",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "VGA",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Ethernet",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Type-C supports power + video/audio transfer.",
+      "answer": "b"
+    },
+    {
+      "id": 186,
+      "level": "Knowledge",
+      "question": "Computer software is:",
+      "options": [
+        {
+          "label": "a",
+          "text": "A physical part of computer",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Instructions/programs that tell a computer what to do",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "An input device",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "A hardware cleaning tool",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Software = set of instructions/programs, not physical hardware.",
+      "answer": "b"
+    },
+    {
+      "id": 187,
+      "level": "Knowledge",
+      "question": "Which is NOT software?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Keyboard",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Web browser",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Video player",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Word processor",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Keyboard is hardware; others are software.",
+      "answer": "a"
+    },
+    {
+      "id": 188,
+      "level": "Knowledge",
+      "question": "Which is the first software loaded when a computer starts?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Application software",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Operating System",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Utility software",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Device driver",
+          "is_correct": false
+        }
+      ],
+      "explanation": "OS loads first into RAM during booting.",
+      "answer": "b"
+    },
+    {
+      "id": 189,
+      "level": "Knowledge",
+      "question": "Which software acts as a bridge between user and hardware?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Application software",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "System software",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Utility software",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Firmware",
+          "is_correct": false
+        }
+      ],
+      "explanation": "System software (mainly OS) links user ↔ hardware.",
+      "answer": "b"
+    },
+    {
+      "id": 190,
+      "level": "Knowledge",
+      "question": "Microsoft Word is an example of:",
+      "options": [
+        {
+          "label": "a",
+          "text": "System software",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Application software",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Utility software",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Language translator",
+          "is_correct": false
+        }
+      ],
+      "explanation": "MS Word is application software for word processing.",
+      "answer": "b"
+    },
+    {
+      "id": 191,
+      "level": "Knowledge",
+      "question": "Antivirus belongs to:",
+      "options": [
+        {
+          "label": "a",
+          "text": "System software → Utility software",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Application software",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Input device",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Database",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Antivirus is utility software under system software.",
+      "answer": "a"
+    },
+    {
+      "id": 192,
+      "level": "Knowledge",
+      "question": "A program converting high-level language into machine code is:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Compiler",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Browser",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Driver",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Photoshop",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Compiler translates entire high-level program at once.",
+      "answer": "a"
+    },
+    {
+      "id": 193,
+      "level": "Knowledge",
+      "question": "Which is NOT a type of language processor?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Assembler",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Compiler",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Interpreter",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Driver",
+          "is_correct": true
+        }
+      ],
+      "explanation": "Drivers manage devices, not programming translation.",
+      "answer": "d"
+    },
+    {
+      "id": 194,
+      "level": "Knowledge",
+      "question": "Which is open-source software?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Windows",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Linux",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Photoshop",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "MS Office",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Linux is free and open-source.",
+      "answer": "b"
+    },
+    {
+      "id": 195,
+      "level": "Knowledge",
+      "question": "Which is proprietary software?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Linux",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Android",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Windows",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "LibreOffice",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Windows is closed source and requires license.",
+      "answer": "c"
+    },
+    {
+      "id": 196,
+      "level": "Application",
+      "question": "A student editing photos is using:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Device driver",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Application software",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Utility software",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Firmware",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Photo editing is done by application software.",
+      "answer": "b"
+    },
+    {
+      "id": 197,
+      "level": "Application",
+      "question": "An operating system is compared to:",
+      "options": [
+        {
+          "label": "a",
+          "text": "A school teacher",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "A traffic policeman",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "A farmer",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "A calculator",
+          "is_correct": false
+        }
+      ],
+      "explanation": "OS controls computer flow like policeman controls traffic.",
+      "answer": "b"
+    },
+    {
+      "id": 198,
+      "level": "Application",
+      "question": "Which software helps recover lost files?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Compiler",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Utility software",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Application software",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Interpreter",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Data recovery is function of utilities.",
+      "answer": "b"
+    },
+    {
+      "id": 199,
+      "level": "Application",
+      "question": "Without OS, a computer:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Works slower",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Cannot function",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Produces only graphics",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Can only store data",
+          "is_correct": false
+        }
+      ],
+      "explanation": "OS is essential for running a computer.",
+      "answer": "b"
+    },
+    {
+      "id": 200,
+      "level": "Application",
+      "question": "Which port needs drivers to function?",
+      "options": [
+        {
+          "label": "a",
+          "text": "CPU",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Printer",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Monitor",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "RAM",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Printers need device drivers to be usable.",
+      "answer": "b"
+    },
+    {
+      "id": 201,
+      "level": "Application",
+      "question": "SEE result processing software is:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Packaged software",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Customized software",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Utility",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "System software",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Developed for specific school need → customized.",
+      "answer": "b"
+    },
+    {
+      "id": 202,
+      "level": "Application",
+      "question": "SQL Server belongs to:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Packaged application software",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Utility software",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Driver",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Firmware",
+          "is_correct": false
+        }
+      ],
+      "explanation": "SQL server is general-purpose packaged software.",
+      "answer": "a"
+    },
+    {
+      "id": 203,
+      "level": "Application",
+      "question": "Which software gives immediate error line by line?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Compiler",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Interpreter",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Assembler",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Driver",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Interpreter translates one line at a time, showing errors immediately.",
+      "answer": "b"
+    },
+    {
+      "id": 204,
+      "level": "Application",
+      "question": "A teacher using Google Meet is using:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Utility",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Application software",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Language processor",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Firmware",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Google Meet is a communication app (application software).",
+      "answer": "b"
+    },
+    {
+      "id": 205,
+      "level": "Application",
+      "question": "Which type of software ensures stable system performance?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Utility software",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Application software",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Interpreter",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Packaged software",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Utilities optimize, protect, and maintain performance.",
+      "answer": "a"
+    },
+    {
+      "id": 206,
+      "level": "Higher Ability",
+      "question": "Which statement about system vs application software is true?",
+      "options": [
+        {
+          "label": "a",
+          "text": "System software runs only when user opens it",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Application software can run without system software",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "System software is essential, application software is optional",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "Both are equally essential",
+          "is_correct": false
+        }
+      ],
+      "explanation": "OS is essential, apps are user-specific.",
+      "answer": "c"
+    },
+    {
+      "id": 207,
+      "level": "Higher Ability",
+      "question": "A student uses Android apps daily. Android OS is:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Application software",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "System software",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Customized software",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Packaged software",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Android is mobile operating system.",
+      "answer": "b"
+    },
+    {
+      "id": 208,
+      "level": "Higher Ability",
+      "question": "Which type of software is installed at system setup?",
+      "options": [
+        {
+          "label": "a",
+          "text": "System software",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Application software",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Utility software",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Packaged software",
+          "is_correct": false
+        }
+      ],
+      "explanation": "OS and system software are pre-installed.",
+      "answer": "a"
+    },
+    {
+      "id": 209,
+      "level": "Higher Ability",
+      "question": "Web apps differ from mobile apps because:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Need installation",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Don’t need installation",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Work without internet",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Are always offline",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Web apps run via browsers, not installed.",
+      "answer": "b"
+    },
+    {
+      "id": 210,
+      "level": "Higher Ability",
+      "question": "OSS provides:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Hidden code",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Free modification",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Licensing restrictions",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Paid access only",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Open-source software gives freedom to modify code.",
+      "answer": "b"
+    },
+    {
+      "id": 211,
+      "level": "Higher Ability",
+      "question": "Which is a disadvantage of OSS?",
+      "options": [
+        {
+          "label": "a",
+          "text": "High price",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Limited innovation",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Less security",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "Requires license",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Open code may be exploited by hackers.",
+      "answer": "c"
+    },
+    {
+      "id": 212,
+      "level": "Higher Ability",
+      "question": "Proprietary software disadvantage is:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Requires license fee",
+          "is_correct": true
+        },
+        {
+          "label": "b",
+          "text": "Openly modifiable",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "Unlimited freedom",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Free distribution",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Proprietary software is costly and controlled.",
+      "answer": "a"
+    },
+    {
+      "id": 213,
+      "level": "Higher Ability",
+      "question": "Gmail is an example of:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Mobile app",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Web app",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Utility",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Compiler",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Gmail runs on browser with internet.",
+      "answer": "b"
+    },
+    {
+      "id": 214,
+      "level": "Higher Ability",
+      "question": "Hospital Management Software is:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Packaged",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Customized",
+          "is_correct": true
+        },
+        {
+          "label": "c",
+          "text": "Utility",
+          "is_correct": false
+        },
+        {
+          "label": "d",
+          "text": "Compiler",
+          "is_correct": false
+        }
+      ],
+      "explanation": "It is tailored for hospital use.",
+      "answer": "b"
+    },
+    {
+      "id": 215,
+      "level": "Higher Ability",
+      "question": "Which is MOST essential for running computer?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Application software",
+          "is_correct": false
+        },
+        {
+          "label": "b",
+          "text": "Utility software",
+          "is_correct": false
+        },
+        {
+          "label": "c",
+          "text": "System software",
+          "is_correct": true
+        },
+        {
+          "label": "d",
+          "text": "Open-source software",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Without OS/system software, computer cannot work.",
+      "answer": "c"
+    }
+  ]
+}
