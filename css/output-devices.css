@@ -1,0 +1,318 @@
+/* Output Devices Page Specific Styles */
+
+/* Device Categories */
+.device-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.device-category {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e9ecef;
+}
+
+.device-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.device-category i {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.device-category h5 {
+    color: #2c3e50;
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.device-category p {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin: 0.5rem 0 0;
+}
+
+/* Comparison Box */
+.comparison-box {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-left: 4px solid #3498db;
+}
+
+.comparison {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.comparison > div {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.comparison h5 {
+    color: #2c3e50;
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Printer Types */
+.printer-types {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.printer-type {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.printer-type h4 {
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Printer Cards */
+.printer-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.printer-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid #3498db;
+    display: flex;
+    flex-direction: column;
+}
+
+.printer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.printer-icon {
+    font-size: 2rem;
+    color: #3498db;
+    margin-bottom: 1rem;
+}
+
+.printer-card h4 {
+    color: #2c3e50;
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+}
+
+.printer-card ul {
+    padding-left: 1.2rem;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.printer-card li {
+    margin-bottom: 0.5rem;
+    color: #495057;
+    line-height: 1.5;
+}
+
+/* Port Cards */
+.port-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.port-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.port-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.port-icon {
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.port-icon.usb { background: #3498db; }
+.port-icon.hdmi { background: #e74c3c; }
+.port-icon.vga { background: #9b59b6; }
+.port-icon.ethernet { background: #2ecc71; }
+.port-icon.audio { background: #f39c12; }
+
+.port-info {
+    padding: 1.25rem;
+    flex: 1;
+}
+
+.port-info h4 {
+    margin: 0 0 0.75rem 0;
+    color: #2c3e50;
+    font-size: 1.1rem;
+}
+
+.port-info ul {
+    padding-left: 1.2rem;
+    margin: 0;
+}
+
+.port-info li {
+    margin-bottom: 0.4rem;
+    color: #495057;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Categories Box */
+.categories-box {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-left: 4px solid #3498db;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.category {
+    background: white;
+    padding: 1.5rem 1rem;
+    border-radius: 6px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e9ecef;
+}
+
+.category:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.category i {
+    font-size: 2rem;
+    color: #3498db;
+    margin-bottom: 0.75rem;
+    display: block;
+}
+
+.category h5 {
+    color: #2c3e50;
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.category p {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin: 0.25rem 0 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .device-categories,
+    .printer-types,
+    .categories {
+        grid-template-columns: 1fr;
+    }
+    
+    .comparison {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .printer-cards,
+    .port-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .port-card {
+        flex-direction: column;
+    }
+    
+    .port-icon {
+        width: 100%;
+        padding: 1rem 0;
+    }
+}
+
+/* Animation for cards */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.device-category,
+.printer-card,
+.port-card,
+.category {
+    animation: fadeInUp 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+/* Staggered animations */
+.device-category:nth-child(1) { animation-delay: 0.1s; }
+.device-category:nth-child(2) { animation-delay: 0.2s; }
+.device-category:nth-child(3) { animation-delay: 0.3s; }
+.device-category:nth-child(4) { animation-delay: 0.4s; }
+
+.printer-card:nth-child(1) { animation-delay: 0.1s; }
+.printer-card:nth-child(2) { animation-delay: 0.2s; }
+.printer-card:nth-child(3) { animation-delay: 0.3s; }
+.printer-card:nth-child(4) { animation-delay: 0.4s; }
+
+.port-card:nth-child(1) { animation-delay: 0.1s; }
+.port-card:nth-child(2) { animation-delay: 0.2s; }
+.port-card:nth-child(3) { animation-delay: 0.3s; }
+.port-card:nth-child(4) { animation-delay: 0.4s; }
+.port-card:nth-child(5) { animation-delay: 0.5s; }

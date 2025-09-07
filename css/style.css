@@ -194,6 +194,190 @@
     }
 }
 
+/* Motherboard Connections */
+.connections-container {
+    padding: 1.5rem;
+}
+
+.connection-type {
+    background: #f8fafc;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border: 1px solid #e2e8f0;
+}
+
+.connection-header {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background: #f1f5f9;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.connection-header i {
+    font-size: 1.25rem;
+    margin-right: 0.75rem;
+    color: #3b82f6;
+}
+
+.connection-header h5 {
+    margin: 0;
+    color: #1e40af;
+    font-size: 1.1rem;
+}
+
+.connection-content {
+    padding: 1.25rem 1.5rem;
+}
+
+.connection-content ul {
+    margin: 0.75rem 0 0 1.25rem;
+    padding: 0;
+}
+
+.connection-content li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+/* Analogy Box */
+.analogy-box {
+    background: #f0f9ff;
+    border-radius: 8px;
+    border: 1px solid #bae6fd;
+    margin-top: 2rem;
+    overflow: hidden;
+}
+
+.analogy-header {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background: #e0f2fe;
+    border-bottom: 1px solid #bae6fd;
+}
+
+.analogy-header i {
+    font-size: 1.25rem;
+    margin-right: 0.75rem;
+    color: #0369a1;
+}
+
+.analogy-header h5 {
+    margin: 0;
+    color: #075985;
+    font-size: 1.1rem;
+}
+
+.analogy-content {
+    padding: 1.25rem 1.5rem;
+}
+
+.analogy-item {
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.analogy-label {
+    font-weight: 600;
+    color: #075985;
+    min-width: 120px;
+}
+
+.analogy-desc {
+    flex: 1;
+    color: #0c4a6e;
+}
+
+/* Bus Section Styles */
+.definition-box h4 {
+    margin-top: 0;
+    color: #1e40af;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.definition-box h4 i {
+    color: #3b82f6;
+}
+
+.importance-note {
+    background: #f8fafc;
+    border-left: 4px solid #3b82f6;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 0 4px 4px 0;
+}
+
+.importance-note h5 {
+    margin: 0 0 0.5rem 0;
+    color: #1e40af;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.importance-note h5 i {
+    color: #f59e0b;
+}
+
+.importance-note p {
+    margin: 0;
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+.bus-characteristics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.characteristic {
+    background: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border: 1px solid #e2e8f0;
+}
+
+.characteristic i {
+    font-size: 2rem;
+    color: #3b82f6;
+    margin-bottom: 1rem;
+}
+
+.characteristic h4 {
+    margin: 0.5rem 0;
+    color: #1e40af;
+}
+
+.characteristic p {
+    margin: 0.5rem 0 0;
+    color: #4b5563;
+    font-size: 0.95rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .analogy-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .analogy-label {
+        margin-bottom: 0.25rem;
+    }
+}
+
 /* Reset and Base Styles */
 :root {
     --primary: #2563eb;
