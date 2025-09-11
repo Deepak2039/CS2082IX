@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Projects - CS 2082</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lesson.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-laptop-code"></i>
+                <a href="index.html" class="home-link">CS 2082</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="lesson-container">
+        <aside class="lesson-sidebar">
+            <h3>Course Content</h3>
+            <ul class="lesson-menu">
+                <li><a href="block-programming.html">3.1 Introduction to Block Programming</a></li>
+                <li><a href="scratch-basics.html">3.2 Scratch Basics</a></li>
+                <li><a href="loops-conditionals.html">3.3 Loops & Conditionals</a></li>
+                <li><a href="variables-blocks.html">3.4 Variables in Block Programming</a></li>
+                <li class="active"><a href="block-projects.html">3.5 Creating Projects</a></li>
+            </ul>
+        </aside>
+
+        <article class="lesson-content">
+            <div class="navigation-buttons top-navigation">
+                <a href="variables-blocks.html" class="nav-button prev"><i class="fas fa-arrow-left"></i> Previous: Variables in Block Programming</a>
+                <a href="index.html" class="nav-button next">Back to Course Modules <i class="fas fa-home"></i></a>
+            </div>
+            
+            <h1>3.5 Creating Complete Projects</h1>
+
+            <section id="project-planning" class="lesson-section">
+                <h2>Planning Your Project</h2>
+                <p>Before you start coding, it's important to plan your project. Good planning makes the development process smoother and helps you stay organized.</p>
+                
+                <h3>1. Define Your Project</h3>
+                <ul>
+                    <li><strong>What</strong> will your project do? (Game, story, animation, etc.)</li>
+                    <li><strong>Who</strong> is your target audience?</li>
+                    <li><strong>Why</strong> are you creating this project?</li>
+                </ul>
+
+                <h3>2. Break It Down</h3>
+                <p>Divide your project into smaller, manageable parts. For example, a simple game might include:</p>
+                <ul>
+                    <li>Player controls</li>
+                    <li>Scoring system</li>
+                    <li>Win/lose conditions</li>
+                    <li>Visual effects</li>
+                    <li>Sound effects</li>
+                </ul>
+
+                <h3>3. Create a Storyboard</h3>
+                <p>Sketch out the main screens and interactions in your project. This helps visualize the user experience.</p>
+            </section>
+
+            <section id="project-structure" class="lesson-section">
+                <h2>Structuring Your Project</h2>
+                
+                <h3>1. Organize Your Sprites</h3>
+                <ul>
+                    <li>Give your sprites clear, descriptive names</li>
+                    <li>Group related sprites together using folders (in Scratch 3.0+)</li>
+                    <li>Use costumes effectively for animations</li>
+                </ul>
+
+                <h3>2. Use Broadcasts for Communication</h3>
+                <p>Broadcasts allow different sprites to communicate with each other:</p>
+                <div class="code-block">
+                    <pre><code>// In one sprite:
+when this sprite clicked
+broadcast [game start v]
+
+// In another sprite:
+when I receive [game start v]
+show
+start sound [game music v]</code></pre>
+                </div>
+
+                <h3>3. Create Custom Blocks</h3>
+                <p>For complex behaviors, create custom blocks to keep your code organized:</p>
+                <div class="code-block">
+                    <pre><code>define jump (height)
+repeat (height)
+    change y by (2)
+end
+repeat (height)
+    change y by (-2)
+end
+
+// Then use it:
+when [space v] key pressed
+jump (10)</code></pre>
+                </div>
+            </section>
+
+            <section id="project-examples" class="lesson-section">
+                <h2>Project Ideas</h2>
+                
+                <div class="project-idea">
+                    <h3>1. Interactive Story</h3>
+                    <p>Create a story where the reader makes choices that affect the outcome.</p>
+                    <p><strong>Features to include:</strong></p>
+                    <ul>
+                        <li>Multiple story paths</li>
+                        <li>Character dialogue</li>
+                        <li>Background changes</li>
+                        <li>Sound effects</li>
+                    </ul>
+                </div>
+
+                <div class="project-idea">
+                    <h3>2. Maze Game</h3>
+                    <p>Guide a character through a maze to reach a goal.</p>
+                    <p><strong>Features to include:</strong></p>
+                    <ul>
+                        <li>Arrow key controls</li>
+                        <li>Walls that block movement</li>
+                        <li>Timer</li>
+                        <li>Multiple levels</li>
+                    </ul>
+                </div>
+
+                <div class="project-idea">
+                    <h3>3. Quiz Game</h3>
+                    <p>Test the player's knowledge on a topic.</p>
+                    <p><strong>Features to include:</strong></p>
+                    <ul>
+                        <li>List of questions and answers</li>
+                        <li>Score tracking</li>
+                        <li>Feedback for correct/incorrect answers</li>
+                        <li>Final score display</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="debugging" class="lesson-section">
+                <h2>Debugging Your Project</h2>
+                <p>Even experienced programmers make mistakes. Here's how to find and fix issues:</p>
+                
+                <h3>1. Common Issues</h3>
+                <ul>
+                    <li><strong>Sprites not moving?</strong> Check if their x/y positions are changing</li>
+                    <li><strong>Events not triggering?</strong> Verify the event blocks match</li>
+                    <li><strong>Variables not updating?</strong> Look for where they're being changed</li>
+                </ul>
+
+                <h3>2. Debugging Techniques</h3>
+                <ul>
+                    <li>Use <code>say [ ] for (1) seconds</code> to display variable values</li>
+                    <li>Add comments to explain complex code sections</li>
+                    <li>Test small parts of your code separately</li>
+                    <li>Take breaks if you're stuck - fresh eyes help!</li>
+                </ul>
+            </section>
+
+            <section id="sharing" class="lesson-section">
+                <h2>Sharing Your Project</h2>
+                <p>Once your project is complete, share it with others!</p>
+                
+                <h3>1. On Scratch</h3>
+                <ol>
+                    <li>Create a free account at <a href="https://scratch.mit.edu" target="_blank">scratch.mit.edu</a></li>
+                    <li>Click "Share" in the top-right corner</li>
+                    <li>Add a title, instructions, and notes</li>
+                    <li>Click "Share" to make it public</li>
+                </ol>
+
+                <h3>2. Exporting Your Project</h3>
+                <p>To save a copy on your computer:</p>
+                <ol>
+                    <li>Click "File" in the top-left corner</li>
+                    <li>Select "Save to your computer"</li>
+                    <li>Choose a location and name your file (it will save with a .sb3 extension)</li>
+                </ol>
+            </section>
+
+            <div class="final-project">
+                <h2><i class="fas fa-star"></i> Final Project</h2>
+                <p>Create a complete project that demonstrates what you've learned in this module. Your project should include:</p>
+                <ul>
+                    <li>At least two sprites with different behaviors</li>
+                    <li>User interaction (keyboard, mouse, or both)</li>
+                    <li>Variables to track game state or score</li>
+                    <li>Loops and conditionals</li>
+                    <li>Visual and sound effects</li>
+                </ul>
+                <p>Be creative and have fun! This is your chance to show off what you've learned.</p>
+            </div>
+
+            <div class="navigation-buttons">
+                <a href="variables-blocks.html" class="nav-button prev"><i class="fas fa-arrow-left"></i> Previous: Variables in Block Programming</a>
+                <a href="index.html" class="nav-button next">Back to Course Modules <i class="fas fa-home"></i></a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About This Course</h3>
+                <p>This course introduces block programming concepts using visual programming environments like Scratch.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://scratch.mit.edu" target="_blank">Scratch Website</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CS 2082 - Computer Science Curriculum</p>
+        </div>
+    </footer>
+
+    <script>
+        // Function to save user's answer
+        function saveAnswer(elementId) {
+            const element = document.getElementById(elementId);
+            if (element) {
+                localStorage.setItem(elementId, element.value);
+            }
+        }
+
+        // Function to update progress
+        function updateProgress() {
+            const progressBar = document.querySelector('.progress-bar');
+            if (progressBar) {
+                const windowHeight = window.innerHeight;
+                const documentHeight = document.documentElement.scrollHeight - windowHeight;
+                const scrolled = window.scrollY;
+                const progress = (scrolled / documentHeight) * 100;
+                progressBar.style.width = Math.min(100, Math.max(0, progress)) + '%';
+            }
+        }
+        
+        // Update progress on scroll and load
+        window.addEventListener('scroll', updateProgress);
+        document.addEventListener('DOMContentLoaded', updateProgress);
+    </script>
+</body>
+</html>

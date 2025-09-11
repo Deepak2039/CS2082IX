@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python File Handling - CS 2082</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lesson.css">
+    <link rel="stylesheet" href="css/mcq.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-laptop-code"></i>
+                <a href="index.html" class="home-link">CS 2082</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="lesson-container">
+        <aside class="lesson-sidebar">
+            <h3>Course Content</h3>
+            <ul class="lesson-menu">
+                <li><a href="python-programming.html">7.1 Python Fundamentals</a></li>
+                <li><a href="python-data-structures.html">7.2 Data Structures</a></li>
+                <li><a href="python-functions.html">7.3 Functions & Modules</a></li>
+                <li class="active"><a href="python-files.html">7.4 File Handling</a></li>
+                <li><a href="python-projects.html">7.5 Python Projects</a></li>
+            </ul>
+        </aside>
+
+        <article class="lesson-content">
+            <div class="navigation-buttons top-navigation">
+                <a href="python-functions.html" class="nav-button prev"><i class="fas fa-arrow-left"></i> Previous: Functions & Modules</a>
+                <a href="python-projects.html" class="nav-button next">Next: Python Projects <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <h1>7.4 Python File Handling</h1>
+
+            <section id="introduction" class="lesson-section">
+                <h2>Introduction to File Handling</h2>
+                <p>File handling is an essential part of any programming language. Python makes it easy to work with files, allowing you to read, write, and manipulate file data efficiently.</p>
+                
+                <div class="info-box">
+                    <h4><i class="fas fa-lightbulb"></i> Why File Handling?</h4>
+                    <ul>
+                        <li>Store data permanently</li>
+                        <li>Process large datasets</li>
+                        <li>Save program output</li>
+                        <li>Read configuration files</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="file-operations" class="lesson-section">
+                <h2>Basic File Operations</h2>
+                
+                <div class="code-example">
+                    <h3><i class="fas fa-file"></i> Opening and Closing Files</h3>
+                    <pre><code class="language-python"># Open a file
+file = open('example.txt', 'r')  # 'r' for reading
+# Do something with the file
+file.close()  # Always close the file when done
+
+# Better way using 'with' statement (recommended)
+with open('example.txt', 'r') as file:
+    # File operations go here
+    pass  # 'with' automatically closes the file</code></pre>
+                </div>
+                
+                <div class="code-example">
+                    <h3><i class="fas fa-file-alt"></i> File Modes</h3>
+                    <table class="file-modes">
+                        <tr>
+                            <th>Mode</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td><code>'r'</code></td>
+                            <td>Read (default). Opens file for reading, error if file doesn't exist.</td>
+                        </tr>
+                        <tr>
+                            <td><code>'w'</code></td>
+                            <td>Write. Opens file for writing, creates the file if it doesn't exist, truncates the file if it exists.</td>
+                        </tr>
+                        <tr>
+                            <td><code>'a'</code></td>
+                            <td>Append. Opens file for appending, creates the file if it doesn't exist.</td>
+                        </tr>
+                        <tr>
+                            <td><code>'x'</code></td>
+                            <td>Create. Creates the specified file, returns an error if the file exists.</td>
+                        </tr>
+                        <tr>
+                            <td><code>'b'</code></td>
+                            <td>Binary mode (e.g., 'rb', 'wb', 'ab', 'xb').</td>
+                        </tr>
+                        <tr>
+                            <td><code>'+'</code></td>
+                            <td>Open for updating (reading and writing).</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <section id="reading-files" class="lesson-section">
+                <h2>Reading from Files</h2>
+                
+                <div class="code-example">
+                    <h3><i class="fas fa-book-reader"></i> Reading Methods</h3>
+                    <pre><code class="language-python"># Read the entire file
+with open('example.txt', 'r') as file:
+    content = file.read()
+    print(content)
+
+# Read line by line
+with open('example.txt', 'r') as file:
+    for line in file:
+        print(line.strip())  # strip() removes extra newlines
+
+# Read all lines into a list
+with open('example.txt', 'r') as file:
+    lines = file.readlines()  # Returns a list of lines
+    for line in lines:
+        print(line.strip())
+
+# Read a specific number of characters
+with open('example.txt', 'r') as file:
+    first_100 = file.read(100)  # Reads first 100 characters
+    print(first_100)</code></pre>
+                </div>
+            </section>
+
+            <section id="writing-files" class="lesson-section">
+                <h2>Writing to Files</h2>
+                
+                <div class="code-example">
+                    <h3><i class="fas fa-edit"></i> Writing Methods</h3>
+                    <pre><code class="language-python"># Write to a file (overwrites existing content)
+with open('output.txt', 'w') as file:
+    file.write("Hello, World!\n")
+    file.write("This is a new line.")
+
+# Append to a file
+with open('output.txt', 'a') as file:
+    file.write("\nThis line is appended.")
+
+# Writing multiple lines
+lines = ["First line\n", "Second line\n", "Third line\n"]
+with open('output.txt', 'w') as file:
+    file.writelines(lines)</code></pre>
+                </div>
+            </section>
+
+            <section id="file-methods" class="lesson-section">
+                <h2>File Object Methods</h2>
+                
+                <div class="code-example">
+                    <h3><i class="fas fa-tools"></i> Common File Methods</h3>
+                    <pre><code class="language-python">with open('example.txt', 'r+') as file:
+    # Get current position
+    position = file.tell()
+    print(f"Current position: {position}")
+    
+    # Read first 10 characters
+    content = file.read(10)
+    print(f"Read: {content}")
+    
+    # Get new position
+    position = file.tell()
+    print(f"New position: {position}")
+    
+    # Move to a specific position
+    file.seek(0)  # Go to the beginning of the file
+    
+    # Check if file is readable/writable
+    print(f"Readable: {file.readable()}")
+    print(f"Writable: {file.writable()}")
+    
+    # Write at current position
+    file.write("New content")
+    
+    # Flush the internal buffer
+    file.flush()
+    
+    # Get file descriptor
+    print(f"File descriptor: {file.fileno()}")
+    
+    # Check if file is closed
+    print(f"Is closed: {file.closed}")
+
+# After 'with' block
+print(f"Is closed: {file.closed}")  # True</code></pre>
+                </div>
+            </section>
+
+            <section id="file-exceptions" class="lesson-section">
+                <h2>Handling File Exceptions</h2>
+                
+                <div class="code-example">
+                    <h3><i class="fas fa-exclamation-triangle"></i> Try-Except with Files</h3>
+                    <pre><code class="language-python">try:
+    with open('nonexistent.txt', 'r') as file:
+        content = file.read()
+        print(content)
+except FileNotFoundError:
+    print("Error: The file does not exist.")
+except PermissionError:
+    print("Error: You don't have permission to read this file.")
+except Exception as e:
+    print(f"An unexpected error occurred: {e}")
+finally:
+    print("File operation completed.")</code></pre>
+                </div>
+            </section>
+
+            <section id="working-with-csv" class="lesson-section">
+                <h2>Working with CSV Files</h2>
+                
+                <div class="code-example">
+                    <h3><i class="fas fa-file-csv"></i> CSV Module</h3>
+                    <pre><code class="language-python">import csv
+
+# Writing to a CSV file
+with open('students.csv', 'w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerow(["Name", "Age", "Grade"])
+    writer.writerow(["Alice", 20, "A"])
+    writer.writerow(["Bob", 22, "B"])
+    writer.writerow(["Charlie", 21, "A-"])
+
+# Reading from a CSV file
+with open('students.csv', 'r') as file:
+    reader = csv.reader(file)
+    for row in reader:
+        print(f"Name: {row[0]}, Age: {row[1]}, Grade: {row[2]}")
+
+# Using DictReader and DictWriter
+with open('students.csv', 'r') as file:
+    reader = csv.DictReader(file)
+    for row in reader:
+        print(f"{row['Name']} is {row['Age']} years old with grade {row['Grade']}")</code></pre>
+                </div>
+            </section>
+
+            <section id="working-with-json" class="lesson-section">
+                <h2>Working with JSON Files</h2>
+                
+                <div class="code-example">
+                    <h3><i class="fas fa-file-code"></i> JSON Module</h3>
+                    <pre><code class="language-python">import json
+
+# Python dictionary
+data = {
+    "name": "John",
+    "age": 30,
+    "city": "New York",
+    "languages": ["Python", "JavaScript", "Java"],
+    "is_student": False
+}
+
+# Writing JSON to a file
+with open('data.json', 'w') as file:
+    json.dump(data, file, indent=4)
+
+# Reading JSON from a file
+with open('data.json', 'r') as file:
+    loaded_data = json.load(file)
+    print(loaded_data["name"])  # Output: John
+    print(loaded_data["languages"][0])  # Output: Python</code></pre>
+                </div>
+            </section>
+
+            <section id="exercises" class="lesson-section">
+                <h2>Practice Exercises</h2>
+                
+                <div class="exercise">
+                    <h3>Exercise 1: File Word Counter</h3>
+                    <p>Write a Python program that reads a text file and counts the number of words in it. The program should:</p>
+                    <ol>
+                        <li>Prompt the user for a filename</li>
+                        <li>Read the file</li>
+                        <li>Count the number of words</li>
+                        <li>Print the result</li>
+                    </ol>
+                    <button class="solution-toggle">Show Solution</button>
+                    <div class="solution">
+                        <pre><code class="language-python">def count_words(filename):
+    try:
+        with open(filename, 'r') as file:
+            content = file.read()
+            words = content.split()
+            return len(words)
+    except FileNotFoundError:
+        return "File not found."
+    except Exception as e:
+        return f"An error occurred: {e}"
+
+# Get filename from user
+filename = input("Enter the filename: ")
+word_count = count_words(filename)
+print(f"The file contains {word_count} words.")</code></pre>
+                    </div>
+                </div>
+                
+                <div class="exercise">
+                    <h3>Exercise 2: Student Grade Book</h3>
+                    <p>Create a program that allows you to manage student grades using a CSV file. The program should:</p>
+                    <ol>
+                        <li>Allow adding new students with their grades</li>
+                        <li>Display all students and their grades</li>
+                        <li>Calculate and display the average grade</li>
+                        <li>Save the data to a CSV file</li>
+                    </ol>
+                    <button class="solution-toggle">Show Solution</button>
+                    <div class="solution">
+                        <pre><code class="language-python">import csv
+import os
+
+FILENAME = 'grades.csv'
+
+def add_student():
+    name = input("Enter student name: ")
+    while True:
+        try:
+            grade = float(input("Enter student grade (0-100): "))
+            if 0 <= grade <= 100:
+                break
+            else:
+                print("Grade must be between 0 and 100.")
+        except ValueError:
+            print("Please enter a valid number.")
+    
+    # Check if file exists, if not write headers
+    file_exists = os.path.isfile(FILENAME)
+    
+    with open(FILENAME, 'a', newline='') as file:
+        writer = csv.writer(file)
+        if not file_exists:
+            writer.writerow(["Name", "Grade"])
+        writer.writerow([name, grade])
+    
+    print(f"{name} with grade {grade} has been added.")
+
+def display_grades():
+    try:
+        with open(FILENAME, 'r') as file:
+            reader = csv.reader(file)
+            header = next(reader, None)
+            if header:
+                print(f"{header[0]:<20} {header[1]}")
+                print("-" * 25)
+                
+                grades = []
+                for row in reader:
+                    if len(row) >= 2:  # Ensure row has at least 2 elements
+                        print(f"{row[0]:<20} {row[1]}")
+                        try:
+                            grades.append(float(row[1]))
+                        except ValueError:
+                            pass
+                
+                if grades:
+                    average = sum(grades) / len(grades)
+                    print("\nAverage grade:", f"{average:.2f}")
+    except FileNotFoundError:
+        print("No grades recorded yet.")
+
+def main():
+    while True:
+        print("\nGrade Book Menu:")
+        print("1. Add Student")
+        print("2. View Grades")
+        print("3. Exit")
+        
+        choice = input("Enter your choice (1-3): ")
+        
+        if choice == '1':
+            add_student()
+        elif choice == '2':
+            display_grades()
+        elif choice == '3':
+            print("Goodbye!")
+            break
+        else:
+            print("Invalid choice. Please try again.")
+
+if __name__ == "__main__":
+    main()</code></pre>
+                    </div>
+                </div>
+            </section>
+
+            <div class="navigation-buttons">
+                <a href="python-functions.html" class="nav-button prev"><i class="fas fa-arrow-left"></i> Previous: Functions & Modules</a>
+                <a href="python-projects.html" class="nav-button next">Next: Python Projects <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Computer Science 2082. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Function to save user's answer
+        function saveAnswer(elementId) {
+            const element = document.getElementById(elementId);
+            const userAnswer = element.value;
+            localStorage.setItem(elementId, userAnswer);
+        }
+
+        // Function to update progress
+        function updateProgress() {
+            const sections = document.querySelectorAll('.lesson-section');
+            const scrollPosition = window.scrollY + 100;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    const sectionId = section.getAttribute('id');
+                    localStorage.setItem('lastVisitedSection', sectionId);
+                }
+            });
+        }
+        
+        // Toggle solution visibility
+        document.querySelectorAll('.solution-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const solution = button.nextElementSibling;
+                solution.style.display = solution.style.display === 'none' ? 'block' : 'none';
+                button.textContent = solution.style.display === 'none' ? 'Show Solution' : 'Hide Solution';
+            });
+        });
+        
+        // Hide all solutions by default
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.solution').forEach(solution => {
+                solution.style.display = 'none';
+            });
+            
+            // Update progress on load
+            updateProgress();
+        });
+        
+        // Update progress on scroll
+        window.addEventListener('scroll', updateProgress);
+    </script>
+</body>
+</html>

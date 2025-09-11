@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Functions & Modules - CS 2082</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lesson.css">
+    <link rel="stylesheet" href="css/mcq.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-laptop-code"></i>
+                <a href="index.html" class="home-link">CS 2082</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="lesson-container">
+        <aside class="lesson-sidebar">
+            <h3>Course Content</h3>
+            <ul class="lesson-menu">
+                <li><a href="python-programming.html">7.1 Python Fundamentals</a></li>
+                <li><a href="python-data-structures.html">7.2 Data Structures</a></li>
+                <li class="active"><a href="python-functions.html">7.3 Functions & Modules</a></li>
+                <li><a href="python-files.html">7.4 File Handling</a></li>
+                <li><a href="python-projects.html">7.5 Python Projects</a></li>
+            </ul>
+        </aside>
+
+        <article class="lesson-content">
+            <div class="navigation-buttons top-navigation">
+                <a href="python-data-structures.html" class="nav-button prev"><i class="fas fa-arrow-left"></i> Previous: Data Structures</a>
+                <a href="python-files.html" class="nav-button next">Next: File Handling <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <h1>7.3 Python Functions & Modules</h1>
+
+            <section id="introduction" class="lesson-section">
+                <h2>Introduction to Functions</h2>
+                <p>Functions are reusable blocks of code that perform a specific task. They help in organizing code, making it more readable and maintainable.</p>
+                
+                <div class="info-box">
+                    <h4><i class="fas fa-lightbulb"></i> Why Use Functions?</h4>
+                    <ul>
+                        <li>Code reusability</li>
+                        <li>Better organization</li>
+                        <li>Easier debugging</li>
+                        <li>Code abstraction</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="defining-functions" class="lesson-section">
+                <h2>Defining and Calling Functions</h2>
+                
+                <div class="code-example">
+                    <h3><i class="fas fa-code"></i> Basic Function Syntax</h3>
+                    <pre><code class="language-python">def greet():
+    """Display a simple greeting."""
+    print("Hello, World!")
+
+# Call the function
+greet()  # Output: Hello, World!</code></pre>
+                </div>
+                
+                <div class="code-example">
+                    <h3><i class="fas fa-arrow-right-arrow-left"></i> Functions with Parameters</h3>
+                    <pre><code class="language-python">def greet_user(username):
+    """Display a personalized greeting."""
+    print(f"Hello, {username.title()}!")
+
+greet_user('alice')  # Output: Hello, Alice!</code></pre>
+                </div>
+                
+                <div class="code-example">
+                    <h3><i class="fas fa-reply"></i> Return Values</h3>
+                    <pre><code class="language-python">def get_formatted_name(first_name, last_name):
+    """Return a full name, neatly formatted."""
+    full_name = f"{first_name} {last_name}"
+    return full_name.title()
+
+musician = get_formatted_name('jimi', 'hendrix')
+print(musician)  # Output: Jimi Hendrix</code></pre>
+                </div>
+            </section>
+
+            <section id="function-arguments" class="lesson-section">
+                <h2>Function Arguments</h2>
+                
+                <div class="code-example">
+                    <h3><i class="fas fa-list-ol"></i> Positional Arguments</h3>
+                    <pre><code class="language-python">def describe_pet(animal_type, pet_name):
+    """Display information about a pet."""
+    print(f"\nI have a {animal_type}.")
+    print(f"My {animal_type}'s name is {pet_name.title()}.")
+
+describe_pet('hamster', 'harry')
+describe_pet('dog', 'willie')</code></pre>
+                </div>
+                
+                <div class="code-example">
+                    <h3><i class="fas fa-key"></i> Keyword Arguments</h3>
+                    <pre><code class="language-python">describe_pet(animal_type='hamster', pet_name='harry')
+describe_pet(pet_name='harry', animal_type='hamster')  # Order doesn't matter</code></pre>
+                </div>
+                
+                <div class="code-example">
+                    <h3><i class="fas fa-equals"></i> Default Values</h3>
+                    <pre><code class="language-python">def describe_pet(pet_name, animal_type='dog'):
+    """Display information about a pet."""
+    print(f"\nI have a {animal_type}.")
+    print(f"My {animal_type}'s name is {pet_name.title()}.")
+
+describe_pet(pet_name='willie')  # Uses default animal_type 'dog'
+describe_pet('harry', 'hamster')  # Overrides default</code></pre>
+                </div>
+                
+                <div class="code-example">
+                    <h3><i class="fas fa-ellipsis-h"></i> Arbitrary Arguments</h3>
+                    <pre><code class="language-python">def make_pizza(*toppings):
+    """Print the list of toppings that have been requested."""
+    print("\nMaking a pizza with the following toppings:")
+    for topping in toppings:
+        print(f"- {topping}")
+
+make_pizza('pepperoni')
+make_pizza('mushrooms', 'green peppers', 'extra cheese')</code></pre>
+                </div>
+            </section>
+
+            <section id="modules" class="lesson-section">
+                <h2>Working with Modules</h2>
+                
+                <div class="code-example">
+                    <h3><i class="fas fa-box"></i> Importing Modules</h3>
+                    <pre><code class="language-python"># Import an entire module
+import math
+print(math.sqrt(16))  # 4.0
+
+# Import specific functions
+from math import sqrt, pi
+print(sqrt(16))  # 4.0
+print(pi)        # 3.141592653589793
+
+# Using an alias
+import math as m
+print(m.sqrt(16))  # 4.0
+
+# Import all names (not recommended)
+from math import *
+print(sqrt(16))  # 4.0</code></pre>
+                </div>
+                
+                <div class="code-example">
+                    <h3><i class="fas fa-file-export"></i> Creating Your Own Modules</h3>
+                    <p>Save this as <code>pizza.py</code>:</p>
+                    <pre><code class="language-python">def make_pizza(size, *toppings):
+    """Summarize the pizza we are about to make."""
+    print(f"\nMaking a {size}-inch pizza with the following toppings:")
+    for topping in toppings:
+        print(f"- {topping}")</code></pre>
+                    
+                    <p>Now you can import and use it:</p>
+                    <pre><code class="language-python">import pizza
+
+pizza.make_pizza(16, 'pepperoni')
+pizza.make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')</code></pre>
+                </div>
+            </section>
+
+            <section id="scope" class="lesson-section">
+                <h2>Variable Scope</h2>
+                
+                <div class="code-example">
+                    <h3><i class="fas fa-project-diagram"></i> Local and Global Scope</h3>
+                    <pre><code class="language-python"># Global variable
+title = "Python Programming"
+
+def greet():
+    # Local variable
+    message = "Hello, "
+    print(message + title)  # Can access global variable
+
+greet()  # Output: Hello, Python Programming
+# print(message)  # Error: message is not defined in global scope</code></pre>
+                </div>
+                
+                <div class="code-example">
+                    <h3><i class="fas fa-exchange-alt"></i> The <code>global</code> Keyword</h3>
+                    <pre><code class="language-python">counter = 0
+
+def increment():
+    global counter
+    counter += 1
+    print(f"Counter: {counter}")
+
+increment()  # Counter: 1
+increment()  # Counter: 2</code></pre>
+                </div>
+            </section>
+
+            <section id="exercises" class="lesson-section">
+                <h2>Practice Exercises</h2>
+                
+                <div class="exercise">
+                    <h3>Exercise 1: Basic Function</h3>
+                    <p>Create a function called <code>describe_city()</code> that accepts the name of a city and its country. The function should print a simple sentence like "Reykjavik is in Iceland." Give the parameter for the country a default value. Call your function for three different cities, at least one of which is not in the default country.</p>
+                    <button class="solution-toggle">Show Solution</button>
+                    <div class="solution">
+                        <pre><code class="language-python">def describe_city(city, country='Iceland'):
+    """Describe a city and its country."""
+    print(f"{city.title()} is in {country.title()}.")
+
+# Call the function for three different cities
+describe_city('reykjavik')
+describe_city('akureyri')
+describe_city('paris', 'france')</code></pre>
+                    </div>
+                </div>
+                
+                <div class="exercise">
+                    <h3>Exercise 2: Return a Dictionary</h3>
+                    <p>Write a function called <code>make_album()</code> that builds a dictionary describing a music album. The function should take an artist name and an album title, and it should return a dictionary containing these two pieces of information. Use the function to make three dictionaries representing different albums. Print each return value to show that the dictionaries are storing the album information correctly.</p>
+                    <button class="solution-toggle">Show Solution</button>
+                    <div class="solution">
+                        <pre><code class="language-python">def make_album(artist, title, tracks=None):
+    """Build a dictionary containing information about an album."""
+    album = {'artist': artist, 'title': title}
+    if tracks:
+        album['tracks'] = tracks
+    return album
+
+# Create three albums
+album1 = make_album('pink floyd', 'dark side of the moon')
+album2 = make_album('the beatles', 'abbey road')
+album3 = make_album('led zeppelin', 'iv', 8)
+
+# Print the albums
+print(album1)
+print(album2)
+print(album3)</code></pre>
+                    </div>
+                </div>
+            </section>
+
+            <div class="navigation-buttons">
+                <a href="python-data-structures.html" class="nav-button prev"><i class="fas fa-arrow-left"></i> Previous: Data Structures</a>
+                <a href="python-files.html" class="nav-button next">Next: File Handling <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Computer Science 2082. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Function to save user's answer
+        function saveAnswer(elementId) {
+            const element = document.getElementById(elementId);
+            const userAnswer = element.value;
+            localStorage.setItem(elementId, userAnswer);
+        }
+
+        // Function to update progress
+        function updateProgress() {
+            const sections = document.querySelectorAll('.lesson-section');
+            const scrollPosition = window.scrollY + 100;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    const sectionId = section.getAttribute('id');
+                    localStorage.setItem('lastVisitedSection', sectionId);
+                }
+            });
+        }
+        
+        // Toggle solution visibility
+        document.querySelectorAll('.solution-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const solution = button.nextElementSibling;
+                solution.style.display = solution.style.display === 'none' ? 'block' : 'none';
+                button.textContent = solution.style.display === 'none' ? 'Show Solution' : 'Hide Solution';
+            });
+        });
+        
+        // Hide all solutions by default
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.solution').forEach(solution => {
+                solution.style.display = 'none';
+            });
+            
+            // Update progress on load
+            updateProgress();
+        });
+        
+        // Update progress on scroll
+        window.addEventListener('scroll', updateProgress);
+    </script>
+</body>
+</html>

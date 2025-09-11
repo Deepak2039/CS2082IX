@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Projects - CS 2082</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lesson.css">
+    <link rel="stylesheet" href="css/mcq.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-laptop-code"></i>
+                <a href="index.html" class="home-link">CS 2082</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="lesson-container">
+        <aside class="lesson-sidebar">
+            <h3>Course Content</h3>
+            <ul class="lesson-menu">
+                <li><a href="python-programming.html">7.1 Python Fundamentals</a></li>
+                <li><a href="python-data-structures.html">7.2 Data Structures</a></li>
+                <li><a href="python-functions.html">7.3 Functions & Modules</a></li>
+                <li><a href="python-files.html">7.4 File Handling</a></li>
+                <li class="active"><a href="python-projects.html">7.5 Python Projects</a></li>
+            </ul>
+        </aside>
+
+        <article class="lesson-content">
+            <div class="navigation-buttons top-navigation">
+                <a href="python-files.html" class="nav-button prev"><i class="fas fa-arrow-left"></i> Previous: File Handling</a>
+                <div></div>
+            </div>
+            
+            <h1>7.5 Python Projects</h1>
+
+            <section id="introduction" class="lesson-section">
+                <h2>Introduction to Python Projects</h2>
+                <p>Now that you've learned the fundamentals of Python, it's time to apply your knowledge to real-world projects. These projects will help you practice what you've learned and build a portfolio to showcase your skills.</p>
+                
+                <div class="info-box">
+                    <h4><i class="fas fa-lightbulb"></i> Project Guidelines</h4>
+                    <ul>
+                        <li>Start with a clear problem statement</li>
+                        <li>Plan your approach before coding</li>
+                        <li>Break the project into smaller tasks</li>
+                        <li>Test your code frequently</li>
+                        <li>Document your code</li>
+                        <li>Seek feedback and improve</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="project-1" class="lesson-section">
+                <h2>Project 1: To-Do List Application</h2>
+                
+                <div class="project-card">
+                    <h3><i class="fas fa-tasks"></i> Project Overview</h3>
+                    <p>Create a command-line to-do list application that allows users to add, view, complete, and delete tasks. The tasks should be saved to a file so they persist between program runs.</p>
+                    
+                    <h4>Features:</h4>
+                    <ul>
+                        <li>Add new tasks</li>
+                        <li>View all tasks</li>
+                        <li>Mark tasks as complete</li>
+                        <li>Delete tasks</li>
+                        <li>Save tasks to a file</li>
+                        <li>Load tasks from a file</li>
+                    </ul>
+                    
+                    <h4>Implementation Steps:</h4>
+                    <ol>
+                        <li>Design the data structure for tasks (dictionary with id, description, status)</li>
+                        <li>Create functions for each operation (add, view, complete, delete)</li>
+                        <li>Implement file I/O to save/load tasks</li>
+                        <li>Create a user-friendly menu system</li>
+                        <li>Add input validation</li>
+                        <li>Test thoroughly</li>
+                    </ol>
+                    
+                    <button class="solution-toggle">Show Solution</button>
+                    <div class="solution">
+                        <pre><code class="language-python">import json
+import os
+
+FILENAME = 'todo.json'
+
+def load_tasks():
+    if os.path.exists(FILENAME):
+        with open(FILENAME, 'r') as file:
+            return json.load(file)
+    return {}
+
+def save_tasks(tasks):
+    with open(FILENAME, 'w') as file:
+        json.dump(tasks, file, indent=4)
+
+def add_task(tasks):
+    description = input("Enter task description: ").strip()
+    if not description:
+        print("Description cannot be empty!")
+        return
+    
+    task_id = str(len(tasks) + 1)
+    tasks[task_id] = {
+        'description': description,
+        'completed': False
+    }
+    save_tasks(tasks)
+    print(f"Task {task_id} added successfully!")
+
+def view_tasks(tasks):
+    if not tasks:
+        print("No tasks found!")
+        return
+    
+    print("\n--- Your Tasks ---")
+    for task_id, task in tasks.items():
+        status = "✓" if task['completed'] else " "
+        print(f"{task_id}. [{status}] {task['description']}")
+    print("------------------")
+
+def complete_task(tasks):
+    view_tasks(tasks)
+    if not tasks:
+        return
+    
+    task_id = input("Enter task ID to mark as complete: ").strip()
+    if task_id in tasks:
+        tasks[task_id]['completed'] = True
+        save_tasks(tasks)
+        print(f"Task {task_id} marked as complete!")
+    else:
+        print("Invalid task ID!")
+
+def delete_task(tasks):
+    view_tasks(tasks)
+    if not tasks:
+        return
+    
+    task_id = input("Enter task ID to delete: ").strip()
+    if task_id in tasks:
+        del tasks[task_id]
+        save_tasks(tasks)
+        print(f"Task {task_id} deleted!")
+    else:
+        print("Invalid task ID!")
+
+def main():
+    tasks = load_tasks()
+    
+    while True:
+        print("\n--- To-Do List Menu ---")
+        print("1. View Tasks")
+        print("2. Add Task")
+        print("3. Complete Task")
+        print("4. Delete Task")
+        print("5. Exit")
+        
+        choice = input("Enter your choice (1-5): ").strip()
+        
+        if choice == '1':
+            view_tasks(tasks)
+        elif choice == '2':
+            add_task(tasks)
+        elif choice == '3':
+            complete_task(tasks)
+        elif choice == '4':
+            delete_task(tasks)
+        elif choice == '5':
+            print("Goodbye!")
+            break
+        else:
+            print("Invalid choice. Please try again.")
+
+if __name__ == "__main__":
+    main()</code></pre>
+                    </div>
+                </div>
+            </section>
+
+            <section id="project-2" class="lesson-section">
+                <h2>Project 2: Quiz Application</h2>
+                
+                <div class="project-card">
+                    <h3><i class="fas fa-question-circle"></i> Project Overview</h3>
+                    <p>Create a quiz application that reads questions from a file, presents them to the user, and keeps track of the score. The application should support multiple choice and true/false questions.</p>
+                    
+                    <h4>Features:</h4>
+                    <ul>
+                        <li>Load questions from a JSON file</li>
+                        <li>Support multiple question types</li>
+                        <li>Calculate and display score</li>
+                        <li>Provide feedback on answers</li>
+                        <li>Show final results</li>
+                    </ul>
+                    
+                    <h4>Implementation Steps:</h4>
+                    <ol>
+                        <li>Design the question format (JSON structure)</li>
+                        <li>Create a function to load questions</li>
+                        <li>Implement the quiz logic</li>
+                        <li>Add score tracking</li>
+                        <li>Display results</li>
+                    </ol>
+                    
+                    <button class="solution-toggle">Show Solution</button>
+                    <div class="solution">
+                        <pre><code class="language-python">import json
+import random
+
+# Sample questions (save as questions.json)
+SAMPLE_QUESTIONS = {
+    "questions": [
+        {
+            "question": "What is the capital of France?",
+            "type": "multiple_choice",
+            "options": ["London", "Berlin", "Paris", "Madrid"],
+            "answer": 2,
+            "points": 1
+        },
+        {
+            "question": "Python is an interpreted language.",
+            "type": "true_false",
+            "answer": True,
+            "points": 1
+        },
+        {
+            "question": "Which of these are Python data types?",
+            "type": "multiple_choice",
+            "options": ["int", "string", "list", "all of the above"],
+            "answer": 3,
+            "points": 2
+        }
+    ]
+}
+
+def load_questions(filename='questions.json'):
+    try:
+        with open(filename, 'r') as file:
+            return json.load(file)['questions']
+    except FileNotFoundError:
+        print(f"Error: {filename} not found. Using sample questions.")
+        return SAMPLE_QUESTIONS['questions']
+    except json.JSONDecodeError:
+        print("Error: Invalid JSON format. Using sample questions.")
+        return SAMPLE_QUESTIONS['questions']
+
+def ask_question(question, question_num):
+    print(f"\nQuestion {question_num}: {question['question']}")
+    
+    if question['type'] == 'multiple_choice':
+        for i, option in enumerate(question['options'], 1):
+            print(f"{i}. {option}")
+        
+        while True:
+            try:
+                answer = int(input("Your answer (1-4): ")) - 1
+                if 0 <= answer < len(question['options']):
+                    return answer == question['answer']
+                print("Please enter a valid option number.")
+            except ValueError:
+                print("Please enter a number.")
+    
+    elif question['type'] == 'true_false':
+        while True:
+            answer = input("True or False? (t/f): ").lower()
+            if answer in ['t', 'true']:
+                return question['answer'] is True
+            elif answer in ['f', 'false']:
+                return question['answer'] is False
+            print("Please enter 't' for True or 'f' for False.")
+
+def run_quiz():
+    print("\n=== Python Quiz ===")
+    print("Answer the following questions. Good luck!\n")
+    
+    questions = load_questions()
+    random.shuffle(questions)  # Shuffle questions
+    
+    score = 0
+    max_score = sum(q.get('points', 1) for q in questions)
+    
+    for i, question in enumerate(questions, 1):
+        if ask_question(question, i):
+            points = question.get('points', 1)
+            score += points
+            print(f"✓ Correct! +{points} point{'s' if points > 1 else ''}")
+        else:
+            print("✗ Incorrect!")
+    
+    print(f"\n=== Quiz Complete! ===")
+    print(f"Your score: {score}/{max_score}")
+    percentage = (score / max_score) * 100
+    print(f"Percentage: {percentage:.1f}%")
+    
+    if percentage >= 80:
+        print("Excellent! 🎉")
+    elif percentage >= 60:
+        print("Good job! 👍")
+    else:
+        print("Keep practicing! 💪")
+
+if __name__ == "__main__":
+    run_quiz()</code></pre>
+                    </div>
+                </div>
+            </section>
+
+            <section id="project-3" class="lesson-section">
+                <h2>Project 3: Contact Book</h2>
+                
+                <div class="project-card">
+                    <h3><i class="fas fa-address-book"></i> Project Overview</h3>
+                    <p>Create a contact book application that allows users to store, search, and manage their contacts. The contacts should be saved to a file for persistence.</p>
+                    
+                    <h4>Features:</h4>
+                    <ul>
+                        <li>Add new contacts</li>
+                        <li>View all contacts</li>
+                        <li>Search for contacts</li>
+                        <li>Update existing contacts</li>
+                        <li>Delete contacts</li>
+                        <li>Save/load contacts to/from a file</li>
+                    </ul>
+                    
+                    <h4>Implementation Steps:</h4>
+                    <ol>
+                        <li>Design the contact data structure</li>
+                        <li>Implement CRUD operations</li>
+                        <li>Add search functionality</li>
+                        <li>Implement file I/O</li>
+                        <li>Create a user-friendly interface</li>
+                    </ol>
+                    
+                    <button class="solution-toggle">Show Solution</button>
+                    <div class="solution">
+                        <pre><code class="language-python">import json
+import os
+from datetime import datetime
+
+FILENAME = 'contacts.json'
+
+def load_contacts():
+    if os.path.exists(FILENAME):
+        with open(FILENAME, 'r') as file:
+            return json.load(file)
+    return {}
+
+def save_contacts(contacts):
+    with open(FILENAME, 'w') as file:
+        json.dump(contacts, file, indent=4)
+
+def add_contact(contacts):
+    print("\n--- Add New Contact ---")
+    
+    while True:
+        name = input("Name: ").strip()
+        if name:
+            break
+        print("Name cannot be empty!")
+    
+    phone = input("Phone: ").strip()
+    email = input("Email: ").strip()
+    address = input("Address: ").strip()
+    
+    contact_id = str(datetime.now().timestamp())
+    contacts[contact_id] = {
+        'name': name,
+        'phone': phone,
+        'email': email,
+        'address': address,
+        'created_at': datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    }
+    
+    save_contacts(contacts)
+    print(f"\nContact '{name}' added successfully!")
+
+def view_contacts(contacts):
+    if not contacts:
+        print("\nNo contacts found!")
+        return
+    
+    print("\n--- Your Contacts ---")
+    for contact_id, contact in contacts.items():
+        print(f"\nID: {contact_id}")
+        print(f"Name: {contact['name']}")
+        print(f"Phone: {contact['phone']}")
+        print(f"Email: {contact['email']}")
+        print(f"Address: {contact['address']}")
+        print(f"Added: {contact['created_at']}")
+    print("-------------------")
+
+def search_contacts(contacts):
+    if not contacts:
+        print("\nNo contacts to search!")
+        return
+    
+    search_term = input("\nEnter name or phone number to search: ").strip().lower()
+    if not search_term:
+        print("Search term cannot be empty!")
+        return
+    
+    found = False
+    print("\n--- Search Results ---")
+    for contact_id, contact in contacts.items():
+        if (search_term in contact['name'].lower() or 
+            search_term in contact['phone']):
+            print(f"\nID: {contact_id}")
+            print(f"Name: {contact['name']}")
+            print(f"Phone: {contact['phone']}")
+            found = True
+    
+    if not found:
+        print("No matching contacts found.")
+    print("----------------------")
+
+def update_contact(contacts):
+    view_contacts(contacts)
+    if not contacts:
+        return
+    
+    contact_id = input("\nEnter contact ID to update: ").strip()
+    if contact_id not in contacts:
+        print("Contact not found!")
+        return
+    
+    contact = contacts[contact_id]
+    print("\nLeave blank to keep current value.")
+    
+    name = input(f"Name [{contact['name']}]: ").strip()
+    phone = input(f"Phone [{contact['phone']}]: ").strip()
+    email = input(f"Email [{contact['email']}]: ").strip()
+    address = input(f"Address [{contact['address']}]: ").strip()
+    
+    if name:
+        contact['name'] = name
+    if phone:
+        contact['phone'] = phone
+    if email:
+        contact['email'] = email
+    if address:
+        contact['address'] = address
+    
+    save_contacts(contacts)
+    print("\nContact updated successfully!")
+
+def delete_contact(contacts):
+    view_contacts(contacts)
+    if not contacts:
+        return
+    
+    contact_id = input("\nEnter contact ID to delete: ").strip()
+    if contact_id in contacts:
+        name = contacts[contact_id]['name']
+        del contacts[contact_id]
+        save_contacts(contacts)
+        print(f"\nContact '{name}' deleted successfully!")
+    else:
+        print("Contact not found!")
+
+def main():
+    contacts = load_contacts()
+    
+    while True:
+        print("\n--- Contact Book Menu ---")
+        print("1. View All Contacts")
+        print("2. Add New Contact")
+        print("3. Search Contacts")
+        print("4. Update Contact")
+        print("5. Delete Contact")
+        print("6. Exit")
+        
+        choice = input("\nEnter your choice (1-6): ").strip()
+        
+        if choice == '1':
+            view_contacts(contacts)
+        elif choice == '2':
+            add_contact(contacts)
+        elif choice == '3':
+            search_contacts(contacts)
+        elif choice == '4':
+            update_contact(contacts)
+        elif choice == '5':
+            delete_contact(contacts)
+        elif choice == '6':
+            print("\nGoodbye!")
+            break
+        else:
+            print("\nInvalid choice. Please try again.")
+
+if __name__ == "__main__":
+    main()</code></pre>
+                    </div>
+                </div>
+            </section>
+
+            <section id="next-steps" class="lesson-section">
+                <h2>Next Steps in Your Python Journey</h2>
+                
+                <div class="next-steps-grid">
+                    <div class="step-card">
+                        <h3><i class="fas fa-book"></i> Learn More Libraries</h3>
+                        <ul>
+                            <li>NumPy for numerical computing</li>
+                            <li>Pandas for data analysis</li>
+                            <li>Matplotlib/Seaborn for data visualization</li>
+                            <li>Flask/Django for web development</li>
+                            <li>Pygame for game development</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="step-card">
+                        <h3><i class="fas fa-laptop-code"></i> Build Projects</h3>
+                        <ul>
+                            <li>Web scraper</li>
+                            <li>Weather app with API</li>
+                            <li>Blog/CMS system</li>
+                            <li>Chat application</li>
+                            <li>Automation scripts</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="step-card">
+                        <h3><i class="fas fa-users"></i> Join Communities</h3>
+                        <ul>
+                            <li>r/learnpython on Reddit</li>
+                            <li>Python Discord server</li>
+                            <li>Local Python meetups</li>
+                            <li>GitHub open source projects</li>
+                            <li>Stack Overflow for Q&A</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <div class="navigation-buttons">
+                <a href="python-files.html" class="nav-button prev"><i class="fas fa-arrow-left"></i> Previous: File Handling</a>
+                <div></div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Computer Science 2082. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Function to save user's answer
+        function saveAnswer(elementId) {
+            const element = document.getElementById(elementId);
+            const userAnswer = element.value;
+            localStorage.setItem(elementId, userAnswer);
+        }
+
+        // Function to update progress
+        function updateProgress() {
+            const sections = document.querySelectorAll('.lesson-section');
+            const scrollPosition = window.scrollY + 100;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    const sectionId = section.getAttribute('id');
+                    localStorage.setItem('lastVisitedSection', sectionId);
+                }
+            });
+        }
+        
+        // Toggle solution visibility
+        document.querySelectorAll('.solution-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const solution = button.nextElementSibling;
+                solution.style.display = solution.style.display === 'none' ? 'block' : 'none';
+                button.textContent = solution.style.display === 'none' ? 'Show Solution' : 'Hide Solution';
+            });
+        });
+        
+        // Hide all solutions by default
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.solution').forEach(solution => {
+                solution.style.display = 'none';
+            });
+            
+            // Update progress on load
+            updateProgress();
+        });
+        
+        // Update progress on scroll
+        window.addEventListener('scroll', updateProgress);
+    </script>
+</body>
+</html>

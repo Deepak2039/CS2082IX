@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Octal & Hexadecimal - CS 2082</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lesson.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-laptop-code"></i>
+                <a href="index.html" class="home-link">CS 2082</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="lesson-container">
+        <aside class="lesson-sidebar">
+            <h3>Course Content</h3>
+            <ul class="lesson-menu">
+                <li><a href="number-system.html">2.1 Number System Basics</a></li>
+                <li><a href="binary-system.html">2.2 Binary Number System</a></li>
+                <li class="active"><a href="octal-hexadecimal.html">2.3 Octal & Hexadecimal</a></li>
+                <li><a href="number-conversion.html">2.4 Number Conversion</a></li>
+                <li><a href="binary-arithmetic.html">2.5 Binary Arithmetic</a></li>
+            </ul>
+        </aside>
+
+        <article class="lesson-content">
+            <div class="navigation-buttons top-navigation">
+                <a href="binary-system.html" class="nav-button prev"><i class="fas fa-arrow-left"></i> Previous: Binary Number System</a>
+                <a href="number-conversion.html" class="nav-button next">Next: Number Conversion <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <h1>2.3 Octal & Hexadecimal Systems</h1>
+
+            <section id="octal-system" class="lesson-section">
+                <h2>Octal Number System (Base-8)</h2>
+                <p>The octal number system is a base-8 number system that uses digits from 0 to 7. It's particularly useful in computing because it can represent binary numbers in a more compact form.</p>
+                
+                <div class="definition-box">
+                    <h4><i class="fas fa-lightbulb"></i> Key Points</h4>
+                    <ul>
+                        <li>Base: 8</li>
+                        <li>Digits: 0, 1, 2, 3, 4, 5, 6, 7</li>
+                        <li>Each octal digit represents exactly 3 binary digits (bits)</li>
+                    </ul>
+                </div>
+
+                <h3>Octal to Binary Conversion</h3>
+                <p>Each octal digit can be directly converted to a 3-bit binary number:</p>
+                
+                <div class="info-table">
+                    <table>
+                        <tr>
+                            <th>Octal</th>
+                            <th>Binary</th>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>000</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>001</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>010</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>011</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>101</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>110</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>111</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <section id="hexadecimal-system" class="lesson-section">
+                <h2>Hexadecimal Number System (Base-16)</h2>
+                <p>The hexadecimal (hex) number system is a base-16 number system that uses sixteen distinct symbols: 0-9 and A-F (where A=10, B=11, ..., F=15). It's widely used in computing as a more human-friendly representation of binary-coded values.</p>
+                
+                <div class="definition-box">
+                    <h4><i class="fas fa-lightbulb"></i> Key Points</h4>
+                    <ul>
+                        <li>Base: 16</li>
+                        <li>Digits: 0-9, A-F (A=10, B=11, C=12, D=13, E=14, F=15)</li>
+                        <li>Each hex digit represents exactly 4 binary digits (bits)</li>
+                        <li>Commonly used in programming and debugging</li>
+                    </ul>
+                </div>
+
+                <h3>Hexadecimal to Binary Conversion</h3>
+                <p>Each hexadecimal digit can be directly converted to a 4-bit binary number:</p>
+                
+                <div class="info-table">
+                    <table>
+                        <tr>
+                            <th>Hex</th>
+                            <th>Binary</th>
+                            <th>Decimal</th>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>0000</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0001</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>0010</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>1001</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>A</td>
+                            <td>1010</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>B</td>
+                            <td>1011</td>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <td>C</td>
+                            <td>1100</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>D</td>
+                            <td>1101</td>
+                            <td>13</td>
+                        </tr>
+                        <tr>
+                            <td>E</td>
+                            <td>1110</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td>F</td>
+                            <td>1111</td>
+                            <td>15</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <section id="applications" class="lesson-section">
+                <h2>Applications in Computing</h2>
+                
+                <h3>Memory Addressing</h3>
+                <p>Memory addresses are often displayed in hexadecimal because:</p>
+                <ul>
+                    <li>They are more compact than binary</li>
+                    <li>They align well with byte boundaries (2 hex digits = 1 byte)</li>
+                    <li>Easier to read and remember than binary</li>
+                </ul>
+
+                <h3>Color Representation</h3>
+                <p>In web development, colors are often specified using hexadecimal notation:</p>
+                <ul>
+                    <li><code>#RRGGBB</code> format</li>
+                    <li>Each pair represents Red, Green, and Blue components</li>
+                    <li>Example: <code>#FF0000</code> is pure red, <code>#00FF00</code> is green, <code>#0000FF</code> is blue</li>
+                </ul>
+            </section>
+
+            <div class="navigation-buttons">
+                <a href="binary-system.html" class="nav-button prev"><i class="fas fa-arrow-left"></i> Previous: Binary Number System</a>
+                <a href="number-conversion.html" class="nav-button next">Next: Number Conversion <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About This Course</h3>
+                <p>This course covers the fundamentals of number systems used in computing, including binary, decimal, octal, and hexadecimal systems.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="quiz.html">Take Quiz</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CS 2082 - Computer Science Curriculum</p>
+        </div>
+    </footer>
+
+    <script>
+        // Function to save user's answer
+        function saveAnswer(elementId) {
+            const element = document.getElementById(elementId);
+            if (element) {
+                localStorage.setItem(elementId, element.value);
+            }
+        }
+
+        // Function to update progress
+        function updateProgress() {
+            const progressBar = document.querySelector('.progress-bar');
+            if (progressBar) {
+                const windowHeight = window.innerHeight;
+                const documentHeight = document.documentElement.scrollHeight - windowHeight;
+                const scrolled = window.scrollY;
+                const progress = (scrolled / documentHeight) * 100;
+                progressBar.style.width = Math.min(100, Math.max(0, progress)) + '%';
+            }
+        }
+        
+        // Update progress on scroll and load
+        window.addEventListener('scroll', updateProgress);
+        document.addEventListener('DOMContentLoaded', updateProgress);
+    </script>
+</body>
+</html>

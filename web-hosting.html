@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Hosting & Publishing - CS 2082</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lesson.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-laptop-code"></i>
+                <a href="index.html" class="home-link">CS 2082</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="lesson-container">
+        <aside class="lesson-sidebar">
+            <h3>Course Content</h3>
+            <ul class="lesson-menu">
+                <li><a href="web-technology.html">4.1 Web Fundamentals</a></li>
+                <li><a href="html-basics.html">4.2 HTML Basics</a></li>
+                <li><a href="css-styling.html">4.3 CSS Styling</a></li>
+                <li><a href="javascript-basics.html">4.4 JavaScript Basics</a></li>
+                <li class="active"><a href="web-hosting.html">4.5 Web Hosting & Publishing</a></li>
+            </ul>
+        </aside>
+
+        <article class="lesson-content">
+            <div class="navigation-buttons top-navigation">
+                <a href="javascript-basics.html" class="nav-button prev"><i class="fas fa-arrow-left"></i> Previous: JavaScript Basics</a>
+                <div></div>
+            </div>
+            
+            <h1>4.5 Web Hosting & Publishing</h1>
+
+            <section id="introduction" class="lesson-section">
+                <h2>Introduction to Web Hosting</h2>
+                <p>Web hosting is a service that allows organizations and individuals to post a website or web page onto the Internet. A web host provides the technologies and services needed for the website to be viewed on the Internet.</p>
+                
+                <div class="definition-box">
+                    <h4><i class="fas fa-lightbulb"></i> Key Components of Web Hosting</h4>
+                    <ul>
+                        <li><strong>Web Server:</strong> The computer that stores your website's files</li>
+                        <li><strong>Bandwidth:</strong> The amount of data that can be transferred from your site to users</li>
+                        <li><strong>Storage:</strong> The amount of server space allocated for your website</li>
+                        <li><strong>Domain Name:</strong> The address users type to access your website</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="types-of-hosting" class="lesson-section">
+                <h2>Types of Web Hosting</h2>
+                
+                <div class="info-box">
+                    <h4><i class="fas fa-server"></i> 1. Shared Hosting</h4>
+                    <p>Multiple websites share the same server resources. This is the most economical option for small websites with moderate traffic.</p>
+                    <p><strong>Best for:</strong> Personal websites, small businesses, blogs</p>
+                </div>
+
+                <div class="info-box">
+                    <h4><i class="fas fa-hdd"></i> 2. VPS Hosting (Virtual Private Server)</h4>
+                    <p>A virtual machine is sold as a service by an Internet hosting service. It runs its own copy of an operating system.</p>
+                    <p><strong>Best for:</strong> Medium-sized businesses, e-commerce sites, high-traffic blogs</p>
+                </div>
+
+                <div class="info-box">
+                    <h4><i class="fas fa-database"></i> 3. Dedicated Hosting</h4>
+                    <p>An entire server is dedicated to a single organization or for a single purpose, such as a website.</p>
+                    <p><strong>Best for:</strong> Large businesses, high-traffic websites, applications with high resource requirements</p>
+                </div>
+
+                <div class="info-box">
+                    <h4><i class="fas fa-cloud"></i> 4. Cloud Hosting</h4>
+                    <p>Uses multiple servers to balance the load and maximize uptime. Resources can be scaled up or down as needed.</p>
+                    <p><strong>Best for:</strong> Businesses with fluctuating traffic, growing websites, applications that need high availability</p>
+                </div>
+            </section>
+
+            <section id="domain-names" class="lesson-section">
+                <h2>Domain Names</h2>
+                <p>A domain name is the address where Internet users can access your website. It's used to find and identify computers on the Internet.</p>
+                
+                <div class="example-box">
+                    <h4>Example Domain Name Structure:</h4>
+                    <p><code>https://www.example.com</code></p>
+                    <ul>
+                        <li><strong>https://</strong> - Protocol</li>
+                        <li><strong>www</strong> - Subdomain (optional)</li>
+                        <li><strong>example</strong> - Domain name</li>
+                        <li><strong>.com</strong> - Top-level domain (TLD)</li>
+                    </ul>
+                </div>
+
+                <h3>How to Register a Domain Name</h3>
+                <ol>
+                    <li>Choose a domain registrar (e.g., GoDaddy, Namecheap, Google Domains)</li>
+                    <li>Check domain name availability</li>
+                    <li>Select your domain name and extension (.com, .org, .net, etc.)</li>
+                    <li>Complete the registration process and pay the registration fee</li>
+                    <li>Configure DNS settings to point to your web hosting</li>
+                </ol>
+            </section>
+
+            <section id="publishing-your-site" class="lesson-section">
+                <h2>Publishing Your Website</h2>
+                
+                <h3>1. Prepare Your Website Files</h3>
+                <ul>
+                    <li>Ensure all files are properly linked</li>
+                    <li>Optimize images and other media</li>
+                    <li>Test your website locally</li>
+                </ul>
+
+                <h3>2. Choose a Web Host</h3>
+                <p>Select a hosting provider that meets your needs in terms of:</p>
+                <ul>
+                    <li>Storage space</li>
+                    <li>Bandwidth</li>
+                    <li>Uptime guarantee</li>
+                    <li>Customer support</li>
+                    <li>Price</li>
+                </ul>
+
+                <h3>3. Upload Your Files</h3>
+                <p>You can upload your website files using:</p>
+                <ul>
+                    <li><strong>FTP (File Transfer Protocol):</strong> Using clients like FileZilla, Cyberduck</li>
+                    <li><strong>Web-based File Manager:</strong> Provided by most hosting control panels</li>
+                    <li><strong>Git:</strong> For version-controlled deployments</li>
+                </ul>
+
+                <h3>4. Test Your Live Site</h3>
+                <p>After uploading, thoroughly test your website:</p>
+                <ul>
+                    <li>Check all links and navigation</li>
+                    <li>Test on different devices and browsers</li>
+                    <li>Verify that all forms and interactive elements work</li>
+                </ul>
+            </section>
+
+            <section id="free-hosting-options" class="lesson-section">
+                <h2>Free Hosting Options</h2>
+                
+                <div class="info-box">
+                    <h4><i class="fab fa-github"></i> GitHub Pages</h4>
+                    <p>Free hosting for static websites directly from a GitHub repository.</p>
+                    <p><strong>Best for:</strong> Personal projects, portfolios, documentation</p>
+                </div>
+
+                <div class="info-box">
+                    <h4><i class="fab fa-google"></i> Firebase Hosting</h4>
+                    <p>Google's hosting service with a generous free tier.</p>
+                    <p><strong>Best for:</strong> Web apps, progressive web apps (PWAs)</p>
+                </div>
+
+                <div class="info-box">
+                    <h4><i class="fas fa-cloud"></i> Netlify / Vercel</h4>
+                    <p>Modern hosting platforms with continuous deployment from Git repositories.</p>
+                    <p><strong>Best for:</strong> Static sites, JAMstack applications</p>
+                </div>
+            </section>
+
+            <div class="navigation-buttons">
+                <a href="javascript-basics.html" class="nav-button prev"><i class="fas fa-arrow-left"></i> Previous: JavaScript Basics</a>
+                <div></div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Computer Science 2082. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Function to save user's answer
+        function saveAnswer(elementId) {
+            const element = document.getElementById(elementId);
+            const userAnswer = element.value;
+            localStorage.setItem(elementId, userAnswer);
+        }
+
+        // Function to update progress
+        function updateProgress() {
+            const sections = document.querySelectorAll('.lesson-section');
+            const scrollPosition = window.scrollY + 100;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    const sectionId = section.getAttribute('id');
+                    localStorage.setItem('lastVisitedSection', sectionId);
+                }
+            });
+        }
+        
+        // Update progress on scroll and load
+        window.addEventListener('scroll', updateProgress);
+        document.addEventListener('DOMContentLoaded', updateProgress);
+    </script>
+</body>
+</html>

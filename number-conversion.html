@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Conversion - CS 2082</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lesson.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-laptop-code"></i>
+                <a href="index.html" class="home-link">CS 2082</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="lesson-container">
+        <aside class="lesson-sidebar">
+            <h3>Course Content</h3>
+            <ul class="lesson-menu">
+                <li><a href="number-system.html">2.1 Number System Basics</a></li>
+                <li><a href="binary-system.html">2.2 Binary Number System</a></li>
+                <li><a href="octal-hexadecimal.html">2.3 Octal & Hexadecimal</a></li>
+                <li class="active"><a href="number-conversion.html">2.4 Number Conversion</a></li>
+                <li><a href="binary-arithmetic.html">2.5 Binary Arithmetic</a></li>
+            </ul>
+        </aside>
+
+        <article class="lesson-content">
+            <div class="navigation-buttons top-navigation">
+                <a href="octal-hexadecimal.html" class="nav-button prev"><i class="fas fa-arrow-left"></i> Previous: Octal & Hexadecimal</a>
+                <a href="binary-arithmetic.html" class="nav-button next">Next: Binary Arithmetic <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <h1>2.4 Number Conversion</h1>
+
+            <section id="conversion-methods" class="lesson-section">
+                <h2>Conversion Between Number Systems</h2>
+                <p>Understanding how to convert between different number systems is essential in computer science. Here we'll cover the most common conversion methods.</p>
+                
+                <h3>1. Decimal to Binary Conversion</h3>
+                <p>To convert a decimal number to binary, repeatedly divide the number by 2 and record the remainders:</p>
+                
+                <div class="example-box">
+                    <h4>Example: Convert 25<sub>10</sub> to binary</h4>
+                    <pre>
+25 ÷ 2 = 12 remainder 1  (LSB)
+12 ÷ 2 = 6  remainder 0
+6 ÷ 2  = 3  remainder 0
+3 ÷ 2  = 1  remainder 1
+1 ÷ 2  = 0  remainder 1  (MSB)
+
+Reading remainders from bottom to top: 11001<sub>2</sub>
+                    </pre>
+                </div>
+
+                <h3>2. Binary to Decimal Conversion</h3>
+                <p>Multiply each bit by 2 raised to the power of its position (starting from 0 on the right), then sum the results:</p>
+                
+                <div class="example-box">
+                    <h4>Example: Convert 1011<sub>2</sub> to decimal</h4>
+                    <pre>
+1 × 2³ = 1 × 8 = 8
+0 × 2² = 0 × 4 = 0
+1 × 2¹ = 1 × 2 = 2
+1 × 2⁰ = 1 × 1 = 1
+               ---
+                 11<sub>10</sub>
+                    </pre>
+                </div>
+
+                <h3>3. Decimal to Hexadecimal</h3>
+                <p>Divide the decimal number by 16 and record the remainders (using letters A-F for remainders 10-15):</p>
+                
+                <div class="example-box">
+                    <h4>Example: Convert 255<sub>10</sub> to hexadecimal</h4>
+                    <pre>
+255 ÷ 16 = 15 remainder 15 (F)
+15 ÷ 16  = 0  remainder 15 (F)
+
+Reading remainders from bottom to top: FF<sub>16</sub>
+                    </pre>
+                </div>
+
+                <h3>4. Hexadecimal to Binary</h3>
+                <p>Convert each hexadecimal digit to its 4-bit binary equivalent:</p>
+                
+                <div class="example-box">
+                    <h4>Example: Convert A3<sub>16</sub> to binary</h4>
+                    <pre>
+A = 1010
+3 = 0011
+
+Combined: 10100011<sub>2</sub>
+                    </pre>
+                </div>
+
+                <h3>5. Binary to Hexadecimal</h3>
+                <p>Group binary digits into sets of four (starting from the right), then convert each group to its hexadecimal equivalent:</p>
+                
+                <div class="example-box">
+                    <h4>Example: Convert 11010110<sub>2</sub> to hexadecimal</h4>
+                    <pre>
+1101 0110
+ D    6
+
+Result: D6<sub>16</sub>
+                    </pre>
+                </div>
+            </section>
+
+            <section id="conversion-tips" class="lesson-section">
+                <h2>Conversion Tips and Tricks</h2>
+                
+                <h3>Using Intermediate Bases</h3>
+                <p>When converting between non-decimal bases, it's often easier to first convert to decimal as an intermediate step:</p>
+                <p>Octal → Decimal → Binary</p>
+                <p>Hexadecimal → Decimal → Binary</p>
+                
+                <h3>Powers of 2</h3>
+                <p>Memorizing powers of 2 can make conversions much faster:</p>
+                <div class="info-table">
+                    <table>
+                        <tr><th>Power</th><th>Value</th><th>Power</th><th>Value</th></tr>
+                        <tr><td>2<sup>0</sup></td><td>1</td><td>2<sup>8</sup></td><td>256</td></tr>
+                        <tr><td>2<sup>1</sup></td><td>2</td><td>2<sup>9</sup></td><td>512</td></tr>
+                        <tr><td>2<sup>2</sup></td><td>4</td><td>2<sup>10</sup></td><td>1,024</td></tr>
+                        <tr><td>2<sup>3</sup></td><td>8</td><td>2<sup>16</sup></td><td>65,536</td></tr>
+                        <tr><td>2<sup>4</sup></td><td>16</td><td>2<sup>20</sup></td><td>1,048,576</td></tr>
+                        <tr><td>2<sup>7</sup></td><td>128</td><td>2<sup>30</sup></td><td>1,073,741,824</td></tr>
+                    </table>
+                </div>
+            </section>
+
+            <div class="navigation-buttons">
+                <a href="octal-hexadecimal.html" class="nav-button prev"><i class="fas fa-arrow-left"></i> Previous: Octal & Hexadecimal</a>
+                <a href="binary-arithmetic.html" class="nav-button next">Next: Binary Arithmetic <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About This Course</h3>
+                <p>This course covers the fundamentals of number systems used in computing, including binary, decimal, octal, and hexadecimal systems.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="quiz.html">Take Quiz</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CS 2082 - Computer Science Curriculum</p>
+        </div>
+    </footer>
+
+    <script>
+        // Function to save user's answer
+        function saveAnswer(elementId) {
+            const element = document.getElementById(elementId);
+            if (element) {
+                localStorage.setItem(elementId, element.value);
+            }
+        }
+
+        // Function to update progress
+        function updateProgress() {
+            const progressBar = document.querySelector('.progress-bar');
+            if (progressBar) {
+                const windowHeight = window.innerHeight;
+                const documentHeight = document.documentElement.scrollHeight - windowHeight;
+                const scrolled = window.scrollY;
+                const progress = (scrolled / documentHeight) * 100;
+                progressBar.style.width = Math.min(100, Math.max(0, progress)) + '%';
+            }
+        }
+        
+        // Update progress on scroll and load
+        window.addEventListener('scroll', updateProgress);
+        document.addEventListener('DOMContentLoaded', updateProgress);
+    </script>
+</body>
+</html>

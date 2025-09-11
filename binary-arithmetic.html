@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Arithmetic - CS 2082</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lesson.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-laptop-code"></i>
+                <a href="index.html" class="home-link">CS 2082</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="lesson-container">
+        <aside class="lesson-sidebar">
+            <h3>Course Content</h3>
+            <ul class="lesson-menu">
+                <li><a href="number-system.html">2.1 Number System Basics</a></li>
+                <li><a href="binary-system.html">2.2 Binary Number System</a></li>
+                <li><a href="octal-hexadecimal.html">2.3 Octal & Hexadecimal</a></li>
+                <li><a href="number-conversion.html">2.4 Number Conversion</a></li>
+                <li class="active"><a href="binary-arithmetic.html">2.5 Binary Arithmetic</a></li>
+            </ul>
+        </aside>
+
+        <article class="lesson-content">
+            <div class="navigation-buttons top-navigation">
+                <a href="number-conversion.html" class="nav-button prev"><i class="fas fa-arrow-left"></i> Previous: Number Conversion</a>
+                <a href="number-system.html" class="nav-button next">Back to Number Systems <i class="fas fa-home"></i></a>
+            </div>
+            
+            <h1>2.5 Binary Arithmetic</h1>
+
+            <section id="binary-addition" class="lesson-section">
+                <h2>Binary Addition</h2>
+                <p>Binary addition follows similar rules to decimal addition but is simpler since it only involves two digits (0 and 1).</p>
+                
+                <h3>Rules of Binary Addition</h3>
+                <div class="info-table">
+                    <table>
+                        <tr>
+                            <th>A</th>
+                            <th>B</th>
+                            <th>Sum</th>
+                            <th>Carry</th>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="example-box">
+                    <h4>Example: Add 1011<sub>2</sub> and 1101<sub>2</sub></h4>
+                    <pre>
+  1111    (carry)
+   1011
+ + 1101
+  -----
+  11000
+
+Verification:
+1011<sub>2</sub> = 11<sub>10</sub>
+1101<sub>2</sub> = 13<sub>10</sub>
+11 + 13 = 24
+11000<sub>2</sub> = 24<sub>10</sub>
+                    </pre>
+                </div>
+            </section>
+
+            <section id="binary-subtraction" class="lesson-section">
+                <h2>Binary Subtraction</h2>
+                <p>Binary subtraction can be performed using two methods: direct subtraction and two's complement method.</p>
+                
+                <h3>Method 1: Direct Subtraction</h3>
+                <div class="info-table">
+                    <table>
+                        <tr>
+                            <th>A</th>
+                            <th>B</th>
+                            <th>Difference</th>
+                            <th>Borrow</th>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="example-box">
+                    <h4>Example: Subtract 1001<sub>2</sub> from 1101<sub>2</sub></h4>
+                    <pre>
+  1101
+ -1001
+  ----
+   100
+
+Verification:
+1101<sub>2</sub> = 13<sub>10</sub>
+1001<sub>2</sub> = 9<sub>10</sub>
+13 - 9 = 4
+100<sub>2</sub> = 4<sub>10</sub>
+                    </pre>
+                </div>
+
+                <h3>Method 2: Two's Complement</h3>
+                <p>For computers, subtraction is often performed using two's complement:</p>
+                <ol>
+                    <li>Find the two's complement of the subtrahend (number being subtracted)</li>
+                    <li>Add this to the minuend (number being subtracted from)</li>
+                    <li>Discard any carry out of the leftmost bit</li>
+                </ol>
+            </section>
+
+            <section id="binary-multiplication" class="lesson-section">
+                <h2>Binary Multiplication</h2>
+                <p>Binary multiplication is simpler than decimal multiplication since it only involves multiplying by 0 or 1.</p>
+                
+                <div class="example-box">
+                    <h4>Example: Multiply 101<sub>2</sub> by 11<sub>2</sub></h4>
+                    <pre>
+    101
+   × 11
+   -----
+     101  (101 × 1)
+    101   (101 × 1, shifted left)
+   -----
+    1111
+
+Verification:
+101<sub>2</sub> = 5<sub>10</sub>
+11<sub>2</sub> = 3<sub>10</sub>
+5 × 3 = 15
+1111<sub>2</sub> = 15<sub>10</sub>
+                    </pre>
+                </div>
+            </section>
+
+            <section id="binary-division" class="lesson-section">
+                <h2>Binary Division</h2>
+                <p>Binary division follows the same long division method as decimal division.</p>
+                
+                <div class="example-box">
+                    <h4>Example: Divide 1101<sub>2</sub> by 10<sub>2</sub></h4>
+                    <pre>
+      110.1
+    --------
+10 ) 1101.0
+     -10
+      --
+       10
+      -10
+       --
+        010
+        -10
+         --
+          0
+
+Verification:
+1101<sub>2</sub> = 13<sub>10</sub>
+10<sub>2</sub> = 2<sub>10</sub>
+13 ÷ 2 = 6.5
+110.1<sub>2</sub> = 6.5<sub>10</sub>
+                    </pre>
+                </div>
+            </section>
+
+            <div class="navigation-buttons">
+                <a href="number-conversion.html" class="nav-button prev"><i class="fas fa-arrow-left"></i> Previous: Number Conversion</a>
+                <a href="number-system.html" class="nav-button next">Back to Number Systems <i class="fas fa-home"></i></a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About This Course</h3>
+                <p>This course covers the fundamentals of number systems used in computing, including binary, decimal, octal, and hexadecimal systems.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="quiz.html">Take Quiz</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CS 2082 - Computer Science Curriculum</p>
+        </div>
+    </footer>
+
+    <script>
+        // Function to save user's answer
+        function saveAnswer(elementId) {
+            const element = document.getElementById(elementId);
+            if (element) {
+                localStorage.setItem(elementId, element.value);
+            }
+        }
+
+        // Function to update progress
+        function updateProgress() {
+            const progressBar = document.querySelector('.progress-bar');
+            if (progressBar) {
+                const windowHeight = window.innerHeight;
+                const documentHeight = document.documentElement.scrollHeight - windowHeight;
+                const scrolled = window.scrollY;
+                const progress = (scrolled / documentHeight) * 100;
+                progressBar.style.width = Math.min(100, Math.max(0, progress)) + '%';
+            }
+        }
+        
+        // Update progress on scroll and load
+        window.addEventListener('scroll', updateProgress);
+        document.addEventListener('DOMContentLoaded', updateProgress);
+    </script>
+</body>
+</html>

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styling - CS 2082</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lesson.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Demo styles for this page */
+        .style-demo {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .color-box {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            border: 1px solid #ccc;
+        }
+        .flex-container {
+            display: flex;
+            gap: 10px;
+            margin: 15px 0;
+            padding: 10px;
+            background-color: #f5f5f5;
+        }
+        .flex-item {
+            background: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin: 15px 0;
+        }
+        .grid-item {
+            background: #2196F3;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .transition-demo {
+            width: 100px;
+            height: 100px;
+            background: #ff9800;
+            transition: all 0.3s ease;
+        }
+        .transition-demo:hover {
+            transform: rotate(15deg);
+            background: #ff5722;
+        }
+        .animation-demo {
+            width: 50px;
+            height: 50px;
+            background: #9c27b0;
+            animation: bounce 1s infinite alternate;
+        }
+        @keyframes bounce {
+            from { transform: translateY(0); }
+            to { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-laptop-code"></i>
+                <a href="index.html" class="home-link">CS 2082</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="lesson-container">
+        <aside class="lesson-sidebar">
+            <h3>Course Content</h3>
+            <ul class="lesson-menu">
+                <li><a href="web-technology.html">4.1 Web Fundamentals</a></li>
+                <li><a href="html-basics.html">4.2 HTML Basics</a></li>
+                <li class="active"><a href="css-styling.html">4.3 CSS Styling</a></li>
+                <li><a href="javascript-basics.html">4.4 JavaScript Basics</a></li>
+                <li><a href="web-hosting.html">4.5 Web Hosting & Publishing</a></li>
+            </ul>
+        </aside>
+
+        <article class="lesson-content">
+            <div class="navigation-buttons top-navigation">
+                <a href="html-basics.html" class="nav-button prev"><i class="fas fa-arrow-left"></i> Previous: HTML Basics</a>
+                <a href="javascript-basics.html" class="nav-button next">Next: JavaScript Basics <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <h1>4.3 CSS Styling</h1>
+
+            <section id="what-is-css" class="lesson-section">
+                <h2>Introduction to CSS</h2>
+                <p>CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML. CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.</p>
+                
+                <div class="definition-box">
+                    <h4><i class="fas fa-lightbulb"></i> Why Use CSS?</h4>
+                    <ul>
+                        <li>Separation of concerns (content vs. presentation)</li>
+                        <li>Consistent styling across multiple pages</li>
+                        <li>Easier maintenance</li>
+                        <li>Better accessibility</li>
+                        <li>Responsive design capabilities</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="syntax" class="lesson-section">
+                <h2>CSS Syntax</h2>
+                <p>CSS consists of style rules that the browser interprets to style HTML elements. Each rule consists of a selector and a declaration block.</p>
+                
+                <div class="code-block">
+                    <pre><code>selector {
+    property: value;
+    another-property: value;
+}</code></pre>
+                </div>
+
+                <div class="example-box">
+                    <h4>Example:</h4>
+                    <pre><code>h1 {
+    color: blue;
+    font-size: 24px;
+    text-align: center;
+}</code></pre>
+                    <p>This will make all <code>&lt;h1&gt;</code> elements blue, with a font size of 24 pixels, and center-aligned.</p>
+                </div>
+            </section>
+
+            <section id="selectors-specificity" class="lesson-section">
+                <h2>CSS Selectors & Specificity</h2>
+                
+                <h3>Basic Selectors</h3>
+                <div class="info-table">
+                    <table>
+                        <tr>
+                            <th>Selector</th>
+                            <th>Example</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>Element</td>
+                            <td><code>p</code></td>
+                            <td>Selects all <code>&lt;p&gt;</code> elements</td>
+                        </tr>
+                        <tr>
+                            <td>Class</td>
+                            <td><code>.intro</code></td>
+                            <td>Selects all elements with <code>class="intro"</code></td>
+                        </tr>
+                        <tr>
+                            <td>ID</td>
+                            <td><code>#header</code></td>
+                            <td>Selects the element with <code>id="header"</code></td>
+                        </tr>
+                        <tr>
+                            <td>Universal</td>
+                            <td><code>*</code></td>
+                            <td>Selects all elements</td>
+                        </tr>
+                        <tr>
+                            <td>Attribute</td>
+                            <td><code>a[target]</code></td>
+                            <td>Selects all <code>&lt;a&gt;</code> elements with a target attribute</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <h3>Combinators</h3>
+                <div class="info-table">
+                    <table>
+                        <tr>
+                            <th>Combinator</th>
+                            <th>Example</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>Descendant</td>
+                            <td><code>div p</code></td>
+                            <td>Selects all <code>&lt;p&gt;</code> elements inside <code>&lt;div&gt;</code> elements</td>
+                        </tr>
+                        <tr>
+                            <td>Child</td>
+                            <td><code>div > p</code></td>
+                            <td>Selects all <code>&lt;p&gt;</code> elements where the parent is a <code>&lt;div&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td>Adjacent Sibling</td>
+                            <td><code>div + p</code></td>
+                            <td>Selects the first <code>&lt;p&gt;</code> that is immediately after a <code>&lt;div&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td>General Sibling</td>
+                            <td><code>div ~ p</code></td>
+                            <td>Selects all <code>&lt;p&gt;</code> elements that are siblings of a <code>&lt;div&gt;</code></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <h3>Specificity</h3>
+                <p>When multiple rules apply to the same element, the more specific rule takes precedence. The order is:</p>
+                <ol>
+                    <li>Inline styles (highest specificity)</li>
+                    <li>IDs</li>
+                    <li>Classes, attributes, and pseudo-classes</li>
+                    <li>Elements and pseudo-elements (lowest specificity)</li>
+                </ol>
+            </section>
+
+            <section id="box-model" class="lesson-section">
+                <h2>The Box Model</h2>
+                <p>Every element in CSS is a rectangular box with these properties:</p>
+                
+                <div class="info-table">
+                    <table>
+                        <tr>
+                            <th>Property</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td><code>width</code> and <code>height</code></td>
+                            <td>Content area dimensions</td>
+                        </tr>
+                        <tr>
+                            <td><code>padding</code></td>
+                            <td>Space between content and border</td>
+                        </tr>
+                        <tr>
+                            <td><code>border</code></td>
+                            <td>Border around the element</td>
+                        </tr>
+                        <tr>
+                            <td><code>margin</code></td>
+                            <td>Space outside the border</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="code-block">
+                    <pre><code>.box {
+    width: 300px;
+    padding: 20px;
+    border: 5px solid #333;
+    margin: 10px;
+    background-color: #f0f0f0;
+}</code></pre>
+                </div>
+
+                <div class="tip-box">
+                    <h4><i class="fas fa-info-circle"></i> Box-Sizing</h4>
+                    <p>By default, padding and border are added to the element's width/height. Use <code>box-sizing: border-box</code> to include them in the element's total width/height.</p>
+                    <pre><code>* {
+    box-sizing: border-box;
+}</code></pre>
+                </div>
+            </section>
+
+            <section id="layout" class="lesson-section">
+                <h2>CSS Layout</h2>
+                
+                <h3>1. Display Property</h3>
+                <div class="info-table">
+                    <table>
+                        <tr>
+                            <th>Value</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td><code>block</code></td>
+                            <td>Starts on a new line and takes full width</td>
+                        </tr>
+                        <tr>
+                            <td><code>inline</code></td>
+                            <td>Flows with text, doesn't start a new line</td>
+                        </tr>
+                        <tr>
+                            <td><code>inline-block</code></td>
+                            <td>Flows like inline, but can have width/height</td>
+                        </tr>
+                        <tr>
+                            <td><code>flex</code></td>
+                            <td>Enables flexbox layout</td>
+                        </tr>
+                        <tr>
+                            <td><code>grid</code></td>
+                            <td>Enables grid layout</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <h3>2. Flexbox</h3>
+                <p>Flexbox is a one-dimensional layout method for laying out items in rows or columns.</p>
+                
+                <div class="flex-container" style="display: flex;">
+                    <div class="flex-item">1</div>
+                    <div class="flex-item">2</div>
+                    <div class="flex-item">3</div>
+                </div>
+
+                <div class="code-block">
+                    <pre><code>.container {
+    display: flex;
+    justify-content: space-between; /* Main axis alignment */
+    align-items: center;    /* Cross axis alignment */
+    gap: 10px;              /* Space between items */
+}</code></pre>
+                </div>
+
+                <h3>3. CSS Grid</h3>
+                <p>Grid is a two-dimensional layout system for the web.</p>
+                
+                <div class="grid-container">
+                    <div class="grid-item">1</div>
+                    <div class="grid-item">2</div>
+                    <div class="grid-item">3</div>
+                    <div class="grid-item">4</div>
+                    <div class="grid-item">5</div>
+                    <div class="grid-item">6</div>
+                </div>
+
+                <div class="code-block">
+                    <pre><code>.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+    gap: 20px;                         /* Gap between grid items */
+}</code></pre>
+                </div>
+            </section>
+
+            <section id="responsive-design" class="lesson-section">
+                <h2>Responsive Design</h2>
+                
+                <h3>1. Viewport Meta Tag</h3>
+                <p>Include this in your HTML <code>&lt;head&gt;</code>:</p>
+                <div class="code-block">
+                    <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></pre>
+                </div>
+
+                <h3>2. Media Queries</h3>
+                <p>Apply different styles based on device characteristics (like screen width):</p>
+                <div class="code-block">
+                    <pre><code>/* Default styles */
+.container {
+    width: 100%;
+    padding: 10px;
+}
+
+/* For tablets */
+@media (min-width: 600px) {
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/* For desktops */
+@media (min-width: 1024px) {
+    .container {
+        width: 960px;
+    }
+}</code></pre>
+                </div>
+
+                <h3>3. Responsive Units</h3>
+                <div class="info-table">
+                    <table>
+                        <tr>
+                            <th>Unit</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td><code>%</code></td>
+                            <td>Percentage of the parent element</td>
+                        </tr>
+                        <tr>
+                            <td><code>vw</code></td>
+                            <td>1% of viewport width</td>
+                        </tr>
+                        <tr>
+                            <td><code>vh</code></td>
+                            <td>1% of viewport height</td>
+                        </tr>
+                        <tr>
+                            <td><code>rem</code></td>
+                            <td>Relative to root element's font-size</td>
+                        </tr>
+                        <tr>
+                            <td><code>em</code></td>
+                            <td>Relative to parent element's font-size</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <section id="transitions-animations" class="lesson-section">
+                <h2>Transitions & Animations</h2>
+                
+                <h3>1. Transitions</h3>
+                <p>Animate changes to CSS properties:</p>
+                <div class="transition-demo">Hover me!</div>
+                <div class="code-block">
+                    <pre><code>.box {
+    background: #ff9800;
+    transition: all 0.3s ease;
+}
+
+.box:hover {
+    transform: rotate(15deg);
+    background: #ff5722;
+}</code></pre>
+                </div>
+
+                <h3>2. Animations</h3>
+                <p>Create complex animations with keyframes:</p>
+                <div class="animation-demo"></div>
+                <div class="code-block">
+                    <pre><code>@keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(-20px); }
+}
+
+.box {
+    animation: bounce 1s infinite alternate;
+}</code></pre>
+                </div>
+            </section>
+
+            <div class="practice-activity">
+                <h3><i class="fas fa-laptop-code"></i> Practice Activity</h3>
+                <p>Create a responsive webpage with:</p>
+                <ol>
+                    <li>A header with navigation that collapses into a hamburger menu on mobile</li>
+                    <li>A main content area with a grid of cards (3 columns on desktop, 2 on tablet, 1 on mobile)</li>
+                    <li>A footer with social media links</li>
+                    <li>Add hover effects to interactive elements</li>
+                    <li>Make sure text is readable on all screen sizes</li>
+                </ol>
+                <p>Use flexbox or grid for layout and include at least one media query.</p>
+            </div>
+
+            <div class="navigation-buttons">
+                <a href="html-basics.html" class="nav-button prev"><i class="fas fa-arrow-left"></i> Previous: HTML Basics</a>
+                <a href="javascript-basics.html" class="nav-button next">Next: JavaScript Basics <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About This Course</h3>
+                <p>This course covers web technologies including HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN CSS Reference</a></li>
+                    <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CS 2082 - Computer Science Curriculum</p>
+        </div>
+    </footer>
+
+    <script>
+        // Function to save user's answer
+        function saveAnswer(elementId) {
+            const element = document.getElementById(elementId);
+            if (element) {
+                localStorage.setItem(elementId, element.value);
+            }
+        }
+
+        // Function to update progress
+        function updateProgress() {
+            const progressBar = document.querySelector('.progress-bar');
+            if (progressBar) {
+                const windowHeight = window.innerHeight;
+                const documentHeight = document.documentElement.scrollHeight - windowHeight;
+                const scrolled = window.scrollY;
+                const progress = (scrolled / documentHeight) * 100;
+                progressBar.style.width = Math.min(100, Math.max(0, progress)) + '%';
+            }
+        }
+        
+        // Update progress on scroll and load
+        window.addEventListener('scroll', updateProgress);
+        document.addEventListener('DOMContentLoaded', updateProgress);
+    </script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scratch Basics - CS 2082</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lesson.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-laptop-code"></i>
+                <a href="index.html" class="home-link">CS 2082</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="lesson-container">
+        <aside class="lesson-sidebar">
+            <h3>Course Content</h3>
+            <ul class="lesson-menu">
+                <li><a href="block-programming.html">3.1 Introduction to Block Programming</a></li>
+                <li class="active"><a href="scratch-basics.html">3.2 Scratch Basics</a></li>
+                <li><a href="loops-conditionals.html">3.3 Loops & Conditionals</a></li>
+                <li><a href="variables-blocks.html">3.4 Variables in Block Programming</a></li>
+                <li><a href="block-projects.html">3.5 Creating Projects</a></li>
+            </ul>
+        </aside>
+
+        <article class="lesson-content">
+            <div class="navigation-buttons top-navigation">
+                <a href="block-programming.html" class="nav-button prev"><i class="fas fa-arrow-left"></i> Previous: Introduction</a>
+                <a href="loops-conditionals.html" class="nav-button next">Next: Loops & Conditionals <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <h1>3.2 Scratch Basics</h1>
+
+            <section id="what-is-scratch" class="lesson-section">
+                <h2>Introduction to Scratch</h2>
+                <p>Scratch is a free, block-based programming language developed by MIT that makes it easy to create interactive stories, games, and animations. It's designed to be fun, educational, and accessible for beginners of all ages.</p>
+                
+                <div class="definition-box">
+                    <h4><i class="fas fa-lightbulb"></i> Why Use Scratch?</h4>
+                    <ul>
+                        <li>Visual programming interface (no syntax errors!)</li>
+                        <li>Great for learning programming concepts</li>
+                        <li>Large online community with millions of shared projects</li>
+                        <li>Can be used online or offline</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="scratch-interface" class="lesson-section">
+                <h2>Scratch Interface Overview</h2>
+                
+                <h3>Main Components:</h3>
+                <div class="info-table">
+                    <table>
+                        <tr>
+                            <th>Area</th>
+                            <th>Purpose</th>
+                        </tr>
+                        <tr>
+                            <td><strong>Stage</strong></td>
+                            <td>Where your project runs and is displayed (480x360 pixels)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sprite List</strong></td>
+                            <td>Shows all characters and objects in your project</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Blocks Palette</strong></td>
+                            <td>Contains all the programming blocks organized by category</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Scripts Area</strong></td>
+                            <td>Where you drag and snap blocks together to create scripts</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Costumes/Backdrops</strong></td>
+                            <td>Where you edit sprites and backgrounds</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sounds</strong></td>
+                            <td>Where you add and edit sounds for your project</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <section id="first-program" class="lesson-section">
+                <h2>Your First Scratch Program</h2>
+                <p>Let's create a simple program where a sprite moves across the screen when the green flag is clicked.</p>
+                
+                <div class="tutorial-steps">
+                    <h3>Step 1: Choose a Sprite</h3>
+                    <ol>
+                        <li>Click on the "Choose a Sprite" button (cat icon) in the bottom-right corner</li>
+                        <li>Select any sprite you like from the library</li>
+                        <li>You can also paint your own sprite or upload an image</li>
+                    </ol>
+
+                    <h3>Step 2: Add Movement</h3>
+                    <ol>
+                        <li>Go to the "Events" category (yellow blocks)</li>
+                        <li>Drag out the "when green flag clicked" block</li>
+                        <li>Go to the "Motion" category (blue blocks)</li>
+                        <li>Attach a "move 10 steps" block</li>
+                        <li>Click the green flag to test your program</li>
+                    </ol>
+
+                    <h3>Step 3: Add a Loop</h3>
+                    <ol>
+                        <li>From the "Control" category (orange blocks), add a "forever" block around your movement block</li>
+                        <li>Add a "if on edge, bounce" block inside the forever loop</li>
+                        <li>Click the green flag to see your sprite bounce back and forth</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section id="scratch-blocks" class="lesson-section">
+                <h2>Essential Scratch Blocks</h2>
+                
+                <div class="info-table">
+                    <table>
+                        <tr>
+                            <th>Category</th>
+                            <th>Key Blocks</th>
+                            <th>Purpose</th>
+                        </tr>
+                        <tr>
+                            <td><strong>Motion</strong></td>
+                            <td>move, turn, point in direction, go to x: y:</td>
+                            <td>Control sprite movement and rotation</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Looks</strong></td>
+                            <td>say, switch costume, change size by</td>
+                            <td>Change appearance and display text</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sound</strong></td>
+                            <td>play sound, change volume by</td>
+                            <td>Add sound effects and music</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Events</strong></td>
+                            <td>when green flag clicked, when key pressed</td>
+                            <td>Start scripts based on events</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Control</strong></td>
+                            <td>wait, repeat, forever, if-then</td>
+                            <td>Control script flow and timing</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sensing</strong></td>
+                            <td>touching color?, key pressed?, mouse x/y</td>
+                            <td>Detect user input and conditions</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Variables</strong></td>
+                            <td>set to, change by</td>
+                            <td>Store and modify data</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <section id="saving-sharing" class="lesson-section">
+                <h2>Saving and Sharing Projects</h2>
+                
+                <h3>To save your project:</h3>
+                <ol>
+                    <li>Click "File" in the top-left corner</li>
+                    <li>Select "Save to your computer"</li>
+                    <li>Choose a location and name your file (it will save with a .sb3 extension)</li>
+                </ol>
+
+                <h3>To share your project online:</h3>
+                <ol>
+                    <li>Create a free Scratch account at <a href="https://scratch.mit.edu" target="_blank">scratch.mit.edu</a></li>
+                    <li>Click "Share" in the top-right corner</li>
+                    <li>Add a title and instructions</li>
+                    <li>Click "Share" to make it public</li>
+                </ol>
+            </section>
+
+            <div class="practice-activity">
+                <h3><i class="fas fa-laptop-code"></i> Practice Activity</h3>
+                <p>Create a simple animation where a sprite:</p>
+                <ol>
+                    <li>Starts in the center of the stage when the green flag is clicked</li>
+                    <li>Moves in a square pattern using motion blocks</li>
+                    <li>Changes color each time it turns a corner</li>
+                    <li>Plays a sound when it completes the square</li>
+                </ol>
+                <p>Hint: You'll need blocks from Motion, Looks, Sound, and Control categories.</p>
+            </div>
+
+            <div class="navigation-buttons">
+                <a href="block-programming.html" class="nav-button prev"><i class="fas fa-arrow-left"></i> Previous: Introduction</a>
+                <a href="loops-conditionals.html" class="nav-button next">Next: Loops & Conditionals <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About This Course</h3>
+                <p>This course introduces block programming concepts using visual programming environments like Scratch.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://scratch.mit.edu" target="_blank">Scratch Website</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CS 2082 - Computer Science Curriculum</p>
+        </div>
+    </footer>
+
+    <script>
+        // Function to save user's answer
+        function saveAnswer(elementId) {
+            const element = document.getElementById(elementId);
+            if (element) {
+                localStorage.setItem(elementId, element.value);
+            }
+        }
+
+        // Function to update progress
+        function updateProgress() {
+            const progressBar = document.querySelector('.progress-bar');
+            if (progressBar) {
+                const windowHeight = window.innerHeight;
+                const documentHeight = document.documentElement.scrollHeight - windowHeight;
+                const scrolled = window.scrollY;
+                const progress = (scrolled / documentHeight) * 100;
+                progressBar.style.width = Math.min(100, Math.max(0, progress)) + '%';
+            }
+        }
+        
+        // Update progress on scroll and load
+        window.addEventListener('scroll', updateProgress);
+        document.addEventListener('DOMContentLoaded', updateProgress);
+    </script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basics - CS 2082</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lesson.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-laptop-code"></i>
+                <a href="index.html" class="home-link">CS 2082</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="lesson-container">
+        <aside class="lesson-sidebar">
+            <h3>Course Content</h3>
+            <ul class="lesson-menu">
+                <li><a href="web-technology.html">4.1 Web Fundamentals</a></li>
+                <li><a href="html-basics.html">4.2 HTML Basics</a></li>
+                <li><a href="css-styling.html">4.3 CSS Styling</a></li>
+                <li class="active"><a href="javascript-basics.html">4.4 JavaScript Basics</a></li>
+                <li><a href="web-hosting.html">4.5 Web Hosting & Publishing</a></li>
+            </ul>
+        </aside>
+
+        <article class="lesson-content">
+            <div class="navigation-buttons top-navigation">
+                <a href="css-styling.html" class="nav-button prev"><i class="fas fa-arrow-left"></i> Previous: CSS Styling</a>
+                <a href="web-hosting.html" class="nav-button next">Next: Web Hosting <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <h1>4.4 JavaScript Basics</h1>
+
+            <section id="what-is-js" class="lesson-section">
+                <h2>Introduction to JavaScript</h2>
+                <p>JavaScript is a high-level, interpreted programming language that makes web pages interactive. It allows you to create dynamic content, control multimedia, animate images, and much more.</p>
+                
+                <div class="definition-box">
+                    <h4><i class="fas fa-lightbulb"></i> Key Points About JavaScript</h4>
+                    <ul>
+                        <li>Client-side scripting language</li>
+                        <li>Lightweight and interpreted</li>
+                        <li>Object-oriented</li>
+                        <li>Event-driven</li>
+                        <li>Cross-platform</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="js-syntax" class="lesson-section">
+                <h2>Basic JavaScript Syntax</h2>
+                
+                <h3>1. Including JavaScript in HTML</h3>
+                <div class="code-snippet">
+                    <pre><code>&lt;!-- Internal JavaScript -->
+&lt;script>
+    // JavaScript code here
+    alert('Hello, World!');
+&lt;/script>
+
+&lt;!-- External JavaScript file -->
+&lt;script src="script.js">&lt;/script></code></pre>
+                </div>
+
+                <h3>2. Variables and Data Types</h3>
+                <div class="code-snippet">
+                    <pre><code>// Variables
+let message = 'Hello';
+const PI = 3.14159;
+var count = 0;
+
+// Data Types
+let name = 'John';          // String
+let age = 25;               // Number
+let isStudent = true;       // Boolean
+let fruits = ['apple', 'banana']; // Array
+let person = {              // Object
+    firstName: 'John',
+    lastName: 'Doe'
+};</code></pre>
+                </div>
+            </section>
+
+            <section id="functions" class="lesson-section">
+                <h2>Functions</h2>
+                <p>Functions are blocks of code designed to perform particular tasks.</p>
+                
+                <div class="code-snippet">
+                    <pre><code>// Function declaration
+function greet(name) {
+    return 'Hello, ' + name + '!';
+}
+
+// Function expression
+const add = function(a, b) {
+    return a + b;
+};
+
+// Arrow function (ES6+)
+const multiply = (a, b) => a * b;
+
+// Using functions
+console.log(greet('Alice'));  // Output: Hello, Alice!
+console.log(add(5, 3));       // Output: 8
+console.log(multiply(4, 5));  // Output: 20</code></pre>
+                </div>
+            </section>
+
+            <section id="dom-manipulation" class="lesson-section">
+                <h2>DOM Manipulation</h2>
+                <p>JavaScript can access and modify the Document Object Model (DOM) to change the content and appearance of a webpage.</p>
+                
+                <div class="code-snippet">
+                    <pre><code>// Select elements
+const heading = document.querySelector('h1');
+const button = document.getElementById('myButton');
+
+// Change content
+heading.textContent = 'New Heading';
+
+// Add event listener
+button.addEventListener('click', function() {
+    alert('Button clicked!');
+});
+
+// Create new element
+const newParagraph = document.createElement('p');
+newParagraph.textContent = 'This is a new paragraph.';
+document.body.appendChild(newParagraph);</code></pre>
+                </div>
+            </section>
+
+            <div class="navigation-buttons">
+                <a href="css-styling.html" class="nav-button prev"><i class="fas fa-arrow-left"></i> Previous: CSS Styling</a>
+                <a href="web-hosting.html" class="nav-button next">Next: Web Hosting <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Computer Science 2082. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Function to save user's answer
+        function saveAnswer(elementId) {
+            const element = document.getElementById(elementId);
+            const userAnswer = element.value;
+            localStorage.setItem(elementId, userAnswer);
+        }
+
+        // Function to update progress
+        function updateProgress() {
+            const sections = document.querySelectorAll('.lesson-section');
+            const scrollPosition = window.scrollY + 100;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    const sectionId = section.getAttribute('id');
+                    localStorage.setItem('lastVisitedSection', sectionId);
+                }
+            });
+        }
+        
+        // Update progress on scroll and load
+        window.addEventListener('scroll', updateProgress);
+        document.addEventListener('DOMContentLoaded', updateProgress);
+    </script>
+</body>
+</html>

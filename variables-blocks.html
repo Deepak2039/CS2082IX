@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables in Block Programming - CS 2082</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lesson.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-laptop-code"></i>
+                <a href="index.html" class="home-link">CS 2082</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="lesson-container">
+        <aside class="lesson-sidebar">
+            <h3>Course Content</h3>
+            <ul class="lesson-menu">
+                <li><a href="block-programming.html">3.1 Introduction to Block Programming</a></li>
+                <li><a href="scratch-basics.html">3.2 Scratch Basics</a></li>
+                <li><a href="loops-conditionals.html">3.3 Loops & Conditionals</a></li>
+                <li class="active"><a href="variables-blocks.html">3.4 Variables in Block Programming</a></li>
+                <li><a href="block-projects.html">3.5 Creating Projects</a></li>
+            </ul>
+        </aside>
+
+        <article class="lesson-content">
+            <div class="navigation-buttons top-navigation">
+                <a href="loops-conditionals.html" class="nav-button prev"><i class="fas fa-arrow-left"></i> Previous: Loops & Conditionals</a>
+                <a href="block-projects.html" class="nav-button next">Next: Creating Projects <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <h1>3.4 Variables in Block Programming</h1>
+
+            <section id="what-are-variables" class="lesson-section">
+                <h2>Understanding Variables</h2>
+                <p>Variables are like containers that store information (values) in your program. They can hold different types of data, such as numbers, text, or true/false values.</p>
+                
+                <div class="definition-box">
+                    <h4><i class="fas fa-lightbulb"></i> Why Use Variables?</h4>
+                    <ul>
+                        <li>Store and update scores in games</li>
+                        <li>Keep track of user input</li>
+                        <li>Control program flow</li>
+                        <li>Make your code more flexible and reusable</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="creating-variables" class="lesson-section">
+                <h2>Creating Variables in Scratch</h2>
+                
+                <h3>1. Making a New Variable</h3>
+                <ol>
+                    <li>Click on the "Variables" category in the blocks palette</li>
+                    <li>Click "Make a Variable"</li>
+                    <li>Enter a name for your variable (e.g., "score", "lives", "highScore")</li>
+                    <li>Choose if the variable should be available to all sprites or just the current one</li>
+                </ol>
+
+                <h3>2. Variable Blocks</h3>
+                <div class="info-table">
+                    <table>
+                        <tr>
+                            <th>Block</th>
+                            <th>Purpose</th>
+                        </tr>
+                        <tr>
+                            <td><code>set [variable] to [0]</code></td>
+                            <td>Sets the variable to a specific value</td>
+                        </tr>
+                        <tr>
+                            <td><code>change [variable] by [1]</code></td>
+                            <td>Increases or decreases the variable by a number</td>
+                        </tr>
+                        <tr>
+                            <td><code>show variable [variable]</code></td>
+                            <td>Displays the variable on the stage</td>
+                        </tr>
+                        <tr>
+                            <td><code>hide variable [variable]</code></td>
+                            <td>Hides the variable from the stage</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <section id="using-variables" class="lesson-section">
+                <h2>Using Variables in Your Projects</h2>
+                
+                <h3>1. Score Counter</h3>
+                <div class="code-block">
+                    <pre><code>when green flag clicked
+set [score v] to [0]
+show variable [score v]
+
+when this sprite clicked
+change [score v] by (1)
+play sound (pop v)</code></pre>
+                </div>
+
+                <h3>2. Countdown Timer</h3>
+                <div class="code-block">
+                    <pre><code>when green flag clicked
+set [time v] to (30)
+show variable [time v]
+repeat until <(time) = [0]>
+    wait (1) seconds
+    change [time v] by (-1)
+end
+say [Time's up!] for (2) seconds</code></pre>
+                </div>
+
+                <h3>3. High Score System</h3>
+                <div class="code-block">
+                    <pre><code>when green flag clicked
+if <(score) > (high score)> then
+    set [high score v] to (score)
+    say [New high score!] for (2) seconds
+end</code></pre>
+                </div>
+            </section>
+
+            <section id="lists" class="lesson-section">
+                <h2>Working with Lists</h2>
+                <p>Lists (also called arrays) allow you to store multiple values in a single variable.</p>
+                
+                <h3>1. Creating a List</h3>
+                <ol>
+                    <li>Click on the "Variables" category</li>
+                    <li>Click "Make a List"</li>
+                    <li>Name your list (e.g., "inventory", "scores", "questions")</li>
+                </ol>
+
+                <h3>2. Common List Operations</h3>
+                <div class="info-table">
+                    <table>
+                        <tr>
+                            <th>Block</th>
+                            <th>Purpose</th>
+                        </tr>
+                        <tr>
+                            <td><code>add [thing] to [list]</code></td>
+                            <td>Adds an item to the end of the list</td>
+                        </tr>
+                        <tr>
+                            <td><code>delete (1) of [list]</code></td>
+                            <td>Removes an item from the list</td>
+                        </tr>
+                        <tr>
+                            <td><code>item (1) of [list]</code></td>
+                            <td>Gets an item at a specific position</td>
+                        </tr>
+                        <tr>
+                            <td><code>length of [list]</code></td>
+                            <td>Gets the number of items in the list</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <h3>3. List Example: Quiz Game</h3>
+                <div class="code-block">
+                    <pre><code>when green flag clicked
+delete (all v) of [questions v]
+add [What is 5 + 3?] to [questions v]
+add [What is the capital of France?] to [questions v]
+add [What color is the sky?] to [questions v]
+set [current question v] to [1]
+ask (item (current question) of [questions v]) and wait
+change [current question v] by (1)</code></pre>
+                </div>
+            </section>
+
+            <section id="variable-scope" class="lesson-section">
+                <h2>Variable Scope</h2>
+                <p>Variables in Scratch can have different scopes:</p>
+                
+                <h3>1. Global Variables</h3>
+                <ul>
+                    <li>Available to all sprites</li>
+                    <li>Created by selecting "For all sprites" when making a variable</li>
+                    <li>Use for values that multiple sprites need to access (e.g., score, time)</li>
+                </ul>
+
+                <h3>2. Local Variables</h3>
+                <ul>
+                    <li>Available only to the sprite they belong to</li>
+                    <li>Created by selecting "For this sprite only"</li>
+                    <li>Use for values specific to one sprite (e.g., speed, health)</li>
+                </ul>
+            </section>
+
+            <div class="practice-activity">
+                <h3><i class="fas fa-laptop-code"></i> Practice Activity</h3>
+                <p>Create a simple game that:</p>
+                <ol>
+                    <li>Keeps track of the player's score</li>
+                    <li>Has a countdown timer (30 seconds)</li>
+                    <li>When the player clicks a moving target, increase their score</li>
+                    <li>When time runs out, show the final score and check for a new high score</li>
+                    <li>Display both the current score and high score on the screen</li>
+                </ol>
+                <p>Use both global variables (for scores) and local variables (for target-specific behaviors).</p>
+            </div>
+
+            <div class="navigation-buttons">
+                <a href="loops-conditionals.html" class="nav-button prev"><i class="fas fa-arrow-left"></i> Previous: Loops & Conditionals</a>
+                <a href="block-projects.html" class="nav-button next">Next: Creating Projects <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About This Course</h3>
+                <p>This course introduces block programming concepts using visual programming environments like Scratch.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://scratch.mit.edu" target="_blank">Scratch Website</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CS 2082 - Computer Science Curriculum</p>
+        </div>
+    </footer>
+
+    <script>
+        // Function to save user's answer
+        function saveAnswer(elementId) {
+            const element = document.getElementById(elementId);
+            if (element) {
+                localStorage.setItem(elementId, element.value);
+            }
+        }
+
+        // Function to update progress
+        function updateProgress() {
+            const progressBar = document.querySelector('.progress-bar');
+            if (progressBar) {
+                const windowHeight = window.innerHeight;
+                const documentHeight = document.documentElement.scrollHeight - windowHeight;
+                const scrolled = window.scrollY;
+                const progress = (scrolled / documentHeight) * 100;
+                progressBar.style.width = Math.min(100, Math.max(0, progress)) + '%';
+            }
+        }
+        
+        // Update progress on scroll and load
+        window.addEventListener('scroll', updateProgress);
+        document.addEventListener('DOMContentLoaded', updateProgress);
+    </script>
+</body>
+</html>

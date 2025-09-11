@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Number System - CS 2082</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lesson.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-laptop-code"></i>
+                <a href="index.html" class="home-link">CS 2082</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="lesson-container">
+        <aside class="lesson-sidebar">
+            <h3>Course Content</h3>
+            <ul class="lesson-menu">
+                <li><a href="number-system.html">2.1 Number System Basics</a></li>
+                <li class="active"><a href="binary-system.html">2.2 Binary Number System</a></li>
+                <li><a href="octal-hexadecimal.html">2.3 Octal & Hexadecimal</a></li>
+                <li><a href="number-conversion.html">2.4 Number Conversion</a></li>
+                <li><a href="binary-arithmetic.html">2.5 Binary Arithmetic</a></li>
+            </ul>
+        </aside>
+
+        <article class="lesson-content">
+            <div class="navigation-buttons top-navigation">
+                <a href="number-system.html" class="nav-button prev"><i class="fas fa-arrow-left"></i> Previous: Number System Basics</a>
+                <a href="octal-hexadecimal.html" class="nav-button next">Next: Octal & Hexadecimal <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <h1>2.2 Binary Number System</h1>
+
+            <section id="binary-intro" class="lesson-section">
+                <h2>Introduction to Binary</h2>
+                <p>The binary number system is the foundation of all modern computing systems. It's a base-2 number system that uses only two digits: 0 and 1. Each digit in a binary number is called a <strong>bit</strong> (binary digit).</p>
+                
+                <div class="definition-box">
+                    <h4><i class="fas fa-lightbulb"></i> Why Binary?</h4>
+                    <p>Computers use binary because it's easier to create physical devices that can distinguish between two states (on/off, high/low voltage) rather than multiple states. This makes binary systems more reliable and easier to implement in hardware.</p>
+                </div>
+            </section>
+
+            <section id="binary-basics" class="lesson-section">
+                <h2>Understanding Binary Numbers</h2>
+                
+                <h3>Binary Place Values</h3>
+                <p>Just like in the decimal system, each position in a binary number represents a power of 2:</p>
+                
+                <div class="info-table">
+                    <table>
+                        <tr>
+                            <th>Position (from right)</th>
+                            <th>Power of 2</th>
+                            <th>Decimal Value</th>
+                        </tr>
+                        <tr>
+                            <td>1st</td>
+                            <td>2<sup>0</sup></td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>2nd</td>
+                            <td>2<sup>1</sup></td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>3rd</td>
+                            <td>2<sup>2</sup></td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>4th</td>
+                            <td>2<sup>3</sup></td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>5th</td>
+                            <td>2<sup>4</sup></td>
+                            <td>16</td>
+                        </tr>
+                        <tr>
+                            <td>6th</td>
+                            <td>2<sup>5</sup></td>
+                            <td>32</td>
+                        </tr>
+                        <tr>
+                            <td>7th</td>
+                            <td>2<sup>6</sup></td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>8th</td>
+                            <td>2<sup>7</sup></td>
+                            <td>128</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <h3>Example: Converting Binary to Decimal</h3>
+                <p>Let's convert the binary number 1011<sub>2</sub> to decimal:</p>
+                <pre>
+1 0 1 1
+│ │ │ └─ 1 × 2<sup>0</sup> = 1 × 1 = 1
+│ │ └─── 1 × 2<sup>1</sup> = 1 × 2 = 2
+│ └───── 0 × 2<sup>2</sup> = 0 × 4 = 0
+└─────── 1 × 2<sup>3</sup> = 1 × 8 = 8
+                        
+Total = 8 + 0 + 2 + 1 = 11<sub>10</sub>
+                </pre>
+            </section>
+
+            <section id="binary-concepts" class="lesson-section">
+                <h2>Key Binary Concepts</h2>
+                
+                <h3>Bytes and Nibbles</h3>
+                <ul>
+                    <li><strong>Bit:</strong> A single binary digit (0 or 1)</li>
+                    <li><strong>Nibble:</strong> 4 bits (e.g., 1010)</li>
+                    <li><strong>Byte:</strong> 8 bits (e.g., 10101010)</li>
+                    <li><strong>Word:</strong> Typically 16, 32, or 64 bits, depending on the computer architecture</li>
+                </ul>
+
+                <h3>Common Binary Prefixes</h3>
+                <div class="info-table">
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Symbol</th>
+                            <th>Value (Bytes)</th>
+                        </tr>
+                        <tr>
+                            <td>Kilobyte</td>
+                            <td>KB</td>
+                            <td>1,024</td>
+                        </tr>
+                        <tr>
+                            <td>Megabyte</td>
+                            <td>MB</td>
+                            <td>1,048,576</td>
+                        </tr>
+                        <tr>
+                            <td>Gigabyte</td>
+                            <td>GB</td>
+                            <td>1,073,741,824</td>
+                        </tr>
+                        <tr>
+                            <td>Terabyte</td>
+                            <td>TB</td>
+                            <td>1,099,511,627,776</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <div class="navigation-buttons">
+                <a href="number-system.html" class="nav-button prev"><i class="fas fa-arrow-left"></i> Previous: Number System Basics</a>
+                <a href="octal-hexadecimal.html" class="nav-button next">Next: Octal & Hexadecimal <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About This Course</h3>
+                <p>This course covers the fundamentals of number systems used in computing, including binary, decimal, octal, and hexadecimal systems.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="quiz.html">Take Quiz</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CS 2082 - Computer Science Curriculum</p>
+        </div>
+    </footer>
+
+    <script>
+        // Function to save user's answer
+        function saveAnswer(elementId) {
+            const element = document.getElementById(elementId);
+            if (element) {
+                localStorage.setItem(elementId, element.value);
+            }
+        }
+
+        // Function to update progress
+        function updateProgress() {
+            const progressBar = document.querySelector('.progress-bar');
+            if (progressBar) {
+                const windowHeight = window.innerHeight;
+                const documentHeight = document.documentElement.scrollHeight - windowHeight;
+                const scrolled = window.scrollY;
+                const progress = (scrolled / documentHeight) * 100;
+                progressBar.style.width = Math.min(100, Math.max(0, progress)) + '%';
+            }
+        }
+        
+        // Update progress on scroll and load
+        window.addEventListener('scroll', updateProgress);
+        document.addEventListener('DOMContentLoaded', updateProgress);
+    </script>
+</body>
+</html>

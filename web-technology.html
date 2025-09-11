@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Technology - CS 2082</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lesson.css">
+    <link rel="stylesheet" href="css/mcq.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-laptop-code"></i>
+                <a href="index.html" class="home-link">CS 2082</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="lesson-container">
+        <aside class="lesson-sidebar">
+            <h3>Course Content</h3>
+            <ul class="lesson-menu">
+                <li class="active"><a href="web-technology.html">4.1 Web Fundamentals</a></li>
+                <li><a href="html-basics.html">4.2 HTML Basics</a></li>
+                <li><a href="css-styling.html">4.3 CSS Styling</a></li>
+                <li><a href="javascript-basics.html">4.4 JavaScript Basics</a></li>
+                <li><a href="web-hosting.html">4.5 Web Hosting & Publishing</a></li>
+            </ul>
+        </aside>
+
+        <article class="lesson-content">
+            <div class="navigation-buttons top-navigation">
+                <div></div>
+                <a href="html-basics.html" class="nav-button next">Next: 4.2 HTML Basics <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <h1>4. Web Technology</h1>
+            
+            <section id="introduction" class="lesson-section">
+                <h2>4.1 Web Fundamentals</h2>
+                <p>Welcome to the world of web technology! This module will introduce you to the fundamental concepts of how the web works and the technologies that power it.</p>
+                
+                <div class="learning-objectives">
+                    <h3><i class="fas fa-bullseye"></i> Learning Objectives</h3>
+                    <ul>
+                        <li>Understand how the World Wide Web works</li>
+                        <li>Learn about client-server architecture</li>
+                        <li>Explore the core web technologies: HTML, CSS, and JavaScript</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="how-web-works" class="lesson-section">
+                <h3>4.1.1 How the Web Works</h3>
+                <div class="definition-box">
+                    <h4><i class="fas fa-lightbulb"></i> The Web in a Nutshell</h4>
+                    <p>The World Wide Web is a system of interlinked hypertext documents accessed via the Internet. It was invented by Sir Tim Berners-Lee in 1989 while working at CERN.</p>
+                </div>
+
+                <h4><i class="fas fa-exchange-alt"></i> Client-Server Model</h4>
+                <p>The web operates on a client-server model:</p>
+                <ul class="application-list">
+                    <li><strong>Client:</strong> Your web browser (Chrome, Firefox, Safari, etc.)</li>
+                    <li><strong>Server:</strong> A powerful computer that hosts website files</li>
+                    <li><strong>HTTP/HTTPS:</strong> Protocol used for communication between client and server</li>
+                    <li><strong>DNS:</strong> Translates domain names (like google.com) to IP addresses</li>
+                </ul>
+
+                <div class="info-box">
+                    <h4><i class="fas fa-info-circle"></i> Web Page Loading Process</h4>
+                    <ol>
+                        <li>You enter a URL in your browser</li>
+                        <li>Browser looks up the IP address using DNS</li>
+                        <li>Browser sends an HTTP request to the server</li>
+                        <li>Server processes the request and sends back the response</li>
+                        <li>Browser renders the HTML, CSS, and JavaScript</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section id="core-technologies" class="lesson-section">
+                <h3>4.1.2 Core Web Technologies</h3>
+                
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="tech-content">
+                        <h4>HTML (HyperText Markup Language)</h4>
+                        <p>The standard markup language for creating web pages. It provides the structure and content of a webpage.</p>
+                        <div class="code-snippet">
+                            <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="tech-content">
+                        <h4>CSS (Cascading Style Sheets)</h4>
+                        <p>Used for styling and layout of web pages. It controls colors, fonts, spacing, and responsive design.</p>
+                        <div class="code-snippet">
+                            <code>h1 { color: blue; font-size: 24px; }</code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <div class="tech-content">
+                        <h4>JavaScript</h4>
+                        <p>A programming language that enables interactive web pages. It can update content, control multimedia, animate images, and more.</p>
+                        <div class="code-snippet">
+                            <code>document.getElementById('demo').innerHTML = 'Hello JavaScript!';</code>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="web-standards" class="lesson-section">
+                <h3>4.1.3 Web Standards & Best Practices</h3>
+                
+                <div class="feature-item">
+                    <h4><i class="fas fa-check-circle"></i> Web Standards</h4>
+                    <p>Web standards are formal specifications that define and describe aspects of the World Wide Web. They are developed by standards organizations like W3C and WHATWG.</p>
+                    <ul class="application-list">
+                        <li><strong>Semantic HTML:</strong> Using HTML elements according to their purpose</li>
+                        <li><strong>Accessibility (a11y):</strong> Making web content accessible to people with disabilities</li>
+                        <li><strong>Responsive Design:</strong> Creating websites that work on all device sizes</li>
+                        <li><strong>Performance:</strong> Optimizing website loading speed and efficiency</li>
+                    </ul>
+                </div>
+                
+                <div class="real-world-example">
+                    <h4><i class="fas fa-mobile-alt"></i> Real World Example</h4>
+                    <p>Modern websites like Wikipedia use semantic HTML for better accessibility and SEO. Their responsive design ensures the content is easily readable on any device, from smartphones to desktop computers. The site also follows web standards to ensure compatibility across different browsers.</p>
+                </div>
+            </section>
+
+            <div class="navigation-buttons">
+                <div></div>
+                <a href="html-basics.html" class="nav-button next">Next: 4.2 HTML Basics <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About This Course</h3>
+                <p>This course covers the fundamentals of web technology, including HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="quiz.html">Take Quiz</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CS 2082 - Updated Computer Science Curriculum</p>
+        </div>
+    </footer>
+
+    <script>
+        // Function to save user's answer
+        function saveAnswer(elementId) {
+            const element = document.getElementById(elementId);
+            if (element) {
+                localStorage.setItem(elementId, element.value);
+            }
+        }
+
+        // Function to update progress
+        function updateProgress() {
+            const sections = document.querySelectorAll('.lesson-section');
+            const totalSections = sections.length;
+            let viewedSections = 0;
+            
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    section.classList.add('viewed');
+                }
+            });
+            
+            viewedSections = document.querySelectorAll('.lesson-section.viewed').length;
+            const progress = Math.round((viewedSections / totalSections) * 100);
+            
+            const progressBar = document.querySelector('.progress-bar');
+            if (progressBar) {
+                progressBar.style.width = progress + '%';
+                progressBar.setAttribute('aria-valuenow', progress);
+            }
+        }
+        
+        // Update progress on scroll and load
+        window.addEventListener('scroll', updateProgress);
+        document.addEventListener('DOMContentLoaded', updateProgress);
+    </script>
+    
+    <!-- Include shared MCQ functionality -->
+    <script src="js/mcq.js"></script>
+    <!-- Include chapter-specific JavaScript -->
+    <script src="js/chapters/web-technology.js"></script>
+</body>
+</html>

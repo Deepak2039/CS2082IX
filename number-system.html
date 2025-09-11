@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number System - CS 2082</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lesson.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-laptop-code"></i>
+                <a href="index.html" class="home-link">CS 2082</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="lesson-container">
+        <aside class="lesson-sidebar">
+            <h3>Course Content</h3>
+            <ul class="lesson-menu">
+                <li class="active"><a href="number-system.html">2.1 Number System Basics</a></li>
+                <li><a href="binary-system.html">2.2 Binary Number System</a></li>
+                <li><a href="octal-hexadecimal.html">2.3 Octal & Hexadecimal</a></li>
+                <li><a href="number-conversion.html">2.4 Number Conversion</a></li>
+                <li><a href="binary-arithmetic.html">2.5 Binary Arithmetic</a></li>
+            </ul>
+        </aside>
+
+        <article class="lesson-content">
+            <div class="navigation-buttons top-navigation">
+                <div></div>
+                <a href="binary-system.html" class="nav-button next">Next: 2.2 Binary Number System <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <h1>2. Number System</h1>
+
+            <section id="introduction" class="lesson-section">
+                <h2>2.1 Number System Basics</h2>
+                <p>Welcome to the world of number systems! In this module, we'll explore how computers represent and work with numbers, and how we can convert between different number systems.</p>
+                
+                <div class="learning-objectives">
+                    <h3><i class="fas fa-bullseye"></i> Learning Objectives</h3>
+                    <ul>
+                        <li>Understand different types of number systems used in computing</li>
+                        <li>Learn about binary, decimal, octal, and hexadecimal systems</li>
+                        <li>Understand the importance of number systems in computing</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="what-is-number-system" class="lesson-section">
+                <h3>2.1.1 What is a Number System?</h3>
+                <div class="definition-box">
+                    <h4><i class="fas fa-lightbulb"></i> Definition</h4>
+                    <p>A number system is a way to represent numbers using digits or other symbols in a consistent manner. The value of each digit in a number can be determined by its position in the number, its digit value, and the base of the number system.</p>
+                </div>
+
+                <h4><i class="fas fa-sort-numeric-up"></i> Types of Number Systems</h4>
+                <p>There are several types of number systems, but in computing, we primarily work with four:</p>
+                
+                <div class="info-table">
+                    <table>
+                        <tr>
+                            <th>Number System</th>
+                            <th>Base</th>
+                            <th>Digits Used</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr>
+                            <td>Binary</td>
+                            <td>2</td>
+                            <td>0, 1</td>
+                            <td>1010<sub>2</sub></td>
+                        </tr>
+                        <tr>
+                            <td>Decimal</td>
+                            <td>10</td>
+                            <td>0-9</td>
+                            <td>10<sub>10</sub></td>
+                        </tr>
+                        <tr>
+                            <td>Octal</td>
+                            <td>8</td>
+                            <td>0-7</td>
+                            <td>12<sub>8</sub></td>
+                        </tr>
+                        <tr>
+                            <td>Hexadecimal</td>
+                            <td>16</td>
+                            <td>0-9, A-F</td>
+                            <td>A1<sub>16</sub></td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <section id="importance" class="lesson-section">
+                <h3>2.1.2 Importance in Computing</h3>
+                <p>Number systems are fundamental to how computers work:</p>
+                
+                <div class="feature-item">
+                    <h4><i class="fas fa-microchip"></i> Binary in Computers</h4>
+                    <p>Computers use the binary system (base-2) because digital electronics have two stable states: on (1) and off (0). All data in computers is ultimately represented in binary form.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h4><i class="fas fa-memory"></i> Memory Addressing</h4>
+                    <p>Memory locations in computers are addressed using binary numbers. Hexadecimal is often used as a more human-readable representation of these binary addresses.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h4><i class="fas fa-palette"></i> Color Representation</h4>
+                    <p>Colors in web design are often represented in hexadecimal format (e.g., #FF5733) which is more compact than binary and easier to read than decimal.</p>
+                </div>
+            </section>
+
+            <section id="conversion-basics" class="lesson-section">
+                <h3>2.1.3 Basic Conversion Concepts</h3>
+                <p>Understanding how to convert between different number systems is a key skill in computer science. Here's a quick overview:</p>
+                
+                <h4>Positional Notation</h4>
+                <p>In any number system, the position of each digit represents a power of the base. For example, in the decimal number 345<sub>10</sub>:</p>
+                <p>3 × 10<sup>2</sup> + 4 × 10<sup>1</sup> + 5 × 10<sup>0</sup> = 300 + 40 + 5 = 345<sub>10</sub></p>
+                
+                <h4>Common Conversion Methods</h4>
+                <ul class="application-list">
+                    <li><strong>Binary to Decimal:</strong> Multiply each bit by 2<sup>position</sup> and add</li>
+                    <li><strong>Decimal to Binary:</strong> Divide by 2 and record remainders</li>
+                    <li><strong>Binary to Hexadecimal:</strong> Group binary digits into sets of four</li>
+                    <li><strong>Hexadecimal to Binary:</strong> Convert each hex digit to 4 binary bits</li>
+                </ul>
+                
+                <div class="real-world-example">
+                    <h4><i class="fas fa-mobile-alt"></i> Real World Example</h4>
+                    <p>When you see a color code like #FF5733 in web design, it's actually three pairs of hexadecimal numbers representing red (FF), green (57), and blue (33) components. Each pair can be converted to binary for the computer to understand.</p>
+                </div>
+            </section>
+
+            <div class="navigation-buttons">
+                <div></div>
+                <a href="binary-system.html" class="nav-button next">Next: 2.2 Binary Number System <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About This Course</h3>
+                <p>This course is designed to provide a comprehensive understanding of number systems and their applications in computing.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="quiz.html">Take Quiz</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CS 2082 - Updated Computer Science Curriculum</p>
+        </div>
+    </footer>
+
+    <script>
+        // Function to save user's answer
+        function saveAnswer(elementId) {
+            const element = document.getElementById(elementId);
+            if (element) {
+                localStorage.setItem(elementId, element.value);
+            }
+        }
+
+        // Function to update progress
+        function updateProgress() {
+            const sections = document.querySelectorAll('.lesson-section');
+            const totalSections = sections.length;
+            let viewedSections = 0;
+            
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    section.classList.add('viewed');
+                }
+            });
+            
+            viewedSections = document.querySelectorAll('.lesson-section.viewed').length;
+            const progress = Math.round((viewedSections / totalSections) * 100);
+            
+            const progressBar = document.querySelector('.progress-bar');
+            if (progressBar) {
+                progressBar.style.width = progress + '%';
+                progressBar.setAttribute('aria-valuenow', progress);
+            }
+        }
+        
+        // Update progress on scroll and load
+        window.addEventListener('scroll', updateProgress);
+        document.addEventListener('DOMContentLoaded', updateProgress);
+    </script>
+    
+    <!-- Include shared MCQ functionality -->
+    <script src="js/mcq.js"></script>
+    <!-- Include chapter-specific JavaScript -->
+    <script src="js/chapters/number-system.js"></script>
+</body>
+</html>

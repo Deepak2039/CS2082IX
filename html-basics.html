@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Basics - CS 2082</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lesson.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-laptop-code"></i>
+                <a href="index.html" class="home-link">CS 2082</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="lesson-container">
+        <aside class="lesson-sidebar">
+            <h3>Course Content</h3>
+            <ul class="lesson-menu">
+                <li><a href="web-technology.html">4.1 Web Fundamentals</a></li>
+                <li class="active"><a href="html-basics.html">4.2 HTML Basics</a></li>
+                <li><a href="css-styling.html">4.3 CSS Styling</a></li>
+                <li><a href="javascript-basics.html">4.4 JavaScript Basics</a></li>
+                <li><a href="web-hosting.html">4.5 Web Hosting & Publishing</a></li>
+            </ul>
+        </aside>
+
+        <article class="lesson-content">
+            <div class="navigation-buttons top-navigation">
+                <a href="web-technology.html" class="nav-button prev"><i class="fas fa-arrow-left"></i> Previous: Web Fundamentals</a>
+                <a href="css-styling.html" class="nav-button next">Next: CSS Styling <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <h1>4.2 HTML Basics</h1>
+
+            <section id="what-is-html" class="lesson-section">
+                <h2>Introduction to HTML</h2>
+                <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages. It provides the structure and content of a webpage, while CSS handles the presentation and JavaScript adds interactivity.</p>
+                
+                <div class="definition-box">
+                    <h4><i class="fas fa-lightbulb"></i> Key Points About HTML</h4>
+                    <ul>
+                        <li>HTML stands for HyperText Markup Language</li>
+                        <li>It uses tags to define elements on a webpage</li>
+                        <li>HTML documents are saved with .html extension</li>
+                        <li>It's not a programming language - it's a markup language</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="html-structure" class="lesson-section">
+                <h2>Basic HTML Document Structure</h2>
+                <p>Every HTML document follows a standard structure:</p>
+                
+                <div class="code-block">
+                    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;My First Webpage&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;p&gt;This is my first webpage.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                </div>
+
+                <h3>HTML Elements Explained:</h3>
+                <div class="info-table">
+                    <table>
+                        <tr>
+                            <th>Element</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;!DOCTYPE html&gt;</code></td>
+                            <td>Defines the document type and HTML version</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;html&gt;</code></td>
+                            <td>Root element of the HTML document</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;head&gt;</code></td>
+                            <td>Contains meta information about the document</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;meta&gt;</code></td>
+                            <td>Defines metadata like character set and viewport settings</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;title&gt;</code></td>
+                            <td>Sets the title shown in the browser tab</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;body&gt;</code></td>
+                            <td>Contains the visible page content</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <section id="common-elements" class="lesson-section">
+                <h2>Common HTML Elements</h2>
+                
+                <h3>1. Text Elements</h3>
+                <div class="code-block">
+                    <pre><code>&lt;h1&gt;This is a Heading 1&lt;/h1&gt;
+&lt;h2&gt;This is a Heading 2&lt;/h2&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;strong&gt;This text is bold&lt;/strong&gt;
+&lt;em&gt;This text is italicized&lt;/em&gt;
+&lt;br&gt; <!-- Line break -->
+&lt;hr&gt; <!-- Horizontal rule --></code></pre>
+                </div>
+
+                <h3>2. Links and Images</h3>
+                <div class="code-block">
+                    <pre><code>&lt;!-- Link to another page -->
+&lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;
+
+&lt;!-- Image -->
+&lt;img src="image.jpg" alt="Description of image"&gt;</code></pre>
+                </div>
+
+                <h3>3. Lists</h3>
+                <div class="code-block">
+                    <pre><code>&lt;!-- Unordered list -->
+&lt;ul&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- Ordered list -->
+&lt;ol&gt;
+    &lt;li&gt;First step&lt;/li&gt;
+    &lt;li&gt;Second step&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                </div>
+
+                <h3>4. Forms</h3>
+                <div class="code-block">
+                    <pre><code>&lt;form action="/submit" method="post"&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;&lt;br&gt;
+    
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;
+    
+    &lt;label for="message"&gt;Message:&lt;/label&gt;&lt;br&gt;
+    &lt;textarea id="message" name="message"&gt;&lt;/textarea&gt;&lt;br&gt;
+    
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+                </div>
+            </section>
+
+            <section id="semantic-html" class="lesson-section">
+                <h2>Semantic HTML</h2>
+                <p>Semantic HTML introduces meaning to the web page rather than just presentation. It helps with accessibility and SEO.</p>
+                
+                <div class="info-table">
+                    <table>
+                        <tr>
+                            <th>Element</th>
+                            <th>Purpose</th>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;header&gt;</code></td>
+                            <td>Represents introductory content</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;nav&gt;</code></td>
+                            <td>Contains navigation links</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;main&gt;</code></td>
+                            <td>Contains the main content of the document</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;section&gt;</code></td>
+                            <td>Defines a section in a document</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;article&gt;</code></td>
+                            <td>Represents a self-contained composition</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;aside&gt;</code></td>
+                            <td>Contains content that is indirectly related to the main content</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;footer&gt;</code></td>
+                            <td>Represents a footer for its nearest section</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <section id="html-validation" class="lesson-section">
+                <h2>HTML Validation</h2>
+                <p>It's important to write valid HTML to ensure your web pages work correctly across different browsers.</p>
+                
+                <h3>Common Validation Rules:</h3>
+                <ul>
+                    <li>Always include DOCTYPE declaration</li>
+                    <li>Close all HTML tags properly</li>
+                    <li>Use lowercase for element names</li>
+                    <li>Quote attribute values</li>
+                    <li>Provide alt text for images</li>
+                </ul>
+
+                <div class="tip-box">
+                    <h4><i class="fas fa-check-circle"></i> Validation Tools</h4>
+                    <p>Use the W3C Markup Validation Service to check your HTML:</p>
+                    <a href="https://validator.w3.org/" target="_blank">W3C Markup Validation Service</a>
+                </div>
+            </section>
+
+            <div class="practice-activity">
+                <h3><i class="fas fa-laptop-code"></i> Practice Activity</h3>
+                <p>Create a simple HTML page that includes:</p>
+                <ol>
+                    <li>A heading with your name</li>
+                    <li>A short paragraph about yourself</li>
+                    <li>An ordered list of your top 3 favorite things</li>
+                    <li>A link to your favorite website</li>
+                    <li>An image (can be from the web or local)</li>
+                    <li>A simple contact form with name, email, and message fields</li>
+                </ol>
+                <p>Use semantic HTML elements where appropriate and validate your code using the W3C validator.</p>
+            </div>
+
+            <div class="navigation-buttons">
+                <a href="web-technology.html" class="nav-button prev"><i class="fas fa-arrow-left"></i> Previous: Web Fundamentals</a>
+                <a href="css-styling.html" class="nav-button next">Next: CSS Styling <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About This Course</h3>
+                <p>This course covers web technologies including HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN HTML Reference</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CS 2082 - Computer Science Curriculum</p>
+        </div>
+    </footer>
+
+    <script>
+        // Function to save user's answer
+        function saveAnswer(elementId) {
+            const element = document.getElementById(elementId);
+            if (element) {
+                localStorage.setItem(elementId, element.value);
+            }
+        }
+
+        // Function to update progress
+        function updateProgress() {
+            const progressBar = document.querySelector('.progress-bar');
+            if (progressBar) {
+                const windowHeight = window.innerHeight;
+                const documentHeight = document.documentElement.scrollHeight - windowHeight;
+                const scrolled = window.scrollY;
+                const progress = (scrolled / documentHeight) * 100;
+                progressBar.style.width = Math.min(100, Math.max(0, progress)) + '%';
+            }
+        }
+        
+        // Update progress on scroll and load
+        window.addEventListener('scroll', updateProgress);
+        document.addEventListener('DOMContentLoaded', updateProgress);
+    </script>
+</body>
+</html>
