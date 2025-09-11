@@ -77,7 +77,7 @@ let downloadCertBtn, certificateSection, progressBar;
     let questions = [];
     let userAnswers = [];
     let quizCompleted = false;
-    let timeLeft = 60 * 60; // 60 minutes in seconds
+    let timeLeft = 30 * 60; // 30 minutes in seconds
     let timerInterval = null;
 
     // Fetch questions from JSON file and select 100 random questions
