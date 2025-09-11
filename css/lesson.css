@@ -1,10 +1,282 @@
+/* Block Programming Specific Styles */
+.lesson-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+.lesson-header {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.lesson-header h1 {
+    font-size: 2.25rem;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.lesson-meta {
+    display: flex;
+    gap: 1.5rem;
+    color: #6b7280;
+    font-size: 0.95rem;
+    margin-top: 1rem;
+}
+
+.learning-objectives {
+    background: #f8fafc;
+    border-left: 4px solid #4f46e5;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.learning-objectives h2 {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    border: none !important;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.learning-objectives ul {
+    margin: 1rem 0 0 0;
+    padding-left: 1.5rem;
+}
+
+.learning-objectives li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.learning-objectives li:before {
+    content: "•";
+    color: #4f46e5;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.lesson-section {
+    margin: 2.5rem 0;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.lesson-section h2 {
+    color: #1f2937;
+    font-size: 1.5rem;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    border: none !important;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.lesson-section h2:before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #4f46e5;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.key-point, .example-box {
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border-radius: 4px;
+    max-width: 100%;
+    overflow: hidden;
+    word-break: break-word;
+}
+
+.key-point {
+    background: #f0f9ff;
+    border-left: 4px solid #0ea5e9;
+}
+
+.key-point h3 {
+    margin-top: 0 !important;
+    color: #0369a1;
+    font-size: 1.1rem;
+}
+
+.example-box {
+    background: #f5f3ff;
+    border-left: 4px solid #8b5cf6;
+}
+
+.example-box h4 {
+    margin-top: 0 !important;
+    color: #6d28d9;
+    font-size: 1.1rem;
+}
+
+.practice-section {
+    background: #ecfdf5;
+    border-left: 4px solid #10b981;
+    padding: 1.5rem;
+    margin: 3rem 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.practice-section h2 {
+    margin-top: 0 !important;
+    color: #047857;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.practice-section ol {
+    margin: 1rem 0 0 0;
+    padding-left: 1.5rem;
+}
+
+.practice-section li {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
 /* Navigation Buttons */
-.nav-buttons {
+.navigation-buttons {
     display: flex;
     justify-content: space-between;
-    margin: 2rem 0;
-    padding: 1rem 0;
+    margin: 3rem 0 2rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid #e5e7eb;
     border-bottom: 1px solid #e5e7eb;
+}
+
+.nav-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-button.prev {
+    background-color: #f8fafc;
+    color: #4f46e5;
+    border: 1px solid #e2e8f0;
+    padding-left: 2.5rem;
+}
+
+.nav-button.next {
+    background-color: #4f46e5;
+    color: white;
+    border: 1px solid #4f46e5;
+    padding-right: 2.5rem;
+}
+
+.nav-button.prev:hover {
+    background-color: #eef2ff;
+    transform: translateX(-3px);
+}
+
+.nav-button.next:hover {
+    background-color: #4338ca;
+    transform: translateX(3px);
+}
+
+.nav-button.prev i {
+    position: absolute;
+    left: 1rem;
+    transition: transform 0.2s ease;
+}
+
+.nav-button.next i {
+    position: absolute;
+    right: 1rem;
+    transition: transform 0.2s ease;
+}
+
+.nav-button.prev:hover i {
+    transform: translateX(-3px);
+}
+
+.nav-button.next:hover i {
+    transform: translateX(3px);
+}
+
+/* Chapter number styling - hidden */
+.chapter-number {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .lesson-container {
+        padding: 1.5rem 1rem;
+    }
+    
+    .lesson-header h1 {
+        font-size: 1.75rem;
+    }
+    
+    .lesson-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .lesson-section {
+        padding: 1.25rem;
+        margin: 2rem 0;
+    }
+    
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .btn-prev, .btn-next {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Code Blocks */
+pre {
+    background: #1e293b;
+    color: #f8fafc;
+    padding: 1.25rem;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    font-family: 'Fira Code', 'Courier New', monospace;
+}
+
+code {
+    background: #f1f5f9;
+    color: #dc2626;
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+    font-family: 'Fira Code', 'Courier New', monospace;
+    font-size: 0.9em;
+}
+
+pre code {
+    background: transparent;
+    color: inherit;
+    padding: 0;
+    border-radius: 0;
 }
 
 /* Top navigation buttons */
@@ -59,6 +331,11 @@
     font-size: 1rem;
     line-height: 1.6;
     color: #374151;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    word-break: break-word;
 }
 
 .lesson-content h1 {
@@ -86,6 +363,10 @@
     margin-bottom: 1rem;
     color: #4b5563;
     font-size: 0.95rem;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    line-height: 1.7;
 }
 
 .lesson-content ul, 
